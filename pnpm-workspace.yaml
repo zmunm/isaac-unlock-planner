@@ -1,0 +1,5 @@
+# Delay installing freshly published versions — buys time for compromised packages to be caught and unpublished
+minimumReleaseAge: 10080
+onlyBuiltDependencies:
+  - esbuild
+  - workerd

@@ -1,0 +1,6586 @@
+{
+ "source": "https://bindingofisaacrebirth.wiki.gg (CC BY-SA 4.0)",
+ "characters": {
+  "Azazel": "https://bindingofisaacrebirth.wiki.gg/images/Character_Azazel_appearance.png?c237ef",
+  "Magdalene": "https://bindingofisaacrebirth.wiki.gg/images/Character_Magdalene_appearance.png?8ae4cd",
+  "Cain": "https://bindingofisaacrebirth.wiki.gg/images/Character_Cain_appearance.png?40f9f3",
+  "???": "https://bindingofisaacrebirth.wiki.gg/images/Character_%3F%3F%3F_appearance.png?360e5d",
+  "Isaac": "https://bindingofisaacrebirth.wiki.gg/images/Character_Isaac_appearance.png?39fee3",
+  "Eve": "https://bindingofisaacrebirth.wiki.gg/images/Character_Eve_appearance.png?7b41a8",
+  "Judas": "https://bindingofisaacrebirth.wiki.gg/images/Character_Judas_appearance.png?c32427",
+  "Samson": "https://bindingofisaacrebirth.wiki.gg/images/Character_Samson_appearance.png?2a278a",
+  "Lazarus": "https://bindingofisaacrebirth.wiki.gg/images/Character_Lazarus_appearance.png?804a52",
+  "Eden": "https://bindingofisaacrebirth.wiki.gg/images/Character_Eden_appearance.png?a1c072",
+  "The Lost": "https://bindingofisaacrebirth.wiki.gg/images/Character_The_Lost_appearance.png?f50801",
+  "Lilith": "https://bindingofisaacrebirth.wiki.gg/images/Character_Lilith_appearance.png?3517c8",
+  "Keeper": "https://bindingofisaacrebirth.wiki.gg/images/Character_Keeper_appearance.png?38aa52",
+  "Apollyon": "https://bindingofisaacrebirth.wiki.gg/images/Character_Apollyon_appearance.png?f71a96",
+  "The Forgotten": "https://bindingofisaacrebirth.wiki.gg/images/Character_The_Forgotten_appearance.png?a20cfd",
+  "Bethany": "https://bindingofisaacrebirth.wiki.gg/images/Character_Bethany_appearance.png?41d8ac",
+  "Jacob and Esau": "https://bindingofisaacrebirth.wiki.gg/images/Character_Jacob_appearance.png?7a3931",
+  "Tainted Isaac": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Isaac_appearance.png?730cd3",
+  "Tainted Magdalene": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Magdalene_appearance.png?d4c720",
+  "Tainted Cain": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Cain_appearance.png?a94a83",
+  "Tainted Judas": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Judas_appearance.png?9657e4",
+  "Tainted ???": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_%3F%3F%3F_appearance.png?10763d",
+  "Tainted Eve": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Eve_appearance.png?273bfa",
+  "Tainted Samson": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Samson_appearance.png?b3f131",
+  "Tainted Azazel": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Azazel_appearance.png?bc4394",
+  "Tainted Lazarus": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Lazarus_appearance.png?b45ce3",
+  "Tainted Eden": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Eden_appearance.png?32acae",
+  "Tainted Lost": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Lost_appearance.png?8468f8",
+  "Tainted Lilith": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Lilith_appearance.png?8a259c",
+  "Tainted Keeper": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Keeper_appearance.png?74fb2b",
+  "Tainted Apollyon": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Apollyon_appearance.png?8bd7b9",
+  "Tainted Forgotten": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Forgotten_appearance.png?f48014",
+  "Tainted Bethany": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Bethany_appearance.png?355a11",
+  "Tainted Jacob": "https://bindingofisaacrebirth.wiki.gg/images/Character_Tainted_Jacob_appearance.png?5e0ca5"
+ },
+ "marks": {
+  "momsHeartHard": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Heart_Hard.png?b736e7",
+  "isaac": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Cathedral.png?e9a14a",
+  "blueBaby": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Chest.png?9633d7",
+  "satan": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Sheol.png?5bfd0e",
+  "lamb": "https://bindingofisaacrebirth.wiki.gg/images/Completion_DarkRoom.png?94a6a5",
+  "megaSatan": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Brimstone.png?e5a150",
+  "bossRush": "https://bindingofisaacrebirth.wiki.gg/images/Completion_BossRush.png?d71150",
+  "hush": "https://bindingofisaacrebirth.wiki.gg/images/Completion_BlueWomb.png?e6e0b4",
+  "delirium": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Void.png?687145",
+  "mother": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Mother.png?9f997c",
+  "beast": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Beast.png?441d40",
+  "greed": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Greed.png?2772fb",
+  "greedier": "https://bindingofisaacrebirth.wiki.gg/images/Completion_Greed_Hard.png?1bce9f"
+ },
+ "challenges": [
+  {
+   "number": 1,
+   "name": "Pitch Black",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    89
+   ]
+  },
+  {
+   "number": 2,
+   "name": "High Brow",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Number One",
+    "E. Coli",
+    "Butt Bombs",
+    "Flush!"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    90
+   ]
+  },
+  {
+   "number": 3,
+   "name": "Head Trauma",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Tiny Planet",
+    "Soy Milk",
+    "The Small Rock",
+    "Iron Bar"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    91
+   ]
+  },
+  {
+   "number": 4,
+   "name": "Darkness Falls",
+   "character": "Eve",
+   "goal": "Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Satan_portrait.png?a129f6",
+   "items": [
+    "Pentagram",
+    "Dead Bird",
+    "Whore of Babylon",
+    "Razor Blade",
+    "Sacrificial Dagger",
+    "Dark Matter"
+   ],
+   "blindfolded": false,
+   "requires": 157,
+   "rewards": [
+    92
+   ]
+  },
+  {
+   "number": 5,
+   "name": "The Tank",
+   "character": "Magdalene",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Infamy",
+    "Bucket of Lard",
+    "Thunder Thighs",
+    "Yum Heart"
+   ],
+   "blindfolded": false,
+   "requires": 158,
+   "rewards": [
+    93
+   ]
+  },
+  {
+   "number": 6,
+   "name": "Solar System",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "Distant Admiration",
+    "Forever alone",
+    "Halo of Flies",
+    "Transcendence"
+   ],
+   "blindfolded": true,
+   "requires": 159,
+   "rewards": [
+    94
+   ]
+  },
+  {
+   "number": 7,
+   "name": "Suicide King",
+   "character": "Lazarus",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "Ipecac",
+    "Mr. Mega",
+    "My Reflection"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    120
+   ]
+  },
+  {
+   "number": 8,
+   "name": "Cat Got Your Tongue",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Guppy's Hairball",
+    "Guppy's Head",
+    "Guppy's Tail"
+   ],
+   "blindfolded": true,
+   "requires": 161,
+   "rewards": [
+    96
+   ]
+  },
+  {
+   "number": 9,
+   "name": "Demo Man",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "Dr. Fetus",
+    "Remote Detonator"
+   ],
+   "blindfolded": false,
+   "requires": 162,
+   "rewards": [
+    97
+   ]
+  },
+  {
+   "number": 10,
+   "name": "Cursed!",
+   "character": "Magdalene",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Blue Map",
+    "The Compass",
+    "Raw Liver",
+    "Treasure Map",
+    "Yum Heart"
+   ],
+   "blindfolded": false,
+   "requires": 163,
+   "rewards": [
+    98
+   ]
+  },
+  {
+   "number": 11,
+   "name": "Glass Cannon",
+   "character": "Judas",
+   "goal": "Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Satan_portrait.png?a129f6",
+   "items": [
+    "Epic Fetus",
+    "Loki's Horns"
+   ],
+   "blindfolded": false,
+   "requires": 164,
+   "rewards": [
+    99
+   ]
+  },
+  {
+   "number": 12,
+   "name": "When Life Gives You Lemons",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "9 Volt",
+    "Habit",
+    "Lemon Mishap"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    100
+   ]
+  },
+  {
+   "number": 13,
+   "name": "Beans!",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "9 Volt",
+    "The Bean",
+    "The Black Bean",
+    "Butt Bombs",
+    "Pyro"
+   ],
+   "blindfolded": true,
+   "requires": null,
+   "rewards": [
+    60
+   ]
+  },
+  {
+   "number": 14,
+   "name": "It's in the Cards",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "9 Volt",
+    "The Battery",
+    "Deck of Cards",
+    "Starter Deck"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    63
+   ]
+  },
+  {
+   "number": 15,
+   "name": "Slow Roll",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Cupid's Arrow",
+    "My Reflection",
+    "Polyphemus"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    101
+   ]
+  },
+  {
+   "number": 16,
+   "name": "Computer Savvy",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Spoon Bender",
+    "Technology",
+    "Technology 2"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    102
+   ]
+  },
+  {
+   "number": 17,
+   "name": "Waka Waka",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "Anti-Gravity",
+    "Strange Attractor"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    103
+   ]
+  },
+  {
+   "number": 18,
+   "name": "The Host",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "The Mulligan",
+    "Spiderbaby"
+   ],
+   "blindfolded": false,
+   "requires": null,
+   "rewards": [
+    104
+   ]
+  },
+  {
+   "number": 19,
+   "name": "The Family Man",
+   "character": "Isaac",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "BFFS!",
+    "Brother Bobby",
+    "Dad's Key",
+    "Rotten Baby",
+    "Sister Maggy"
+   ],
+   "blindfolded": true,
+   "requires": 165,
+   "rewards": [
+    62,
+    164
+   ]
+  },
+  {
+   "number": 20,
+   "name": "Purist",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [],
+   "blindfolded": false,
+   "requires": 166,
+   "rewards": [
+    95
+   ]
+  },
+  {
+   "number": 21,
+   "name": "XXXXXXXXL",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [],
+   "blindfolded": false,
+   "requires": 265,
+   "rewards": [
+    224
+   ]
+  },
+  {
+   "number": 22,
+   "name": "SPEED!",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [],
+   "blindfolded": false,
+   "requires": 266,
+   "rewards": [
+    225
+   ]
+  },
+  {
+   "number": 23,
+   "name": "Blue Bomber",
+   "character": "???",
+   "goal": "Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Satan_portrait.png?a129f6",
+   "items": [
+    "Brother Bobby",
+    "Kamikaze!",
+    "Pyromaniac",
+    "Mr. Mega"
+   ],
+   "blindfolded": true,
+   "requires": 267,
+   "rewards": [
+    226
+   ]
+  },
+  {
+   "number": 24,
+   "name": "PAY TO PLAY",
+   "character": "Isaac",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "Money = Power",
+    "Sack of Pennies"
+   ],
+   "blindfolded": false,
+   "requires": 268,
+   "rewards": [
+    227
+   ]
+  },
+  {
+   "number": 25,
+   "name": "Have a Heart",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "Charm of the Vampire"
+   ],
+   "blindfolded": false,
+   "requires": 269,
+   "rewards": [
+    228
+   ]
+  },
+  {
+   "number": 26,
+   "name": "I RULE!",
+   "character": "Isaac",
+   "goal": "Mega Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mega_Satan_portrait.png?2fc483",
+   "items": [
+    "The Boomerang",
+    "Key Piece 1",
+    "Key Piece 2",
+    "The Ladder",
+    "Mom's Knife",
+    "Trinity Shield"
+   ],
+   "blindfolded": false,
+   "requires": 270,
+   "rewards": [
+    229
+   ]
+  },
+  {
+   "number": 27,
+   "name": "BRAINS!",
+   "character": "???",
+   "goal": "???",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_%3F%3F%3F_Rebirth_portrait.png?7bdf12",
+   "items": [
+    "3 Bob's Brain",
+    "Thunder Thighs"
+   ],
+   "blindfolded": true,
+   "requires": 271,
+   "rewards": [
+    230
+   ]
+  },
+  {
+   "number": 28,
+   "name": "PRIDE DAY!",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "3 Dollar Bill",
+    "Rainbow Baby"
+   ],
+   "blindfolded": false,
+   "requires": 272,
+   "rewards": [
+    231
+   ]
+  },
+  {
+   "number": 29,
+   "name": "Onan's Streak",
+   "character": "Judas",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "The Book of Belial",
+    "Chocolate Milk"
+   ],
+   "blindfolded": false,
+   "requires": 273,
+   "rewards": [
+    232
+   ]
+  },
+  {
+   "number": 30,
+   "name": "The Guardian",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "Holy Grail",
+    "Isaac's Heart",
+    "Punching Bag",
+    "Spear Of Destiny"
+   ],
+   "blindfolded": true,
+   "requires": 274,
+   "rewards": [
+    233
+   ]
+  },
+  {
+   "number": 31,
+   "name": "Backasswards",
+   "character": "Isaac",
+   "goal": "Basement / Cellar / Burning Basement I",
+   "goalImage": null,
+   "items": [
+    "8-10 random items"
+   ],
+   "blindfolded": false,
+   "requires": 277,
+   "rewards": [
+    331
+   ]
+  },
+  {
+   "number": 32,
+   "name": "Aprils Fool",
+   "character": "Isaac",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [],
+   "blindfolded": false,
+   "requires": 278,
+   "rewards": [
+    332
+   ]
+  },
+  {
+   "number": 33,
+   "name": "Pokey Mans",
+   "character": "Isaac",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "Friendly Ball",
+    "Mom's Eyeshadow"
+   ],
+   "blindfolded": false,
+   "requires": 279,
+   "rewards": [
+    333
+   ]
+  },
+  {
+   "number": 34,
+   "name": "Ultra Hard",
+   "character": "Isaac",
+   "goal": "Mega Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mega_Satan_portrait.png?2fc483",
+   "items": [
+    "Key Piece 1",
+    "Key Piece 2"
+   ],
+   "blindfolded": false,
+   "requires": 280,
+   "rewards": [
+    334
+   ]
+  },
+  {
+   "number": 35,
+   "name": "Pong",
+   "character": "Isaac",
+   "goal": "???",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_%3F%3F%3F_Rebirth_portrait.png?7bdf12",
+   "items": [
+    "Cupid's Arrow",
+    "Rubber Cement"
+   ],
+   "blindfolded": false,
+   "requires": 281,
+   "rewards": [
+    335
+   ]
+  },
+  {
+   "number": 36,
+   "name": "Scat Man",
+   "character": "Isaac",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [
+    "The Poop",
+    "9 Volt",
+    "Skatole",
+    "3 Butt Bombs",
+    "BFFS!",
+    "Thunder Thighs",
+    "Dirty Mind",
+    "Mysterious Candy"
+   ],
+   "blindfolded": true,
+   "requires": null,
+   "rewards": [
+    517
+   ]
+  },
+  {
+   "number": 37,
+   "name": "Bloody Mary",
+   "character": "Bethany",
+   "goal": "Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Satan_portrait.png?a129f6",
+   "items": [
+    "The Book of Belial",
+    "Blood Bag",
+    "Anemic",
+    "Blood Oath"
+   ],
+   "blindfolded": false,
+   "requires": 508,
+   "rewards": [
+    518
+   ]
+  },
+  {
+   "number": 38,
+   "name": "Baptism by Fire",
+   "character": "Bethany",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_Rebirth_portrait.png?7ba807",
+   "items": [
+    "Urn of Souls",
+    "Schoolbag",
+    "Guppy's Paw",
+    "Maggy's Faith"
+   ],
+   "blindfolded": true,
+   "requires": 509,
+   "rewards": [
+    519
+   ]
+  },
+  {
+   "number": 39,
+   "name": "Isaac's Awakening",
+   "character": "Isaac",
+   "goal": "Mother",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mother_portrait.png?b2d49d",
+   "items": [
+    "Spirit Sword",
+    "Trinity Shield",
+    "Mom's Bracelet"
+   ],
+   "blindfolded": false,
+   "requires": 510,
+   "rewards": [
+    520
+   ]
+  },
+  {
+   "number": 40,
+   "name": "Seeing Double",
+   "character": "Jacob and Esau",
+   "goal": "Mom's Heart",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom%27s_Heart_portrait.png?effccd",
+   "items": [
+    "Jacob: 20/20",
+    "Esau: 20/20",
+    "X-Ray Vision"
+   ],
+   "blindfolded": false,
+   "requires": 511,
+   "rewards": [
+    521
+   ]
+  },
+  {
+   "number": 41,
+   "name": "Pica Run",
+   "character": "Isaac",
+   "goal": "Isaac",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Isaac_portrait.png?170382",
+   "items": [
+    "Mom's Box",
+    "Marbles",
+    "Mom's Purse"
+   ],
+   "blindfolded": false,
+   "requires": 512,
+   "rewards": [
+    522
+   ]
+  },
+  {
+   "number": 42,
+   "name": "Hot Potato",
+   "character": "Tainted Forgotten",
+   "goal": "Satan",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Satan_portrait.png?a129f6",
+   "items": [],
+   "blindfolded": true,
+   "requires": 513,
+   "rewards": [
+    531
+   ]
+  },
+  {
+   "number": 43,
+   "name": "Cantripped!",
+   "character": "Tainted Cain",
+   "goal": "Mom",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mom_portrait.png?51eb72",
+   "items": [],
+   "blindfolded": false,
+   "requires": 514,
+   "rewards": [
+    532
+   ]
+  },
+  {
+   "number": 44,
+   "name": "Red Redemption",
+   "character": "Tainted Jacob",
+   "goal": "Mother",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Mother_portrait.png?b2d49d",
+   "items": [
+    "Dad's Key",
+    "Red Key"
+   ],
+   "blindfolded": false,
+   "requires": 515,
+   "rewards": [
+    533
+   ]
+  },
+  {
+   "number": 45,
+   "name": "DELETE THIS",
+   "character": "Isaac",
+   "goal": "???",
+   "goalImage": "https://bindingofisaacrebirth.wiki.gg/images/Boss_%3F%3F%3F_portrait.png?3da4cf",
+   "items": [
+    "TMTRAINER"
+   ],
+   "blindfolded": false,
+   "requires": 516,
+   "rewards": [
+    538
+   ]
+  }
+ ],
+ "achievements": [
+  {
+   "id": 1,
+   "name": "Magdalene",
+   "requirement": "Have 7 or more Red Heart Containers at one time",
+   "unlocks": []
+  },
+  {
+   "id": 2,
+   "name": "Cain",
+   "requirement": "Hold 55 Coins at one time",
+   "unlocks": []
+  },
+  {
+   "id": 3,
+   "name": "Judas",
+   "requirement": "Defeat Satan",
+   "unlocks": []
+  },
+  {
+   "id": 4,
+   "name": "The Womb",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 5,
+   "name": "The Harbingers",
+   "requirement": "Defeat Mom",
+   "unlocks": [
+    {
+     "name": "A Pony",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Pony_icon.png?d84207",
+     "effect": "Passively grants flight and increases speed to 1.5. Upon use, Isaac charges in the direction the pony is facing, giving invulnerability during the charge and dealing damage to enemies hit."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "A Cube of Meat",
+   "requirement": "Defeat Mom",
+   "unlocks": [
+    {
+     "name": "Ball of Bandages",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ball_of_Bandages_icon.png?323894",
+     "effect": "Creates an orbital familiar. Collecting additional copies gives it the ability to shoot Charm tears, then chase enemies to deal contact damage, then deal even more contact damage."
+    },
+    {
+     "name": "Cube of Meat",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cube_of_Meat_icon.png?e6b7ae",
+     "effect": "Creates an orbital familiar. Collecting additional copies gives it the ability to shoot tears, then chase enemies to deal contact damage, then deal even more contact damage."
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "The Book of Revelations",
+   "requirement": "Defeat a Harbinger",
+   "unlocks": [
+    {
+     "name": "Book of Revelations",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Revelations_icon.png?7f5758",
+     "effect": "Increases the chance of a Devil Room / Angel Room appearing while held. Upon use, gives one Soul Heart, and replaces the boss of the current floor with a Harbinger if possible."
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "A Noose",
+   "requirement": "Defeat Mom's Heart 3 times",
+   "unlocks": [
+    {
+     "name": "Transcendence",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Transcendence_icon.png?5ad625",
+     "effect": "Grants flight."
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "The Nail",
+   "requirement": "Complete the Boss Rush as Azazel",
+   "unlocks": [
+    {
+     "name": "The Nail",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Nail_icon.png?c30aa8",
+     "effect": "Gives half a Black Heart. For the current room; +2 damage, -0.18 speed, Isaac breaks rocks and deals contact damage."
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "A Quarter",
+   "requirement": "Defeat Mom's Heart 8 times",
+   "unlocks": [
+    {
+     "name": "A Quarter",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Quarter_icon.png?b64fa9",
+     "effect": "Gives Isaac 25 coins."
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "A Fetus in a Jar",
+   "requirement": "Defeat Mom's Heart 9 times",
+   "unlocks": [
+    {
+     "name": "Dr. Fetus",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dr._Fetus_icon.png?59ffa2",
+     "effect": "Tears are replaced by Bombs that benefit from bomb-enhancing effects and slide for a fixed time after being fired."
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "A Small Rock",
+   "requirement": "Destroy 100 Tinted Rocks",
+   "unlocks": [
+    {
+     "name": "The Small Rock",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Small_Rock_icon.png?269162",
+     "effect": "+1 damage, +0.2 tears, -0.2 speed."
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Monstro's Tooth",
+   "requirement": "Beat Chapter 1",
+   "unlocks": [
+    {
+     "name": "Monstro's Tooth",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Monstro%27s_Tooth_icon.png?cbb087",
+     "effect": "A friendly Monstro jumps on a random enemy, dealing 120 damage in an area. Targets Isaac if used in a room without enemies."
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Lil' Chubby",
+   "requirement": "Beat Chapter 2",
+   "unlocks": [
+    {
+     "name": "Little Chubby",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Chubby_icon.png?ffb9c8",
+     "effect": "Spawns a Charger familiar that charges forward and deals contact damage to any enemies in its path."
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Loki's Horns",
+   "requirement": "Defeat Lokii",
+   "unlocks": [
+    {
+     "name": "Loki's Horns",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Loki%27s_Horns_icon.png?d41cdb",
+     "effect": "Gives a random chance for projectiles to fire in all 4 cardinal directions."
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "Something From The Future",
+   "requirement": "Beat Basement 40 times",
+   "unlocks": []
+  },
+  {
+   "id": 17,
+   "name": "Something Cute",
+   "requirement": "Beat Chapter 2 30 times",
+   "unlocks": []
+  },
+  {
+   "id": 18,
+   "name": "Something Sticky",
+   "requirement": "Beat Chapter 3 20 times",
+   "unlocks": []
+  },
+  {
+   "id": 19,
+   "name": "A Bandage",
+   "requirement": "Make a Super Bandage Girl by picking up 4 copies of Ball of Bandages in one run",
+   "unlocks": [
+    {
+     "name": "Super Bandage",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Super_Bandage_icon.png?ab7059",
+     "effect": "Grants one full Red Heart container and 2 Soul Hearts."
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "name": "A Cross",
+   "requirement": "Defeat Isaac as Magdalene",
+   "unlocks": [
+    {
+     "name": "The Relic",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Relic_icon.png?f428a6",
+     "effect": "Spawns a cross familiar that drops a Soul Heart after clearing enough rooms."
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "name": "A Bag of Pennies",
+   "requirement": "Defeat Isaac as Cain",
+   "unlocks": [
+    {
+     "name": "Sack of Pennies",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sack_of_Pennies_icon.png?3a4f0c",
+     "effect": "Spawns a familiar that drops a coin every 2 rooms."
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "name": "The Book of Sin",
+   "requirement": "Defeat all 7 Deadly Sins",
+   "unlocks": [
+    {
+     "name": "The Book of Sin",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Book_of_Sin_icon.png?33ff91",
+     "effect": "Spawns a random coin, heart, bomb, key, battery, pill or card near Isaac."
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "name": "Little Gish",
+   "requirement": "Defeat Gish",
+   "unlocks": [
+    {
+     "name": "Little Gish",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Gish_icon.png?8bf6d1",
+     "effect": "Spawns a familiar that follows Isaac around and fires slowing tears, impeding enemies' speed."
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "name": "Little Steven",
+   "requirement": "Defeat Steven",
+   "unlocks": [
+    {
+     "name": "Little Steven",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Steven_icon.png?44ce4f",
+     "effect": "Spawns a familiar who follows Isaac around and fires homing tears 1.36 times a second that each do 3.5 damage."
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "name": "Little C.H.A.D.",
+   "requirement": "Defeat C.H.A.D.",
+   "unlocks": [
+    {
+     "name": "Little C.H.A.D.",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_C.H.A.D._icon.png?e645d4",
+     "effect": "Spawns a familiar who drops a Half Red Heart every 3 rooms. The first is dropped after 2 rooms."
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "name": "A Gamekid",
+   "requirement": "Visit 10 Arcades",
+   "unlocks": [
+    {
+     "name": "The Gamekid",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Gamekid_icon.png?b0f12d",
+     "effect": "Transforms Isaac into a rainbow-colored chomping creature for 6.5 seconds. Grants invulnerability, inflicts fear on all enemies, and has a chance of replenishing a Half Red Heart every time an enemy is killed."
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "name": "A Halo",
+   "requirement": "Defeat Mom, Mom's Heart, or It Lives! using The Bible or XV - The Devil?",
+   "unlocks": [
+    {
+     "name": "The Halo",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Halo_icon.png?3b1bbd",
+     "effect": "Grants one full Red Heart container, +0.3 damage, +0.2 tears, +1.5 range, and +0.3 speed. Heals 1 additional Red Heart."
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "name": "Mr. Mega",
+   "requirement": "Destroy 10 Tinted Rocks",
+   "unlocks": [
+    {
+     "name": "Mr. Mega",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._Mega_icon.png?57c93e",
+     "effect": "+5 Bombs. Increases the size, blast radius, and damage of Isaac's bombs."
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "name": "The D6",
+   "requirement": "Defeat Isaac as ???",
+   "unlocks": [
+    {
+     "name": "The D6",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_D6_icon.png?d91969",
+     "effect": "Re-rolls all items in the current room into other items, depending on the current room's item pool."
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "name": "The Scissors",
+   "requirement": "Die 100 times",
+   "unlocks": [
+    {
+     "name": "Scissors",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Scissors_icon.png?fff7a5",
+     "effect": "Turns Isaac's head into a stationary familiar for the current room which fires tears automatically. Isaac's body also shoots a controllable fountain of blood shots for the room."
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "name": "The Parasite",
+   "requirement": "Pick up 2 dead-related items in a single run",
+   "unlocks": [
+    {
+     "name": "The Parasite",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Parasite_icon.png?efabb1",
+     "effect": "Isaac's tears split in two when they hit something."
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "name": "???",
+   "requirement": "Defeat Mom's Heart 10 times",
+   "unlocks": []
+  },
+  {
+   "id": 33,
+   "name": "Everything Is Terrible!!!",
+   "requirement": "Defeat Mom's Heart 5 times",
+   "unlocks": []
+  },
+  {
+   "id": 34,
+   "name": "It Lives!",
+   "requirement": "Defeat Mom's Heart 11 times",
+   "unlocks": []
+  },
+  {
+   "id": 35,
+   "name": "Mom's Contact",
+   "requirement": "Obtain three Yes Mother? items in one run",
+   "unlocks": [
+    {
+     "name": "Mom's Contacts",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Contacts_icon.png?806fcd",
+     "effect": "Adds a chance to shoot petrifying tears. +1.5 range."
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "name": "The Necronomicon",
+   "requirement": "Use XIII - Death 4 times",
+   "unlocks": [
+    {
+     "name": "The Necronomicon",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Necronomicon_icon.png?d56c9b",
+     "effect": "Deals 40 damage to every enemy in the room."
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "name": "Basement Boy",
+   "requirement": "Beat Chapter 1 without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 38,
+   "name": "Spelunker Boy",
+   "requirement": "Beat Chapter 2 without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 39,
+   "name": "Dark Boy",
+   "requirement": "Beat Chapter 3 without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 40,
+   "name": "Mama's Boy",
+   "requirement": "Beat Chapter 4 without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 41,
+   "name": "Golden God!",
+   "requirement": "Defeat ??? and The Lamb",
+   "unlocks": []
+  },
+  {
+   "id": 42,
+   "name": "Eve",
+   "requirement": "Don't pick up any hearts for 2 floors in a row",
+   "unlocks": []
+  },
+  {
+   "id": 43,
+   "name": "Mom's Knife",
+   "requirement": "Defeat Satan as Isaac",
+   "unlocks": [
+    {
+     "name": "Mom's Knife",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Knife_icon.png?dffc5f",
+     "effect": "Isaac's tears are replaced by a knife that pierces enemies, can travel through obstacles, and can hurt enemies while Isaac is holding it. Holding down the fire button before firing increases its range and power."
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "name": "The Razor",
+   "requirement": "Defeat Satan as Eve",
+   "unlocks": [
+    {
+     "name": "Razor Blade",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Razor_Blade_icon.png?aa952f",
+     "effect": "Damages Isaac for one heart and grants +1.2 damage for the current room. Subsequent uses in the same room only take half a heart."
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "name": "Guardian Angel",
+   "requirement": "Defeat Satan as Magdalene",
+   "unlocks": [
+    {
+     "name": "Guardian Angel",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guardian_Angel_icon.png?1442bc",
+     "effect": "Spawns an orbital familiar that blocks enemy shots, deals 7 damage per tick on contact, and increases the speed of all orbital familiars."
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "name": "A Bag of Bombs",
+   "requirement": "Defeat Satan as Cain",
+   "unlocks": [
+    {
+     "name": "Bomb Bag",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bomb_Bag_icon.png?daeb5d",
+     "effect": "Spawns a familiar that drops a Bomb every 3 rooms."
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "name": "Demon Baby",
+   "requirement": "Defeat The Lamb as Azazel",
+   "unlocks": [
+    {
+     "name": "Demon Baby",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Demon_Baby_icon.png?aef14c",
+     "effect": "Spawns a familiar that follows Isaac around and automatically fires at enemies within its range."
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "name": "Forget Me Now",
+   "requirement": "Defeat Satan as ???",
+   "unlocks": [
+    {
+     "name": "Forget Me Now",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Forget_Me_Now_icon.png?1c9b8f",
+     "effect": "Restarts the current floor with a new layout. Any items and pickups from the original floor are kept."
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "name": "The D20",
+   "requirement": "Defeat ??? as Isaac",
+   "unlocks": [
+    {
+     "name": "D20",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D20_icon.png?95c84e",
+     "effect": "Re-rolls all pickups, chests, and trinkets in the current room."
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "name": "Celtic Cross",
+   "requirement": "Defeat ??? as Magdalene",
+   "unlocks": [
+    {
+     "name": "Celtic Cross",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Celtic_Cross_icon.png?ba866e",
+     "effect": "Grants a chance to trigger the Book of Shadows effect upon taking damage, creating a shield that nullifies all types of damage for 7 seconds."
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "name": "Abel",
+   "requirement": "Defeat The Lamb as Cain",
+   "unlocks": [
+    {
+     "name": "Abel",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abel_icon.png?473d01",
+     "effect": "Spawns a familiar that mirrors Isaac's movements and shoots towards him."
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "name": "Curved Horn",
+   "requirement": "Defeat The Lamb as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 53,
+   "name": "Sacrificial Dagger",
+   "requirement": "Defeat ??? as Eve",
+   "unlocks": [
+    {
+     "name": "Sacrificial Dagger",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacrificial_Dagger_icon.png?e4482c",
+     "effect": "Spawns a dagger orbital familiar, blocking enemy shots and dealing a high amount of damage to enemies in contact."
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "name": "Bloody Lust",
+   "requirement": "Defeat Isaac as Samson",
+   "unlocks": [
+    {
+     "name": "Bloody Lust",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bloody_Lust_icon.png?5d69ca",
+     "effect": "Increases Isaac's damage whenever he takes damage, up to six times. The bonus resets when entering a new floor."
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "name": "Blood Penny",
+   "requirement": "Defeat ??? as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 56,
+   "name": "Blood Rights",
+   "requirement": "Defeat Satan as Samson",
+   "unlocks": [
+    {
+     "name": "Blood Rights",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Rights_icon.png?8e8c1c",
+     "effect": "Takes a full heart of health and deals 40 damage to all enemies in the room. Repeated uses in the same room only take half a heart. Increases fire rate when used."
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "name": "The Polaroid",
+   "requirement": "Defeat Isaac 5 times",
+   "unlocks": [
+    {
+     "name": "The Polaroid",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Polaroid_icon.png?75486f",
+     "effect": "If Isaac has half a red heart or no red hearts after taking damage, he gains a shield that nullifies all types of damage for 5 seconds. Allows entrance into Chest. Also allows access to Home."
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "name": "Dad's Key",
+   "requirement": "Pick up both Key Pieces from the Angels in one run",
+   "unlocks": [
+    {
+     "name": "Dad's Key",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Key_icon.png?7b5272",
+     "effect": "Opens all doors in the current room in almost all circumstances, including doors which require a Key to open, entrances to Secret Rooms, and the door to Mega Satan."
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "name": "Blue Candle",
+   "requirement": "Donate 900 coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "The Candle",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Candle_icon.png?a2f860",
+     "effect": "Throws out a blue flame that damages everything in its path, diminishing in size as it travels."
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "name": "Burnt Penny",
+   "requirement": "Complete Beans! (challenge #13)",
+   "unlocks": []
+  },
+  {
+   "id": 61,
+   "name": "Lucky Toe",
+   "requirement": "Blow up 20 Shopkeepers",
+   "unlocks": []
+  },
+  {
+   "id": 62,
+   "name": "Epic Fetus",
+   "requirement": "Complete The Family Man (challenge #19)",
+   "unlocks": [
+    {
+     "name": "Epic Fetus",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Epic_Fetus_icon.png?7af4b0",
+     "effect": "Instead of tears, firing creates a crosshair which can be moved freely. A missile is dropped in the location after 1.5 seconds, exploding for high damage."
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "name": "SMB Super Fan",
+   "requirement": "Complete It's in the Cards (challenge #14)",
+   "unlocks": [
+    {
+     "name": "SMB Super Fan",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_SMB_Super_Fan_icon.png?ad7555",
+     "effect": "+1 Red Heart container, +0.3 damage, +0.2 tears, +0.2 speed, +2.5 range. Fully restores all red hearts."
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "name": "Counterfeit Coin",
+   "requirement": "Play either Shell Game or Hell Game 100 times",
+   "unlocks": []
+  },
+  {
+   "id": 65,
+   "name": "Guppy's Hairball",
+   "requirement": "Become Guppy",
+   "unlocks": [
+    {
+     "name": "Guppy's Hairball",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Hairball_icon.png?c68c00",
+     "effect": "Spawns a familiar that loosely follows behind Isaac, which blocks shots and can be swung like a flail to damage enemies. Grows bigger by killing enemies."
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "name": "A Forgotten Horseman",
+   "requirement": "Take 10 Angel Room items",
+   "unlocks": [
+    {
+     "name": "White Pony",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_White_Pony_icon.png?51088d",
+     "effect": "Passively grants flight and increases speed to 1.5. Upon use, Isaac charges in the direction the pony is facing, giving invulnerability during the charge while also creating damaging beams of light."
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "name": "Samson",
+   "requirement": "Complete 2 floors in a row without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 68,
+   "name": "Something Icky",
+   "requirement": "Defeat Isaac 10 times",
+   "unlocks": []
+  },
+  {
+   "id": 69,
+   "name": "!Platinum God!",
+   "requirement": "Collect all non-DLC items, and unlock all non-DLC secrets and endings (minus The Lost and his 6 unlockable items)",
+   "unlocks": []
+  },
+  {
+   "id": 70,
+   "name": "Isaac's Head",
+   "requirement": "Complete the Boss Rush as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 71,
+   "name": "Maggy's Faith",
+   "requirement": "Defeat The Lamb as Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 72,
+   "name": "Judas' Tongue",
+   "requirement": "Defeat Satan as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 73,
+   "name": "???'s Soul",
+   "requirement": "Defeat The Lamb as ???",
+   "unlocks": []
+  },
+  {
+   "id": 74,
+   "name": "Samson's Lock",
+   "requirement": "Defeat The Lamb as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 75,
+   "name": "Cain's Eye",
+   "requirement": "Defeat ??? as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 76,
+   "name": "Eve's Bird Foot",
+   "requirement": "Defeat Isaac as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 77,
+   "name": "The Left Hand",
+   "requirement": "Defeat Ultra Pride as any character, or ??? as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 78,
+   "name": "The Negative",
+   "requirement": "Defeat Satan 5 times",
+   "unlocks": [
+    {
+     "name": "The Negative",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Negative_icon.png?d6421d",
+     "effect": "If Isaac has half a red heart or no red hearts after taking damage, all enemies in the room take significant damage. Allows entrance into the Dark Room. +1 Damage and also allows access to Home."
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "name": "Azazel",
+   "requirement": "Make 3 Deals with the Devil in one run",
+   "unlocks": []
+  },
+  {
+   "id": 80,
+   "name": "Lazarus",
+   "requirement": "Have 4 or more Soul Hearts at one time",
+   "unlocks": []
+  },
+  {
+   "id": 81,
+   "name": "Eden",
+   "requirement": "Complete Chapter 4",
+   "unlocks": []
+  },
+  {
+   "id": 82,
+   "name": "The Lost",
+   "requirement": "Die in a Sacrifice Room while holding Missing Poster",
+   "unlocks": []
+  },
+  {
+   "id": 83,
+   "name": "Dead Boy",
+   "requirement": "Complete Chapter 6 without taking damage",
+   "unlocks": []
+  },
+  {
+   "id": 84,
+   "name": "The Real Platinum God",
+   "requirement": "Collect all non-DLC items, and unlock all non-DLC secrets and endings",
+   "unlocks": []
+  },
+  {
+   "id": 85,
+   "name": "Lucky Rock",
+   "requirement": "Destroy 100 rocks",
+   "unlocks": []
+  },
+  {
+   "id": 86,
+   "name": "The Cellar",
+   "requirement": "Beat all Basement bosses",
+   "unlocks": []
+  },
+  {
+   "id": 87,
+   "name": "The Catacombs",
+   "requirement": "Beat all Caves bosses",
+   "unlocks": []
+  },
+  {
+   "id": 88,
+   "name": "The Necropolis",
+   "requirement": "Beat all Depths bosses",
+   "unlocks": []
+  },
+  {
+   "id": 89,
+   "name": "Rune of Hagalaz",
+   "requirement": "Complete Pitch Black (challenge #1)",
+   "unlocks": []
+  },
+  {
+   "id": 90,
+   "name": "Rune of Jera",
+   "requirement": "Complete High Brow (challenge #2)",
+   "unlocks": []
+  },
+  {
+   "id": 91,
+   "name": "Rune of Ehwaz",
+   "requirement": "Complete Head Trauma (challenge #3)",
+   "unlocks": []
+  },
+  {
+   "id": 92,
+   "name": "Rune of Dagaz",
+   "requirement": "Complete Darkness Falls (challenge #4)",
+   "unlocks": []
+  },
+  {
+   "id": 93,
+   "name": "Rune of Ansuz",
+   "requirement": "Complete The Tank (challenge #5)",
+   "unlocks": []
+  },
+  {
+   "id": 94,
+   "name": "Rune of Perthro",
+   "requirement": "Complete Solar System (challenge #6)",
+   "unlocks": []
+  },
+  {
+   "id": 95,
+   "name": "Rune of Berkano",
+   "requirement": "Complete Purist (challenge #20)",
+   "unlocks": []
+  },
+  {
+   "id": 96,
+   "name": "Rune of Algiz",
+   "requirement": "Complete Cat Got Your Tongue (challenge #8)",
+   "unlocks": []
+  },
+  {
+   "id": 97,
+   "name": "Chaos Card",
+   "requirement": "Complete Demo Man (challenge #9)",
+   "unlocks": []
+  },
+  {
+   "id": 98,
+   "name": "Credit Card",
+   "requirement": "Complete Cursed! (challenge #10)",
+   "unlocks": []
+  },
+  {
+   "id": 99,
+   "name": "Rules Card",
+   "requirement": "Complete Glass Cannon (challenge #11)",
+   "unlocks": []
+  },
+  {
+   "id": 100,
+   "name": "Card Against Humanity",
+   "requirement": "Complete When Life Gives You Lemons (challenge #12)",
+   "unlocks": []
+  },
+  {
+   "id": 101,
+   "name": "Swallowed Penny",
+   "requirement": "Complete Slow Roll (challenge #15)",
+   "unlocks": []
+  },
+  {
+   "id": 102,
+   "name": "Robo-Baby 2.0",
+   "requirement": "Complete Computer Savvy (challenge #16)",
+   "unlocks": [
+    {
+     "name": "Robo-Baby 2.0",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Robo-Baby_2.0_icon.png?2bddda",
+     "effect": "Spawns a familiar that fires lasers at any enemy in its line of sight and moves based on the direction Isaac is firing tears."
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "name": "Death's Touch",
+   "requirement": "Complete Waka Waka (challenge #17)",
+   "unlocks": [
+    {
+     "name": "Death's Touch",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death%27s_Touch_icon.png?8ab6f7",
+     "effect": "+1.5 damage, -0.3 tears. Tears are replaced with large piercing scythes."
+    }
+   ]
+  },
+  {
+   "id": 104,
+   "name": "Technology .5",
+   "requirement": "Complete The Host (challenge #18)",
+   "unlocks": [
+    {
+     "name": "Tech.5",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tech.5_icon.png?4e91c7",
+     "effect": "Isaac occasionally fires an unlimited range piercing laser alongside his normal tears. The laser can glitch, mimicking the effects of certain items and trinkets."
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "name": "Missing No.",
+   "requirement": "Complete the Boss Rush as Lazarus",
+   "unlocks": [
+    {
+     "name": "Missing No.",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Missing_No._icon.png?edc05c",
+     "effect": "Randomizes all passive items and stats upon pickup and at the start of each succeeding floor."
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "name": "Isaac's Tears",
+   "requirement": "Defeat Isaac as Isaac",
+   "unlocks": [
+    {
+     "name": "Isaac's Tears",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Tears_icon.png?ba2304",
+     "effect": "Fires 8 tears around Isaac, which use his damage, range, shot speed, and tear effects. Shooting charges this item. Tears from this item have a +5 flat damage."
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "name": "Guillotine",
+   "requirement": "Defeat Isaac as Judas",
+   "unlocks": [
+    {
+     "name": "Guillotine",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guillotine_icon.png?958e66",
+     "effect": "Isaac's head becomes an orbital familiar that blocks shots and deals contact damage. Tears are still fired from the rotating head. +1 damage, +0.5 fire rate."
+    }
+   ]
+  },
+  {
+   "id": 108,
+   "name": "Judas' Shadow",
+   "requirement": "Complete the Boss Rush as Judas",
+   "unlocks": [
+    {
+     "name": "Judas' Shadow",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Judas%27_Shadow_icon.png?f793ce",
+     "effect": "Upon death, respawns Isaac as Black Judas with two Black Hearts in the previous room."
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "name": "Maggy's Bow",
+   "requirement": "Complete the Boss Rush as Magdalene",
+   "unlocks": [
+    {
+     "name": "Maggy's Bow",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Maggy%27s_Bow_icon.png?d54114",
+     "effect": "Gives one Red Heart Container and doubles the healing provided by Red Hearts. Also heals 1 Red Heart when obtained."
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "name": "Cain's Other Eye",
+   "requirement": "Complete the Boss Rush as Cain",
+   "unlocks": [
+    {
+     "name": "Cain's Other Eye",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cain%27s_Other_Eye_icon.png?91d030",
+     "effect": "Spawns a familiar that follows Isaac and fires tears in random cardinal directions that copy Isaac's tears and tear effects and scale with damage."
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "name": "Black Lipstick",
+   "requirement": "Defeat The Lamb as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 112,
+   "name": "Eve's Mascara",
+   "requirement": "Complete the Boss Rush as Eve",
+   "unlocks": [
+    {
+     "name": "Eve's Mascara",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eve%27s_Mascara_icon.png?2d89ba",
+     "effect": "Doubles damage, 0.66x tears multiplier, and greatly reduces shot speed."
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "name": "Fate",
+   "requirement": "Defeat ??? as ???",
+   "unlocks": [
+    {
+     "name": "Fate",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fate_icon.png?705636",
+     "effect": "Grants flight and one Eternal Heart."
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "name": "???'s Only Friend",
+   "requirement": "Complete the Boss Rush as ???",
+   "unlocks": [
+    {
+     "name": "???'s Only Friend",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blue_Baby%27s_Only_Friend_icon.png?aaa764",
+     "effect": "Spawns a controllable familiar that deals 15 damage per second on touch. It can be moved using the shooting directional keys"
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "name": "Samson's Chains",
+   "requirement": "Complete the Boss Rush as Samson",
+   "unlocks": [
+    {
+     "name": "Samson's Chains",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Samson%27s_Chains_icon.png?efd198",
+     "effect": "Attaches a ball and chain to Isaac that pulls behind him that damages enemies, blocks shots, and destroys most Obstacles."
+    }
+   ]
+  },
+  {
+   "id": 116,
+   "name": "Lazarus' Rags",
+   "requirement": "Defeat Isaac as Lazarus",
+   "unlocks": [
+    {
+     "name": "Lazarus' Rags",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lazarus%27_Rags_icon.png?f1044b",
+     "effect": "Upon dying, resurrect as Lazarus Risen in the current room with one less Red Heart container, Anemic, and +0.5 Damage. Transform into Lazarus when reaching the next floor."
+    }
+   ]
+  },
+  {
+   "id": 117,
+   "name": "Broken Ankh",
+   "requirement": "Defeat Satan as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 118,
+   "name": "Store Credit",
+   "requirement": "Defeat ??? as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 119,
+   "name": "Pandora's Box",
+   "requirement": "Defeat The Lamb as Lazarus",
+   "unlocks": [
+    {
+     "name": "Pandora's Box",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pandora%27s_Box_icon.png?14d3c0",
+     "effect": "Spawns specific pickups or items depending on the floor it is used on. Disappears after use."
+    }
+   ]
+  },
+  {
+   "id": 120,
+   "name": "Suicide King",
+   "requirement": "Complete Suicide King (challenge #7)",
+   "unlocks": []
+  },
+  {
+   "id": 121,
+   "name": "Blank Card",
+   "requirement": "Defeat Isaac as Eden",
+   "unlocks": [
+    {
+     "name": "Blank Card",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blank_Card_icon.png?a1624b",
+     "effect": "Copies the effect of the card currently held by Isaac. The recharge time is based on the power of the card."
+    }
+   ]
+  },
+  {
+   "id": 122,
+   "name": "Book of Secrets",
+   "requirement": "Defeat Satan as Eden",
+   "unlocks": [
+    {
+     "name": "Book of Secrets",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Secrets_icon.png?e66000",
+     "effect": "Gives the effect of Treasure Map, The Compass, or Blue Map for the duration of the current floor. If all effects are active, X-Ray Vision is provided for the floor instead. Highlights any Tinted Rocks and rocks with Crawl Space in the room."
+    }
+   ]
+  },
+  {
+   "id": 123,
+   "name": "Mysterious Paper",
+   "requirement": "Defeat ??? as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 124,
+   "name": "Mystery Sack",
+   "requirement": "Defeat The Lamb as Eden",
+   "unlocks": [
+    {
+     "name": "Mystery Sack",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Sack_icon.png?e0803d",
+     "effect": "Spawns a familiar that drops a Heart, coin, Bomb, or Key every 5-6 rooms."
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "name": "Undefined",
+   "requirement": "Complete the Boss Rush as Eden",
+   "unlocks": [
+    {
+     "name": "Undefined",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Undefined_icon.png?98cb3d",
+     "effect": "Teleports Isaac to the Secret Room, Super Secret Room, Treasure Room, or I AM ERROR."
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "name": "Satanic Bible",
+   "requirement": "Defeat Isaac as Azazel",
+   "unlocks": [
+    {
+     "name": "Satanic Bible",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Satanic_Bible_icon.png?982ba3",
+     "effect": "Grants one Black Heart. Replaces the boss room item on the current floor with a Devil Deal."
+    }
+   ]
+  },
+  {
+   "id": 127,
+   "name": "Daemon's Tail",
+   "requirement": "Defeat Satan as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 128,
+   "name": "Abaddon",
+   "requirement": "Defeat ??? as Azazel",
+   "unlocks": [
+    {
+     "name": "Abaddon",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abaddon_icon.png?75eac8",
+     "effect": "+1.5 damage, +0.2 speed. Grants two Black Hearts, converts all Red Heart Containers into Black Hearts, and adds a chance to shoot fear tears."
+    }
+   ]
+  },
+  {
+   "id": 129,
+   "name": "Isaac's Heart",
+   "requirement": "Defeat Isaac as The Lost",
+   "unlocks": [
+    {
+     "name": "Isaac's Heart",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Heart_icon.png?83c017",
+     "effect": "Isaac himself is now immune to all damage, and a heart familiar follows him. If the heart is hurt, Isaac is hurt. The heart charges up as Isaac shoots, firing 8 blood shots, knocking back enemies, and leaving a puddle of creep when released."
+    }
+   ]
+  },
+  {
+   "id": 130,
+   "name": "The Mind",
+   "requirement": "Defeat Satan as The Lost",
+   "unlocks": [
+    {
+     "name": "The Mind",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Mind_icon.png?5684b4",
+     "effect": "Reveals the entire map, including all special rooms and Secret Rooms."
+    }
+   ]
+  },
+  {
+   "id": 131,
+   "name": "The Body",
+   "requirement": "Defeat ??? as The Lost",
+   "unlocks": [
+    {
+     "name": "The Body",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Body_icon.png?fcca18",
+     "effect": "Adds 3 Red Heart Containers."
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "name": "The Soul",
+   "requirement": "Defeat The Lamb as The Lost",
+   "unlocks": [
+    {
+     "name": "The Soul",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Soul_icon.png?623f0b",
+     "effect": "Grants two Soul Hearts. Isaac gains a pulsing aura that repels enemies and projectiles."
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "name": "The D100",
+   "requirement": "Complete the Boss Rush as The Lost",
+   "unlocks": [
+    {
+     "name": "D100",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D100_icon.png?aeebac",
+     "effect": "Activates the combined effects of D1, D4, The D6, D7, D8, D10, D12, and D20."
+    }
+   ]
+  },
+  {
+   "id": 134,
+   "name": "Blue Map",
+   "requirement": "Donate 10 Coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "Blue Map",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blue_Map_icon.png?6bb8fe",
+     "effect": "Reveals the locations of Secret Rooms and Super Secret Rooms on the map."
+    }
+   ]
+  },
+  {
+   "id": 135,
+   "name": "There's Options",
+   "requirement": "Donate 50 Coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "More Options",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_More_Options_icon.png?108593",
+     "effect": "Two item pedestals are presented in every Treasure Room. Only one can be taken; the other will disappear."
+    },
+    {
+     "name": "There's Options",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_There%27s_Options_icon.png?6bc866",
+     "effect": "Two items appear after defeating a Boss. Only one can be taken; the other will disappear."
+    }
+   ]
+  },
+  {
+   "id": 136,
+   "name": "Black Candle",
+   "requirement": "Donate 150 Coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "Black Candle",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Candle_icon.png?826a99",
+     "effect": "Prevents curses. Grants one Black Heart. Increases the chance for a Devil Room or Angel Room to appear."
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "name": "Red Candle",
+   "requirement": "Donate 400 Coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "Red Candle",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Candle_icon.png?1979fa",
+     "effect": "Throws out a flame that damages everything in its path, diminishing in size as it hits enemies or blocks shots."
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "name": "Stop Watch",
+   "requirement": "Donate 999 Coins to the Donation Machine",
+   "unlocks": [
+    {
+     "name": "Stop Watch",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stop_Watch_icon.png?38f8f7",
+     "effect": "+0.3 speed. Slows all enemies in every room to 80% speed."
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "name": "Wire Coat Hanger",
+   "requirement": "Defeat Mom's Heart 4 times",
+   "unlocks": [
+    {
+     "name": "Wire Coat Hanger",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wire_Coat_Hanger_icon.png?40e21d",
+     "effect": "+0.7 tears."
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "name": "Ipecac",
+   "requirement": "Defeat Mom's Heart 6 times",
+   "unlocks": [
+    {
+     "name": "Ipecac",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ipecac_icon.png?a48b39",
+     "effect": "Replaces tears with explosive and poisoning projectiles fired in an arc from the mouth."
+    }
+   ]
+  },
+  {
+   "id": 141,
+   "name": "Experimental Treatment",
+   "requirement": "Defeat Mom's Heart 7 times",
+   "unlocks": [
+    {
+     "name": "Experimental Treatment",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Experimental_Treatment_icon.png?98c08e",
+     "effect": "Increases four random stats and decreases the other two."
+    }
+   ]
+  },
+  {
+   "id": 142,
+   "name": "Krampus",
+   "requirement": "Take 20 items from Devil Rooms",
+   "unlocks": []
+  },
+  {
+   "id": 143,
+   "name": "Head of Krampus",
+   "requirement": "Defeat Krampus",
+   "unlocks": [
+    {
+     "name": "Head of Krampus",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Head_of_Krampus_icon.png?1be1d4",
+     "effect": "Fires a powerful Brimstone beam in four cardinal directions."
+    }
+   ]
+  },
+  {
+   "id": 144,
+   "name": "Super Meat Boy",
+   "requirement": "Make a Super Meat Boy by picking up 4 copies of Cube of Meat in one run",
+   "unlocks": []
+  },
+  {
+   "id": 145,
+   "name": "Butter Bean",
+   "requirement": "Destroy 100 poops",
+   "unlocks": [
+    {
+     "name": "Butter Bean",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Butter_Bean_icon.png?b3d1d9",
+     "effect": "Isaac farts and knocks back nearby enemies and projectiles. Enemies pushed into walls or obstacles take 10 + 2 * (floor - 1) damage."
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "name": "Little Baggy",
+   "requirement": "Pick up 2 syringe-related items in a single run",
+   "unlocks": [
+    {
+     "name": "Little Baggy",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Baggy_icon.png?6f174a",
+     "effect": "Isaac can hold 2 pills at once and all cards and runes are replaced by pills."
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "name": "Blood Bag",
+   "requirement": "Use the Blood Donation Machine 30 times",
+   "unlocks": [
+    {
+     "name": "Blood Bag",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Bag_icon.png?d25bad",
+     "effect": "Grants one filled Red Heart container, restores 5 Red Hearts, and increases speed by 0.3."
+    }
+   ]
+  },
+  {
+   "id": 148,
+   "name": "The D4",
+   "requirement": "Blow up 30 Slot Machine",
+   "unlocks": [
+    {
+     "name": "D4",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D4_icon.png?d78d10",
+     "effect": "Rerolls all of Isaac's passive items."
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "name": "Missing Poster",
+   "requirement": "Defeat The Lamb as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 150,
+   "name": "Rubber Cement",
+   "requirement": "Defeat Mom's Heart 2 times",
+   "unlocks": [
+    {
+     "name": "Rubber Cement",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rubber_Cement_icon.png?10e246",
+     "effect": "Tears bounce off walls, enemies, and environmental objects."
+    }
+   ]
+  },
+  {
+   "id": 151,
+   "name": "Store Upgrade lv.1",
+   "requirement": "Donate 20 Coins to the Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 152,
+   "name": "Store Upgrade lv.2",
+   "requirement": "Donate 100 Coins to the Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 153,
+   "name": "Store Upgrade lv.3",
+   "requirement": "Donate 200 Coins to the Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 154,
+   "name": "Store Upgrade lv.4",
+   "requirement": "Donate 600 Coins to the Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 155,
+   "name": "Angels",
+   "requirement": "Complete Chapter 6",
+   "unlocks": [
+    {
+     "name": "Key Piece 1",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Piece_1_icon.png?236bec",
+     "effect": "Combined with Key Piece 2, unlocks the golden gate in the starting room of Chest and Dark Room to fight Mega Satan."
+    },
+    {
+     "name": "Key Piece 2",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Piece_2_icon.png?8ed324",
+     "effect": "Combined with Key Piece 1, unlocks the golden gate in the starting room of Chest and Dark Room to fight Mega Satan."
+    }
+   ]
+  },
+  {
+   "id": 156,
+   "name": "Godhead",
+   "requirement": "Earn all 12 Completion Marks on Hard mode as The Lost",
+   "unlocks": [
+    {
+     "name": "Godhead",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Godhead_icon.png?cb6c61",
+     "effect": "Grants homing tears with a damaging halo. +0.5 Damage, -0.3 Tears, and -0.3 Shot Speed."
+    }
+   ]
+  },
+  {
+   "id": 157,
+   "name": "Darkness Falls",
+   "requirement": "Defeat Mom's Heart 11 times and defeat ??? as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 158,
+   "name": "The Tank",
+   "requirement": "Have 7 or more Red Heart Containers at one time",
+   "unlocks": []
+  },
+  {
+   "id": 159,
+   "name": "Solar System",
+   "requirement": "Defeat Mom's Heart 3 times",
+   "unlocks": []
+  },
+  {
+   "id": 160,
+   "name": "Suicide King",
+   "requirement": "Defeat Mom's Heart 11 times and unlock Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 161,
+   "name": "Cat Got Your Tongue",
+   "requirement": "Become Guppy",
+   "unlocks": []
+  },
+  {
+   "id": 162,
+   "name": "Demo Man",
+   "requirement": "Defeat Mom's Heart 9 times",
+   "unlocks": []
+  },
+  {
+   "id": 163,
+   "name": "Cursed!",
+   "requirement": "Have 7 or more Red Heart Containers at one time",
+   "unlocks": []
+  },
+  {
+   "id": 164,
+   "name": "Glass Cannon",
+   "requirement": "Beat The Family Man (challenge #19), defeat Lokii, and unlock Judas and It Lives!",
+   "unlocks": []
+  },
+  {
+   "id": 165,
+   "name": "The Family Man",
+   "requirement": "Pick up both Key Pieces from the Angels in one run and defeat Mom's Heart 11 times",
+   "unlocks": []
+  },
+  {
+   "id": 166,
+   "name": "Purist",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 167,
+   "name": "Lost Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 168,
+   "name": "Cute Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 169,
+   "name": "Crow Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 170,
+   "name": "Shadow Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 171,
+   "name": "Glass Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 172,
+   "name": "Wrapped Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 173,
+   "name": "Begotten Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 174,
+   "name": "Dead Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as ???",
+   "unlocks": []
+  },
+  {
+   "id": 175,
+   "name": "-0- Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as The Lost",
+   "unlocks": []
+  },
+  {
+   "id": 176,
+   "name": "Glitch Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 177,
+   "name": "Fighting Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 178,
+   "name": "Lord of the Flies",
+   "requirement": "Become Beelzebub",
+   "unlocks": []
+  },
+  {
+   "id": 179,
+   "name": "Fart Baby",
+   "requirement": "Defeat Hush as Isaac",
+   "unlocks": [
+    {
+     "name": "Farting Baby",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Farting_Baby_icon.png?81e89d",
+     "effect": "Spawns a familiar that follows Isaac and blocks enemy shots. If a shot hits Farting Baby, it has a chance to fart, which charms, poisons, or knocks back nearby enemies."
+    }
+   ]
+  },
+  {
+   "id": 180,
+   "name": "Purity",
+   "requirement": "Defeat Hush as Magdalene",
+   "unlocks": [
+    {
+     "name": "Purity",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Purity_icon.png?19a347",
+     "effect": "Boosts one of Isaac's stats depending on the color of the aura around him. The aura disappears upon taking damage and reappears with a random color upon entering a new room. Red boosts damage, blue boosts tears, yellow boosts speed, and orange boosts range."
+    }
+   ]
+  },
+  {
+   "id": 181,
+   "name": "D12",
+   "requirement": "Defeat Hush as Cain",
+   "unlocks": [
+    {
+     "name": "D12",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D12_icon.png?2c7b71",
+     "effect": "Re-rolls most types of obstacles in the current room into other random obstacles."
+    }
+   ]
+  },
+  {
+   "id": 182,
+   "name": "Betrayal",
+   "requirement": "Defeat Hush as Judas",
+   "unlocks": [
+    {
+     "name": "Betrayal",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Betrayal_icon.png?dca9bc",
+     "effect": "Enemies are able to damage each other. If an enemy is damaged by another enemy, they will attack that enemy instead of Isaac."
+    }
+   ]
+  },
+  {
+   "id": 183,
+   "name": "Fate's Reward",
+   "requirement": "Defeat Hush as ???",
+   "unlocks": [
+    {
+     "name": "Fate's Reward",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fate%27s_Reward_icon.png?e22539",
+     "effect": "A blue head familiar that will follow Isaac and fire tears copying his tear effects and damage."
+    }
+   ]
+  },
+  {
+   "id": 184,
+   "name": "Athame",
+   "requirement": "Defeat Hush as Eve",
+   "unlocks": [
+    {
+     "name": "Athame",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Athame_icon.png?34252b",
+     "effect": "After Isaac kills an enemy, adds a luck-based chance to spawn a damaging black ring around them."
+    }
+   ]
+  },
+  {
+   "id": 185,
+   "name": "Blind Rage",
+   "requirement": "Defeat Hush as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 186,
+   "name": "Maw of the Void",
+   "requirement": "Defeat Hush as Azazel",
+   "unlocks": [
+    {
+     "name": "Maw Of The Void",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Maw_Of_The_Void_icon.png?1bb067",
+     "effect": "While firing, Isaac can charge and unleash a black ring that rapidly deals damage around him."
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "name": "Empty Vessel",
+   "requirement": "Defeat Hush as Lazarus",
+   "unlocks": [
+    {
+     "name": "Empty Vessel",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Empty_Vessel_icon.png?5394cb",
+     "effect": "Grants two Black Hearts. While Isaac has no red hearts, grants flight and periodically grants an invincibility shield for a few seconds."
+    }
+   ]
+  },
+  {
+   "id": 188,
+   "name": "Eden's Blessing",
+   "requirement": "Defeat Hush as Eden",
+   "unlocks": [
+    {
+     "name": "Eden's Blessing",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eden%27s_Blessing_icon.png?da7f47",
+     "effect": "+0.7 tears up. Grants a random item at the start of the next run."
+    }
+   ]
+  },
+  {
+   "id": 189,
+   "name": "Sworn Protector",
+   "requirement": "Defeat Hush as The Lost",
+   "unlocks": [
+    {
+     "name": "Sworn Protector",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sworn_Protector_icon.png?dc5699",
+     "effect": "Spawns an orbital familiar which does 53 damage per second and attracts and blocks enemy shots. Upon blocking 10 shots in a room, it drops an Eternal Heart."
+    }
+   ]
+  },
+  {
+   "id": 190,
+   "name": "Incubus",
+   "requirement": "Defeat Hush as Lilith",
+   "unlocks": [
+    {
+     "name": "Incubus",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Incubus_icon.png?b3a1ae",
+     "effect": "Spawns a familiar who follows Isaac around and fires copies of Isaac's tears with reduced size (or width for some special attacks)."
+    }
+   ]
+  },
+  {
+   "id": 191,
+   "name": "Keeper now holds... A Penny!",
+   "requirement": "Defeat Hush as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 192,
+   "name": "Lil' Chest",
+   "requirement": "Defeat Ultra Greed as Isaac",
+   "unlocks": [
+    {
+     "name": "Lil Chest",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Chest_icon.png?5648fd",
+     "effect": "Spawns a chest familiar that spawns a random pickup (25% chance) or trinket (10% chance) upon clearing a room."
+    }
+   ]
+  },
+  {
+   "id": 193,
+   "name": "Censer",
+   "requirement": "Defeat Ultra Greed as Magdalene",
+   "unlocks": [
+    {
+     "name": "Censer",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Censer_icon.png?c82c77",
+     "effect": "Spawns a familiar which creates a circular aura that slows down enemies and enemy shots inside."
+    }
+   ]
+  },
+  {
+   "id": 194,
+   "name": "Evil Eye",
+   "requirement": "Defeat Ultra Greed as Cain",
+   "unlocks": [
+    {
+     "name": "Evil Eye",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Evil_Eye_icon.png?eb75cb",
+     "effect": "Adds a chance to fire a slow-moving eye that fires tears in the same direction as Isaac. The eye is destroyed when it hits an enemy or obstacle."
+    }
+   ]
+  },
+  {
+   "id": 195,
+   "name": "My Shadow",
+   "requirement": "Defeat Ultra Greed as Judas",
+   "unlocks": [
+    {
+     "name": "My Shadow",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_My_Shadow_icon.png?608a35",
+     "effect": "Spawns a shadow familiar that closely follows behind Isaac. It spawns a black friendly Charger whenever an enemy touches it."
+    }
+   ]
+  },
+  {
+   "id": 196,
+   "name": "Cracked Dice",
+   "requirement": "Defeat Ultra Greed as ???",
+   "unlocks": []
+  },
+  {
+   "id": 197,
+   "name": "Black Feather",
+   "requirement": "Defeat Ultra Greed as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 198,
+   "name": "Lusty Blood",
+   "requirement": "Defeat Ultra Greed as Samson",
+   "unlocks": [
+    {
+     "name": "Lusty Blood",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lusty_Blood_icon.png?27d1d3",
+     "effect": "Isaac's damage increases for the current room each time he kills an enemy."
+    }
+   ]
+  },
+  {
+   "id": 199,
+   "name": "Lilith",
+   "requirement": "Defeat Ultra Greed as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 200,
+   "name": "Key Bum",
+   "requirement": "Defeat Ultra Greed as Lazarus",
+   "unlocks": [
+    {
+     "name": "Key Bum",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Bum_icon.png?6d4d04",
+     "effect": "Spawns a familiar that follows Isaac and collects Keys for himself, giving random Chests in return."
+    }
+   ]
+  },
+  {
+   "id": 201,
+   "name": "GB Bug",
+   "requirement": "Defeat Ultra Greed as Eden",
+   "unlocks": [
+    {
+     "name": "GB Bug",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_GB_Bug_icon.png?4433aa",
+     "effect": "Spawns a familiar that follows Isaac. Double tapping the fire button launches it forward, causing it to reroll the first monster or pickup it hits."
+    }
+   ]
+  },
+  {
+   "id": 202,
+   "name": "Zodiac",
+   "requirement": "Defeat Ultra Greed as The Lost",
+   "unlocks": [
+    {
+     "name": "Zodiac",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Zodiac_icon.png?42c4f4",
+     "effect": "Gives Isaac a random zodiac item effect that changes every floor."
+    }
+   ]
+  },
+  {
+   "id": 203,
+   "name": "Box of Friends",
+   "requirement": "Defeat Ultra Greed as Lilith",
+   "unlocks": [
+    {
+     "name": "Box of Friends",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Box_of_Friends_icon.png?24dfe9",
+     "effect": "Duplicates all of Isaac's familiars for the current room. If Isaac has no familiars, spawns a Demon Baby for the room instead."
+    }
+   ]
+  },
+  {
+   "id": 204,
+   "name": "Rib of Greed",
+   "requirement": "Defeat Ultra Greed as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 205,
+   "name": "Cry Baby",
+   "requirement": "Defeat Mega Satan as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 206,
+   "name": "Red Baby",
+   "requirement": "Defeat Mega Satan as Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 207,
+   "name": "Green Baby",
+   "requirement": "Defeat Mega Satan as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 208,
+   "name": "Brown Baby",
+   "requirement": "Defeat Mega Satan as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 209,
+   "name": "Blue Baby",
+   "requirement": "Defeat Mega Satan as ???",
+   "unlocks": []
+  },
+  {
+   "id": 210,
+   "name": "Lil' Baby",
+   "requirement": "Defeat Mega Satan as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 211,
+   "name": "Rage Baby",
+   "requirement": "Defeat Mega Satan as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 212,
+   "name": "Black Baby",
+   "requirement": "Defeat Mega Satan as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 213,
+   "name": "Long Baby",
+   "requirement": "Defeat Mega Satan as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 214,
+   "name": "Yellow Baby",
+   "requirement": "Defeat Mega Satan as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 215,
+   "name": "White Baby",
+   "requirement": "Defeat Mega Satan as The Lost",
+   "unlocks": []
+  },
+  {
+   "id": 216,
+   "name": "Big Baby",
+   "requirement": "Defeat Mega Satan as Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 217,
+   "name": "Noose Baby",
+   "requirement": "Defeat Mega Satan as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 218,
+   "name": "Rune Bag",
+   "requirement": "Defeat Isaac as Lilith",
+   "unlocks": [
+    {
+     "name": "Rune Bag",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rune_Bag_icon.png?481a2e",
+     "effect": "Spawns a familiar that drops a random rune after clearing enough rooms."
+    }
+   ]
+  },
+  {
+   "id": 219,
+   "name": "Cambion Conception",
+   "requirement": "Defeat ??? as Lilith",
+   "unlocks": [
+    {
+     "name": "Cambion Conception",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cambion_Conception_icon.png?ccb90c",
+     "effect": "After taking damage a certain amount of times, a permanent demonic familiar spawns."
+    }
+   ]
+  },
+  {
+   "id": 220,
+   "name": "Serpent's Kiss",
+   "requirement": "Defeat Satan as Lilith",
+   "unlocks": [
+    {
+     "name": "Serpent's Kiss",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Serpent%27s_Kiss_icon.png?ed2231",
+     "effect": "Tears have a chance to apply a poison effect to enemies. Isaac poisons enemies on contact. Poisoned enemies have a chance to drop a Black Heart when killed."
+    }
+   ]
+  },
+  {
+   "id": 221,
+   "name": "Succubus",
+   "requirement": "Defeat The Lamb as Lilith",
+   "unlocks": [
+    {
+     "name": "Succubus",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Succubus_icon.png?f921b7",
+     "effect": "Spawns a flying familiar that bounces around the room with a black aura, dealing rapid damage to any enemies inside it. While standing in the aura, Isaac gains a 1.5× tear damage multiplier."
+    }
+   ]
+  },
+  {
+   "id": 222,
+   "name": "Immaculate Conception",
+   "requirement": "Complete the Boss Rush as Lilith",
+   "unlocks": [
+    {
+     "name": "Immaculate Conception",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Immaculate_Conception_icon.png?496b6c",
+     "effect": "Upon picking up a certain amount of health, spawn a permanent angelic familiar."
+    }
+   ]
+  },
+  {
+   "id": 223,
+   "name": "Goat Head Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 224,
+   "name": "Gold Heart",
+   "requirement": "Complete XXXXXXXXL (challenge #21)",
+   "unlocks": []
+  },
+  {
+   "id": 225,
+   "name": "Get out of Jail Free Card",
+   "requirement": "Complete SPEED! (challenge #22)",
+   "unlocks": []
+  },
+  {
+   "id": 226,
+   "name": "Gold Bomb",
+   "requirement": "Complete Blue Bomber (challenge #23)",
+   "unlocks": []
+  },
+  {
+   "id": 227,
+   "name": "2 new pills",
+   "requirement": "Complete PAY TO PLAY (challenge #24)",
+   "unlocks": []
+  },
+  {
+   "id": 228,
+   "name": "2 new pills",
+   "requirement": "Complete Have a Heart (challenge #25)",
+   "unlocks": []
+  },
+  {
+   "id": 229,
+   "name": "Poker Chip",
+   "requirement": "Complete I RULE! (challenge #26)",
+   "unlocks": []
+  },
+  {
+   "id": 230,
+   "name": "Stud Finder",
+   "requirement": "Complete BRAINS! (challenge #27)",
+   "unlocks": []
+  },
+  {
+   "id": 231,
+   "name": "D8",
+   "requirement": "Complete PRIDE DAY! (challenge #28)",
+   "unlocks": [
+    {
+     "name": "D8",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D8_icon.png?d5c924",
+     "effect": "Re-rolls Isaac's damage, tears, range, and speed."
+    }
+   ]
+  },
+  {
+   "id": 232,
+   "name": "Kidney Stone",
+   "requirement": "Complete Onan's Streak (challenge #29)",
+   "unlocks": [
+    {
+     "name": "Kidney Stone",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Kidney_Stone_icon.png?1567d3",
+     "effect": "Isaac is occasionally forced to stop firing and charge an attack that launches a massive piercing, spectral kidney stone and a barrage of tears."
+    }
+   ]
+  },
+  {
+   "id": 233,
+   "name": "Blank Rune",
+   "requirement": "Complete The Guardian (challenge #30)",
+   "unlocks": [
+    {
+     "name": "Clear Rune",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Clear_Rune_icon.png?5dfdb1",
+     "effect": "Copies the effect of the rune or soul stone currently held by Isaac. The recharge time is based on the power of the rune. Drops a random rune when first picked up."
+    }
+   ]
+  },
+  {
+   "id": 234,
+   "name": "Blue Womb",
+   "requirement": "Defeat Mom's Heart 10 times",
+   "unlocks": []
+  },
+  {
+   "id": 235,
+   "name": "1001%",
+   "requirement": "Unlock 275 random achievements and have at least 510 items in the collection page",
+   "unlocks": []
+  },
+  {
+   "id": 236,
+   "name": "Keeper holds Wooden Nickel",
+   "requirement": "Defeat Isaac as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 237,
+   "name": "Keeper holds Store Key",
+   "requirement": "Defeat Satan as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 238,
+   "name": "Deep Pockets",
+   "requirement": "Defeat ??? as Keeper",
+   "unlocks": [
+    {
+     "name": "Deep Pockets",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Deep_Pockets_icon.png?edd66e",
+     "effect": "Increases the coin cap to 999. If a room would otherwise yield no reward, 1-3 coins will spawn."
+    }
+   ]
+  },
+  {
+   "id": 239,
+   "name": "Karma",
+   "requirement": "Defeat The Lamb as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 240,
+   "name": "Sticky Nickels",
+   "requirement": "Complete the Boss Rush as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 241,
+   "name": "Super Greed Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 242,
+   "name": "Lucky Pennies",
+   "requirement": "Donate 2 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 243,
+   "name": "Special Hanging Shopkeepers",
+   "requirement": "Donate 14 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 244,
+   "name": "Wooden Nickel",
+   "requirement": "Donate 33 Coins to the Greed Donation Machine",
+   "unlocks": [
+    {
+     "name": "Wooden Nickel",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wooden_Nickel_icon.png?122bb2",
+     "effect": "Has a roughly 50% chance to drop a Penny, Nickel, or Dime and a roughly 50% chance to do nothing."
+    }
+   ]
+  },
+  {
+   "id": 245,
+   "name": "Cain holds Paperclip",
+   "requirement": "Donate 68 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 246,
+   "name": "Everything is Terrible 2!!!",
+   "requirement": "Donate 111 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 247,
+   "name": "Special Shopkeepers",
+   "requirement": "Donate 234 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 248,
+   "name": "Eve now holds Razor Blade",
+   "requirement": "Donate 439 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 249,
+   "name": "Store Key",
+   "requirement": "Donate 666 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 250,
+   "name": "Lost holds Holy Mantle",
+   "requirement": "Donate 879 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 251,
+   "name": "Keeper",
+   "requirement": "Donate 1000 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 252,
+   "name": "Hive Baby",
+   "requirement": "Earn all Hard mode Completion Marks as ???",
+   "unlocks": []
+  },
+  {
+   "id": 253,
+   "name": "Buddy Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 254,
+   "name": "Colorful Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 255,
+   "name": "Whore Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 256,
+   "name": "Cracked Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 257,
+   "name": "Dripping Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 258,
+   "name": "Blinding Baby",
+   "requirement": "Use Blank Card while holding XIX - The Sun",
+   "unlocks": []
+  },
+  {
+   "id": 259,
+   "name": "Sucky Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 260,
+   "name": "Dark Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 261,
+   "name": "Picky Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 262,
+   "name": "Revenge Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 263,
+   "name": "Belial Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 264,
+   "name": "Sale Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 265,
+   "name": "XXXXXXXXL",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 266,
+   "name": "SPEED!",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 267,
+   "name": "Blue Bomber",
+   "requirement": "Destroy 10 Tinted Rocks and defeat Mom's Heart 11 times",
+   "unlocks": []
+  },
+  {
+   "id": 268,
+   "name": "PAY TO PLAY",
+   "requirement": "Defeat Isaac as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 269,
+   "name": "Have a Heart",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 270,
+   "name": "I RULE!",
+   "requirement": "Defeat Mega Satan and unlock The Negative",
+   "unlocks": []
+  },
+  {
+   "id": 271,
+   "name": "BRAINS!",
+   "requirement": "Defeat Isaac 5 times",
+   "unlocks": []
+  },
+  {
+   "id": 272,
+   "name": "PRIDE DAY!",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 273,
+   "name": "Onan's Streak",
+   "requirement": "Unlock Judas and It Lives!",
+   "unlocks": []
+  },
+  {
+   "id": 274,
+   "name": "The Guardian",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 275,
+   "name": "Generosity",
+   "requirement": "Donate 999 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 276,
+   "name": "Mega",
+   "requirement": "Defeat Mega Satan as every character ( except tainted characters)",
+   "unlocks": [
+    {
+     "name": "Mega Blast",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mega_Blast_icon.png?f78de8",
+     "effect": "Isaac fires a giant blood laser for approximately 15 seconds. This laser deals massive damage, pushes Isaac backwards, and persists between rooms and floors."
+    }
+   ]
+  },
+  {
+   "id": 277,
+   "name": "Backasswards",
+   "requirement": "Defeat Mega Satan and unlock The Negative",
+   "unlocks": []
+  },
+  {
+   "id": 278,
+   "name": "Aprils fool",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  },
+  {
+   "id": 279,
+   "name": "Pokey Mans",
+   "requirement": "Defeat Mom's Heart 11 times",
+   "unlocks": []
+  },
+  {
+   "id": 280,
+   "name": "Ultra Hard",
+   "requirement": "Defeat Mega Satan and unlock The Negative",
+   "unlocks": []
+  },
+  {
+   "id": 281,
+   "name": "PONG",
+   "requirement": "Defeat Isaac 5 times",
+   "unlocks": []
+  },
+  {
+   "id": 282,
+   "name": "D infinity",
+   "requirement": "Defeat Delirium as Isaac",
+   "unlocks": [
+    {
+     "name": "D infinity",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D_infinity_icon.png?469b78",
+     "effect": "Replicates the effect of a selected die item (except Spindown Dice), and can be cycled through by pressing the drop key."
+    }
+   ]
+  },
+  {
+   "id": 283,
+   "name": "Eucharist",
+   "requirement": "Defeat Delirium as Magdalene",
+   "unlocks": [
+    {
+     "name": "Eucharist",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eucharist_icon.png?c420cd",
+     "effect": "An Angel Room will always spawn after every boss fight, excluding the first floor and floors after Chapter 4."
+    }
+   ]
+  },
+  {
+   "id": 284,
+   "name": "Silver Dollar",
+   "requirement": "Defeat Delirium as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 285,
+   "name": "Shade",
+   "requirement": "Defeat Delirium as Judas",
+   "unlocks": [
+    {
+     "name": "Shade",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Shade_icon.png?7dc1ee",
+     "effect": "Spawns a shadow familiar that follows Isaac's movements on a 1 second delay and deals contact damage to enemies. After dealing enough damage, it is absorbed by Isaac and spawns friendly Chargers."
+    }
+   ]
+  },
+  {
+   "id": 286,
+   "name": "King Baby",
+   "requirement": "Defeat Delirium as ???",
+   "unlocks": [
+    {
+     "name": "King Baby",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_King_Baby_icon.png?30545c",
+     "effect": "Spawns a familiar that follows Isaac and makes other familiars follow it. While firing tears, other familiars stop moving."
+    }
+   ]
+  },
+  {
+   "id": 287,
+   "name": "Bloody Crown",
+   "requirement": "Defeat Delirium as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 288,
+   "name": "Dull Razor",
+   "requirement": "Defeat Delirium as Eve",
+   "unlocks": [
+    {
+     "name": "Dull Razor",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dull_Razor_icon.png?b19196",
+     "effect": "Hurts Isaac without depleting health, activating any items that trigger upon taking damage."
+    }
+   ]
+  },
+  {
+   "id": 289,
+   "name": "Eden's Soul",
+   "requirement": "Defeat Delirium as Eden",
+   "unlocks": [
+    {
+     "name": "Eden's Soul",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eden%27s_Soul_icon.png?c9aa3a",
+     "effect": "Spawns two random items from the current room's Item Pool and then disappears. Starts with no charges."
+    }
+   ]
+  },
+  {
+   "id": 290,
+   "name": "Dark Prince's Crown",
+   "requirement": "Defeat Delirium as Azazel",
+   "unlocks": [
+    {
+     "name": "Dark Prince's Crown",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Prince%27s_Crown_icon.png?4a0bee",
+     "effect": "When at exactly one Red Heart, +2 fire rate, +1.5 range, and +0.2 shot speed."
+    }
+   ]
+  },
+  {
+   "id": 291,
+   "name": "Compound Fracture",
+   "requirement": "Defeat Delirium as Lazarus",
+   "unlocks": [
+    {
+     "name": "Compound Fracture",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Compound_Fracture_icon.png?4a8218",
+     "effect": "Increases Range. Tears turn into bones, which shatter into 1-3 bone shards upon hitting an enemy or obstacle."
+    }
+   ]
+  },
+  {
+   "id": 292,
+   "name": "Euthanasia",
+   "requirement": "Defeat Delirium as Lilith",
+   "unlocks": [
+    {
+     "name": "Euthanasia",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Euthanasia_icon.png?73c40b",
+     "effect": "Adds a luck-based chance to fire needles that instantly kill basic enemies and deal triple damage to bosses. If a needle kills an enemy, it bursts into more tears/needles."
+    }
+   ]
+  },
+  {
+   "id": 293,
+   "name": "Holy Card",
+   "requirement": "Defeat Delirium as The Lost",
+   "unlocks": []
+  },
+  {
+   "id": 294,
+   "name": "Crooked Penny",
+   "requirement": "Defeat Delirium as Keeper",
+   "unlocks": [
+    {
+     "name": "Crooked Penny",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crooked_Penny_icon.png?1303de",
+     "effect": "Has a 50% chance to double all items, chests, trinkets, and pickups in the room. If the effect fails, spawns a Penny and the other items and pickups disappear."
+    }
+   ]
+  },
+  {
+   "id": 295,
+   "name": "Void",
+   "requirement": "Defeat Delirium as Apollyon",
+   "unlocks": [
+    {
+     "name": "Void",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Void_icon.png?a5275a",
+     "effect": "Consumes all pedestal items in the room. Activated items will have their effects added to Void, and passive items will grant random stat upgrades."
+    }
+   ]
+  },
+  {
+   "id": 296,
+   "name": "D1",
+   "requirement": "Defeat Ultra Greedier as Isaac",
+   "unlocks": [
+    {
+     "name": "D1",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D1_icon.png?47a45b",
+     "effect": "Duplicates a random pickup in the room. The new pickup may be different than the original (i.e. a different card, etc)."
+    }
+   ]
+  },
+  {
+   "id": 297,
+   "name": "Glyph of Balance",
+   "requirement": "Defeat Ultra Greedier as Magdalene",
+   "unlocks": [
+    {
+     "name": "Glyph of Balance",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glyph_of_Balance_icon.png?125796",
+     "effect": "Grants 2 Soul Hearts and modifies drops from Champion monsters based on certain conditions. Also modifies room clear drops."
+    }
+   ]
+  },
+  {
+   "id": 298,
+   "name": "Sack of Sacks",
+   "requirement": "Defeat Ultra Greedier as Cain",
+   "unlocks": [
+    {
+     "name": "Sack of Sacks",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sack_of_Sacks_icon.png?5148a5",
+     "effect": "Spawns a familiar that drops a Grab Bag every few rooms cleared."
+    }
+   ]
+  },
+  {
+   "id": 299,
+   "name": "Eye of Belial",
+   "requirement": "Defeat Ultra Greedier as Judas",
+   "unlocks": [
+    {
+     "name": "Eye of Belial",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_of_Belial_icon.png?698553",
+     "effect": "Grants piercing tears. After piercing one enemy, tears start homing and deal double damage."
+    }
+   ]
+  },
+  {
+   "id": 300,
+   "name": "Meconium",
+   "requirement": "Defeat Ultra Greedier as ???",
+   "unlocks": []
+  },
+  {
+   "id": 301,
+   "name": "Stem Cell",
+   "requirement": "Defeat Ultra Greedier as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 302,
+   "name": "Crow Heart",
+   "requirement": "Defeat Ultra Greedier as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 303,
+   "name": "Metronome",
+   "requirement": "Defeat Ultra Greedier as Eden",
+   "unlocks": [
+    {
+     "name": "Metronome",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Metronome_icon.png?f59fbf",
+     "effect": "Grants a random item effect for the current room."
+    }
+   ]
+  },
+  {
+   "id": 304,
+   "name": "Bat Wing",
+   "requirement": "Defeat Ultra Greedier as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 305,
+   "name": "Plan C",
+   "requirement": "Defeat Ultra Greedier as Lazarus",
+   "unlocks": [
+    {
+     "name": "Plan C",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Plan_C_icon.png?b4adfb",
+     "effect": "Kills all enemies in the room, then kills Isaac three seconds later."
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "name": "Duality",
+   "requirement": "Defeat Ultra Greedier as Lilith",
+   "unlocks": [
+    {
+     "name": "Duality",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Duality_icon.png?551404",
+     "effect": "Whenever a Devil Room or Angel Room would spawn after defeating a boss, both rooms spawn. Only one can be entered."
+    }
+   ]
+  },
+  {
+   "id": 307,
+   "name": "Dad's Lost Coin",
+   "requirement": "Defeat Ultra Greedier as The Lost",
+   "unlocks": [
+    {
+     "name": "Dad's Lost Coin",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Lost_Coin_icon.png?db4a03",
+     "effect": "+2.5 range. Drops a Lucky Penny."
+    }
+   ]
+  },
+  {
+   "id": 308,
+   "name": "Eye of Greed",
+   "requirement": "Defeat Ultra Greedier as Keeper",
+   "unlocks": [
+    {
+     "name": "Eye of Greed",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_of_Greed_icon.png?44283a",
+     "effect": "Every 20 tears, Isaac loses 1 Penny and shoots an additional gold tear that petrifies enemies and turns them into gold. Any enemy killed while in this state will drop coins."
+    }
+   ]
+  },
+  {
+   "id": 309,
+   "name": "Black Rune",
+   "requirement": "Defeat Ultra Greedier as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 310,
+   "name": "Locust of Wrath",
+   "requirement": "Defeat Isaac as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 311,
+   "name": "Locust of Pestilence",
+   "requirement": "Defeat Satan as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 312,
+   "name": "Locust of Famine",
+   "requirement": "Defeat ??? as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 313,
+   "name": "Locust of Death",
+   "requirement": "Defeat The Lamb as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 314,
+   "name": "Locust of Conquest",
+   "requirement": "Complete the Boss Rush as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 315,
+   "name": "Hushy",
+   "requirement": "Defeat Hush as Apollyon",
+   "unlocks": [
+    {
+     "name": "Hushy",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hushy_icon.png?240688",
+     "effect": "Spawns a Hush familiar that bounces diagonally around the room and deals contact damage. While firing tears, it stops moving. When stationary, Hushy will periodically fire out rings of projectiles."
+    }
+   ]
+  },
+  {
+   "id": 316,
+   "name": "Brown Nugget",
+   "requirement": "Defeat Ultra Greed as Apollyon",
+   "unlocks": [
+    {
+     "name": "Brown Nugget",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brown_Nugget_icon.png?3372e4",
+     "effect": "Spawns a stationary fly turret that lasts for the current room and fires tears at nearby enemies."
+    }
+   ]
+  },
+  {
+   "id": 317,
+   "name": "Mort Baby",
+   "requirement": "Defeat Mega Satan as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 318,
+   "name": "Smelter",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Apollyon",
+   "unlocks": [
+    {
+     "name": "Smelter",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Smelter_icon.png?fe7bd7",
+     "effect": "Consumes Isaac's currently held trinket and applies its effects permanently."
+    }
+   ]
+  },
+  {
+   "id": 319,
+   "name": "Apollyon Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 320,
+   "name": "New Area",
+   "requirement": "Defeat Hush",
+   "unlocks": []
+  },
+  {
+   "id": 321,
+   "name": "Once More with Feeling!",
+   "requirement": "Complete a Victory Lap by defeating The Lamb",
+   "unlocks": []
+  },
+  {
+   "id": 322,
+   "name": "Hat trick!",
+   "requirement": "Get a 3-win streak",
+   "unlocks": []
+  },
+  {
+   "id": 323,
+   "name": "5 Nights at Mom's",
+   "requirement": "Get a 5-win streak, using a different character each time",
+   "unlocks": []
+  },
+  {
+   "id": 324,
+   "name": "Sin collector",
+   "requirement": "Collect every entry in the Bestiary",
+   "unlocks": []
+  },
+  {
+   "id": 325,
+   "name": "Dedication",
+   "requirement": "Participate in 31 Daily Challenges",
+   "unlocks": []
+  },
+  {
+   "id": 326,
+   "name": "ZIP!",
+   "requirement": "Defeat The Lamb in under 20 minutes",
+   "unlocks": []
+  },
+  {
+   "id": 327,
+   "name": "It's the Key",
+   "requirement": "Defeat The Lamb without taking Hearts, Coins, or Bombs through the entire run",
+   "unlocks": []
+  },
+  {
+   "id": 328,
+   "name": "Mr. Resetter!",
+   "requirement": "Reset 7 times in a row SwitchPS 4 Get a minus 10-win streak",
+   "unlocks": []
+  },
+  {
+   "id": 329,
+   "name": "Living on the edge",
+   "requirement": "Complete a Chapter (floors I and II) after Basement, start-to-finish, with only half a Heart total (can use The Lost)",
+   "unlocks": []
+  },
+  {
+   "id": 330,
+   "name": "U Broke It!",
+   "requirement": "Obtain 50 items in a run",
+   "unlocks": []
+  },
+  {
+   "id": 331,
+   "name": "Laz Bleeds More!",
+   "requirement": "Complete Backasswards (challenge #31)",
+   "unlocks": []
+  },
+  {
+   "id": 332,
+   "name": "Maggy Now Holds a Pill!",
+   "requirement": "Complete Aprils Fool (challenge #32)",
+   "unlocks": []
+  },
+  {
+   "id": 333,
+   "name": "Charged Key",
+   "requirement": "Complete Pokey Mans (challenge #33)",
+   "unlocks": []
+  },
+  {
+   "id": 334,
+   "name": "Samson Feels Healthy!",
+   "requirement": "Complete Ultra Hard (challenge #34)",
+   "unlocks": []
+  },
+  {
+   "id": 335,
+   "name": "Greed's Gullet",
+   "requirement": "Complete Pong (challenge #35)",
+   "unlocks": [
+    {
+     "name": "Greed's Gullet",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Greed%27s_Gullet_icon.png?593746",
+     "effect": "Grants a Red Heart container for every 25 Coins Isaac has."
+    }
+   ]
+  },
+  {
+   "id": 336,
+   "name": "The Marathon",
+   "requirement": "Get a 5-win streak in the Daily Challenges",
+   "unlocks": []
+  },
+  {
+   "id": 337,
+   "name": "RERUN",
+   "requirement": "Complete 3 Victory Laps by defeating The Lamb",
+   "unlocks": []
+  },
+  {
+   "id": 338,
+   "name": "Delirious",
+   "requirement": "Defeat Delirium",
+   "unlocks": [
+    {
+     "name": "Delirious",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Delirious_icon.png?9f576a",
+     "effect": "Spawns Delirium as a random friendly boss that fights for Isaac. The boss persists between rooms. The charge time is based on the power of the boss summoned."
+    }
+   ]
+  },
+  {
+   "id": 339,
+   "name": "1000000%",
+   "requirement": "Unlock 402 random achievements and have at least 510 items in the collection page",
+   "unlocks": []
+  },
+  {
+   "id": 340,
+   "name": "Apollyon",
+   "requirement": "Defeat Mega Satan",
+   "unlocks": []
+  },
+  {
+   "id": 341,
+   "name": "Greedier!",
+   "requirement": "Donate 500 Coins to the Greed Donation Machine",
+   "unlocks": []
+  },
+  {
+   "id": 342,
+   "name": "Burning Basement",
+   "requirement": "Defeat Mom's Heart 11 times",
+   "unlocks": []
+  },
+  {
+   "id": 343,
+   "name": "Flooded Caves",
+   "requirement": "Defeat Mom's Heart/It Lives! 16 times",
+   "unlocks": []
+  },
+  {
+   "id": 344,
+   "name": "Dank Depths",
+   "requirement": "Defeat Mom's Heart/It Lives! 21 times",
+   "unlocks": []
+  },
+  {
+   "id": 345,
+   "name": "Scarred Womb",
+   "requirement": "Defeat Mom's Heart/It Lives! 30 times",
+   "unlocks": []
+  },
+  {
+   "id": 346,
+   "name": "Something wicked this way comes!",
+   "requirement": "Defeat ??? as 3 different Characters",
+   "unlocks": []
+  },
+  {
+   "id": 347,
+   "name": "Something wicked this way comes+!",
+   "requirement": "Defeat ??? as 6 different Characters",
+   "unlocks": []
+  },
+  {
+   "id": 348,
+   "name": "The gate is open!",
+   "requirement": "Defeat The Lamb",
+   "unlocks": []
+  },
+  {
+   "id": 349,
+   "name": "Black Hole",
+   "requirement": "Defeat 20 Portals",
+   "unlocks": [
+    {
+     "name": "Black Hole",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Hole_icon.png?c56e87",
+     "effect": "Throws a black hole on the ground which sucks in and damages enemies and destroys nearby obstacles."
+    }
+   ]
+  },
+  {
+   "id": 350,
+   "name": "Mystery Gift",
+   "requirement": "Destroy 500 rocks",
+   "unlocks": [
+    {
+     "name": "Mystery Gift",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Gift_icon.png?e5ec0b",
+     "effect": "Spawns a random item from the current room's item pool, with a chance to spawn A Lump of Coal or The Poop instead."
+    }
+   ]
+  },
+  {
+   "id": 351,
+   "name": "Sprinkler",
+   "requirement": "Beat Chapter 1 without taking damage",
+   "unlocks": [
+    {
+     "name": "Sprinkler",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sprinkler_icon.png?11ac65",
+     "effect": "Creates a stationary sprinkler for the current room that rotates and fires tears in 8 directions. The tears copy Isaac's stats and most tear effects."
+    }
+   ]
+  },
+  {
+   "id": 352,
+   "name": "Angry Fly",
+   "requirement": "Become Beelzebub",
+   "unlocks": [
+    {
+     "name": "Angry Fly",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Angry_Fly_icon.png?5acfac",
+     "effect": "Spawns a fly familiar that orbits around a random enemy and deals 30 damage per second to enemies it comes in contact with."
+    }
+   ]
+  },
+  {
+   "id": 353,
+   "name": "Bozo",
+   "requirement": "Destroy 5 rainbow poops",
+   "unlocks": [
+    {
+     "name": "Bozo",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bozo_icon.png?6bf85a",
+     "effect": "+0.1 flat damage, grants a Soul Heart. Enemies can randomly become briefly charmed or feared. Taking damage has a chance to spawn a Rainbow Poop."
+    }
+   ]
+  },
+  {
+   "id": 354,
+   "name": "Broken Modem",
+   "requirement": "Complete 7 Daily Challenges (by touching the trophy at the end)",
+   "unlocks": [
+    {
+     "name": "Broken Modem",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Modem_icon.png?8966ca",
+     "effect": "Enemies, enemy shots, tears, and pickups will briefly freeze in place at random intervals. The reward from clearing a room will sometimes be duplicated."
+    }
+   ]
+  },
+  {
+   "id": 355,
+   "name": "Buddy in a Box",
+   "requirement": "Pick up 5 familiars in a single run",
+   "unlocks": [
+    {
+     "name": "Buddy in a Box",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Buddy_in_a_Box_icon.png?ad3e07",
+     "effect": "Spawns a familiar with a random tear effect. The familiar is randomized at the start of each floor."
+    }
+   ]
+  },
+  {
+   "id": 356,
+   "name": "Fast Bombs",
+   "requirement": "Defeat Little Horn 20 times",
+   "unlocks": [
+    {
+     "name": "Fast Bombs",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fast_Bombs_icon.png?803647",
+     "effect": "+7 Bombs. Removes the delay between bomb placements, allowing them to be placed rapidly. Bombs will no longer knock each other away."
+    }
+   ]
+  },
+  {
+   "id": 357,
+   "name": "Lil Delirium",
+   "requirement": "Defeat Delirium for the 1st time",
+   "unlocks": [
+    {
+     "name": "Lil Delirium",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Delirium_icon.png?c8ef4e",
+     "effect": "Grants a familiar that transforms into another random familiar every 10 seconds."
+    }
+   ]
+  },
+  {
+   "id": 358,
+   "name": "Hairpin",
+   "requirement": "Recharge using Lil' Batteries 20 times",
+   "unlocks": []
+  },
+  {
+   "id": 359,
+   "name": "Wooden Cross",
+   "requirement": "Sleep in a bed",
+   "unlocks": []
+  },
+  {
+   "id": 360,
+   "name": "Butter!",
+   "requirement": "Complete 2 Victory Laps by defeating The Lamb",
+   "unlocks": []
+  },
+  {
+   "id": 361,
+   "name": "Huge Growth",
+   "requirement": "Be 3 times larger than the starting size. Depending on the item/card/pill size's multiplier, 5 to 7 size increases will be required.",
+   "unlocks": []
+  },
+  {
+   "id": 362,
+   "name": "Ancient Recall",
+   "requirement": "Use Cards and Runes 20 times",
+   "unlocks": []
+  },
+  {
+   "id": 363,
+   "name": "Era Walk",
+   "requirement": "Add both the Broken Watch and the Stop Watch to your collection",
+   "unlocks": []
+  },
+  {
+   "id": 364,
+   "name": "Coupon",
+   "requirement": "Purchase anything from Shops, Devil Rooms, and/or Black Markets 50 times",
+   "unlocks": [
+    {
+     "name": "Coupon",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Coupon_icon.png?868208",
+     "effect": "While held, guarantees one item in every Shop will be on sale for half price. On use, makes a random item in the current room free."
+    }
+   ]
+  },
+  {
+   "id": 365,
+   "name": "Telekinesis",
+   "requirement": "Beat Chapter 2 without taking damage",
+   "unlocks": [
+    {
+     "name": "Telekinesis",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Telekinesis_icon.png?ac5161",
+     "effect": "Any enemy shots that come near Isaac for the next three seconds are held in place then fired back."
+    }
+   ]
+  },
+  {
+   "id": 366,
+   "name": "Moving Box",
+   "requirement": "Use Pandora's Box in Dark Room",
+   "unlocks": [
+    {
+     "name": "Moving Box",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Moving_Box_icon.png?465ac2",
+     "effect": "If the box is empty, picks up items and pickups in a room and stores them. If the box is not empty, places all stored items and pickups in the current room. Can carry up to 10 items or pickups at once."
+    }
+   ]
+  },
+  {
+   "id": 367,
+   "name": "Jumper Cables",
+   "requirement": "Pick up 2 battery-related items in a single run",
+   "unlocks": [
+    {
+     "name": "Jumper Cables",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jumper_Cables_icon.png?284649",
+     "effect": "Grants an active item charge every 15 enemies killed."
+    }
+   ]
+  },
+  {
+   "id": 368,
+   "name": "Leprosy",
+   "requirement": "Beat Chapter 3 without taking damage",
+   "unlocks": [
+    {
+     "name": "Leprosy",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Leprosy_icon.png?ff291a",
+     "effect": "Taking damage grants a body part orbital that blocks shots and deals contact damage, up to a maximum of three. The body parts are destroyed after blocking enough damage."
+    }
+   ]
+  },
+  {
+   "id": 369,
+   "name": "Technology Zero",
+   "requirement": "Pick up 2 technology-related items in a single run",
+   "unlocks": [
+    {
+     "name": "Technology Zero",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Technology_Zero_icon.png?40b673",
+     "effect": "Connects Isaac's tears with electricity that can damage enemies."
+    }
+   ]
+  },
+  {
+   "id": 370,
+   "name": "Filigree Feather",
+   "requirement": "Acquire both Key Piece 1 and Key Piece 2",
+   "unlocks": []
+  },
+  {
+   "id": 371,
+   "name": "Mr. ME!",
+   "requirement": "Open 20 Locked Chests",
+   "unlocks": [
+    {
+     "name": "Mr. ME!",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._ME%21_icon.png?65612e",
+     "effect": "Summons a controllable ghost that can perform various tasks depending on what it targets."
+    }
+   ]
+  },
+  {
+   "id": 372,
+   "name": "7 Seals",
+   "requirement": "Defeat all 5 Harbingers",
+   "unlocks": [
+    {
+     "name": "7 Seals",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_7_Seals_icon.png?c524d1",
+     "effect": "Spawns a random Harbinger familiar that changes every 10 seconds. Harbingers have different behaviors and spawn themed Locusts."
+    }
+   ]
+  },
+  {
+   "id": 373,
+   "name": "Angelic Prism",
+   "requirement": "Defeat an Angel 10 times",
+   "unlocks": [
+    {
+     "name": "Angelic Prism",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Angelic_Prism_icon.png?8c6319",
+     "effect": "Spawns an orbital familiar with a large orbital radius. Tears that pass through the prism split into four multi-colored tears."
+    }
+   ]
+  },
+  {
+   "id": 374,
+   "name": "Pop!",
+   "requirement": "Beat Chapter 4 without taking damage",
+   "unlocks": [
+    {
+     "name": "Pop!",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pop%21_icon.png?3d95f8",
+     "effect": "Replaces Isaac's tears with eyeballs that can bounce off of each other. The eyeballs are not limited by range, and will instead dissipate when they stop moving or when hitting an enemy or obstacle."
+    }
+   ]
+  },
+  {
+   "id": 375,
+   "name": "Door Stop",
+   "requirement": "Blow up doors and Secret Room walls 50 times",
+   "unlocks": []
+  },
+  {
+   "id": 376,
+   "name": "Death's List",
+   "requirement": "Take 25 Deals with the Devil",
+   "unlocks": [
+    {
+     "name": "Death's List",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death%27s_List_icon.png?449ac8",
+     "effect": "Grants a pickup or stat upgrade if all enemies in a room are killed in the order they are marked."
+    }
+   ]
+  },
+  {
+   "id": 377,
+   "name": "Haemolacria",
+   "requirement": "Acquire Blood Clot 10 times",
+   "unlocks": [
+    {
+     "name": "Haemolacria",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Haemolacria_icon.png?401958",
+     "effect": "Turns Isaac's tears into large blood tears fired in an arc. Upon hitting the floor, an obstacle, or an enemy, they burst into many smaller tears in all directions. Increases tear delay."
+    }
+   ]
+  },
+  {
+   "id": 378,
+   "name": "Lachryphagy",
+   "requirement": "Collect 10 \"Tears Up\" items or pills in one run",
+   "unlocks": [
+    {
+     "name": "Lachryphagy",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lachryphagy_icon.png?fa9e90",
+     "effect": "Isaac's tears decelerate as they travel. Upon stopping or hitting an obstacle, they burst into 8 tears in all directions. Tears can be fired into other tears to feed them, increasing their damage."
+    }
+   ]
+  },
+  {
+   "id": 379,
+   "name": "Schoolbag",
+   "requirement": "Enter 6 Shops in one run",
+   "unlocks": [
+    {
+     "name": "Schoolbag",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Schoolbag_icon.png?ca2bcc",
+     "effect": "Allows Isaac to hold two active items."
+    }
+   ]
+  },
+  {
+   "id": 380,
+   "name": "Trisagion",
+   "requirement": "Take 25 Angel Rooms items",
+   "unlocks": [
+    {
+     "name": "Trisagion",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Trisagion_icon.png?fcf771",
+     "effect": "Tears are replaced with piercing white blasts of light that deal less damage but can damage the same enemy multiple times."
+    }
+   ]
+  },
+  {
+   "id": 381,
+   "name": "Extension Cord",
+   "requirement": "Have The Battery, 9 Volt, and Car Battery in Isaac's collection",
+   "unlocks": []
+  },
+  {
+   "id": 382,
+   "name": "Flat Stone",
+   "requirement": "Acquire Rubber Cement 5 times",
+   "unlocks": [
+    {
+     "name": "Flat Stone",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Flat_Stone_icon.png?ca4dfd",
+     "effect": "Tears bounce off the floor, creating splashes. Splashes deal 25% of Isaac's tear damage to all enemies in a small area."
+    }
+   ]
+  },
+  {
+   "id": 383,
+   "name": "Sacrificial Altar",
+   "requirement": "Take 50 Deals with the Devil",
+   "unlocks": [
+    {
+     "name": "Sacrificial Altar",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacrificial_Altar_icon.png?ce7cdb",
+     "effect": "Sacrifices up to two familiars and spawns an item pedestal for each familiar sacrificed. Converts all friendly spiders and flies into coins."
+    }
+   ]
+  },
+  {
+   "id": 384,
+   "name": "Lil Spewer",
+   "requirement": "Have Isaac die to his own explosion from any explosive and poisoned tear (Ipecac, Bob's Rotten Head, Fire Mind / Explosivo + Scorpio, or a Horf! pill)",
+   "unlocks": [
+    {
+     "name": "Lil Spewer",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Spewer_icon.png?6ab996",
+     "effect": "Drops a random pill, and spawns a familiar that charges up and fires creep. Using pills changes the creep type."
+    }
+   ]
+  },
+  {
+   "id": 385,
+   "name": "Blanket",
+   "requirement": "Sleep in 10 beds",
+   "unlocks": [
+    {
+     "name": "Blanket",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blanket_icon.png?3827df",
+     "effect": "Grants one Soul Heart. Upon entering a boss room, grants a shield that blocks one hit, then disappears."
+    }
+   ]
+  },
+  {
+   "id": 386,
+   "name": "Marbles",
+   "requirement": "Use 5 Gulp! pills in one run",
+   "unlocks": [
+    {
+     "name": "Marbles",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Marbles_icon.png?943a93",
+     "effect": "Spawns 3 random trinkets. Taking damage has a 5% chance to swallow Isaac's currently held trinket, gaining its effect permanently."
+    }
+   ]
+  },
+  {
+   "id": 387,
+   "name": "Mystery Egg",
+   "requirement": "Spawn three charmed enemies in the same room",
+   "unlocks": [
+    {
+     "name": "Mystery Egg",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Egg_icon.png?68474a",
+     "effect": "Spawns an egg familiar, which hatches a random friendly monster when Isaac is hurt once per room. The power of the monster improves for each consecutive room cleared without taking damage."
+    }
+   ]
+  },
+  {
+   "id": 388,
+   "name": "Rotten Penny",
+   "requirement": "Have 20 Blue Flies at the same time",
+   "unlocks": []
+  },
+  {
+   "id": 389,
+   "name": "Baby-Bender",
+   "requirement": "Use I - The Magician or Telepathy For Dummies while already having homing tears",
+   "unlocks": []
+  },
+  {
+   "id": 390,
+   "name": "The Forgotten",
+   "requirement": "It's complicated",
+   "unlocks": []
+  },
+  {
+   "id": 391,
+   "name": "Bone Heart",
+   "requirement": "It's complicated",
+   "unlocks": []
+  },
+  {
+   "id": 392,
+   "name": "Marrow",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Marrow",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Marrow_icon.png?89d56d",
+     "effect": "Grants one Bone Heart and spawns three Red Hearts."
+    }
+   ]
+  },
+  {
+   "id": 393,
+   "name": "Slipped Rib",
+   "requirement": "Defeat Isaac as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Slipped Rib",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Slipped_Rib_icon.png?bca17c",
+     "effect": "Spawns a bone familiar that circles around Isaac and reflects enemy shots."
+    }
+   ]
+  },
+  {
+   "id": 394,
+   "name": "Pointy Rib",
+   "requirement": "Defeat Satan as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Pointy Rib",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pointy_Rib_icon.png?1d27d1",
+     "effect": "Spawns a bone familiar that hovers back and forth in front of Isaac, dealing damage equal to Isaac's damage."
+    }
+   ]
+  },
+  {
+   "id": 395,
+   "name": "Jaw Bone",
+   "requirement": "Defeat ??? as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Jaw Bone",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jaw_Bone_icon.png?9192ba",
+     "effect": "Spawns a familiar that flies through the room while firing, dealing a flat 7 contact damage to enemies and retrieving pickups."
+    }
+   ]
+  },
+  {
+   "id": 396,
+   "name": "Brittle Bones",
+   "requirement": "Defeat The Lamb as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Brittle Bones",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brittle_Bones_icon.png?896488",
+     "effect": "Replaces all Red Heart Containers with 6 empty Bone Hearts. Upon losing a Bone Heart, Isaac fires bones in 8 directions and permanently gains a fire rate up."
+    }
+   ]
+  },
+  {
+   "id": 397,
+   "name": "Divorce Papers",
+   "requirement": "Complete the Boss Rush as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Divorce Papers",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Divorce_Papers_icon.png?251035",
+     "effect": "Grants one Bone Heart, +0.7 tears, spawns a Mysterious Paper."
+    }
+   ]
+  },
+  {
+   "id": 398,
+   "name": "Hallowed Ground",
+   "requirement": "Defeat Hush as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Hallowed Ground",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hallowed_Ground_icon.png?731794",
+     "effect": "Spawns a white poop familiar, which turns into a White Poop when Isaac is hurt. White poop has an aura that increases tear fire rate and can block enemy shots. The aura also increases damage by 20% and gives homing."
+    }
+   ]
+  },
+  {
+   "id": 399,
+   "name": "Finger Bone",
+   "requirement": "Defeat Ultra Greed as The Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 400,
+   "name": "Dad's Ring",
+   "requirement": "Defeat Ultra Greedier as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Dad's Ring",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Ring_icon.png?6096ac",
+     "effect": "Creates a ring of light around Isaac that petrifies enemies in contact."
+    }
+   ]
+  },
+  {
+   "id": 401,
+   "name": "Book of the Dead",
+   "requirement": "Defeat Delirium as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Book of the Dead",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_the_Dead_icon.png?d83418",
+     "effect": "Creates a friendly Bony, Black Bony, Bone Fly, Revenant, Big Bony, or an orbital bone for each enemy killed in the current room."
+    }
+   ]
+  },
+  {
+   "id": 402,
+   "name": "Bone Baby",
+   "requirement": "Earn all Hard mode Completion Marks as The Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 403,
+   "name": "Bound Baby",
+   "requirement": "Defeat Mega Satan as The Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 404,
+   "name": "Bethany",
+   "requirement": "Defeat Mom's Heart or It Lives! on hard mode as Lazarus, without dying at all",
+   "unlocks": []
+  },
+  {
+   "id": 405,
+   "name": "Jacob and Esau",
+   "requirement": "Defeat Mother",
+   "unlocks": []
+  },
+  {
+   "id": 406,
+   "name": "The Planetarium",
+   "requirement": "Collect any 3 items with the 'stars' item tag in a single run",
+   "unlocks": []
+  },
+  {
+   "id": 407,
+   "name": "A Secret Exit",
+   "requirement": "Defeat Hush 3 times",
+   "unlocks": []
+  },
+  {
+   "id": 408,
+   "name": "Forgotten Lullaby",
+   "requirement": "Blow up The Siren's skull after defeating her",
+   "unlocks": []
+  },
+  {
+   "id": 409,
+   "name": "Fruity Plum",
+   "requirement": "Defeat Baby Plum 10 times",
+   "unlocks": [
+    {
+     "name": "Fruity Plum",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fruity_Plum_icon.png?c578ce",
+     "effect": "Gives Isaac a miniature Baby Plum familiar that propels itself diagonally around the room, firing tears behind itself as it travels."
+    }
+   ]
+  },
+  {
+   "id": 410,
+   "name": "Plum Flute",
+   "requirement": "Allow Baby Plum to escape instead of defeating her",
+   "unlocks": [
+    {
+     "name": "Plum Flute",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Plum_Flute_icon.png?12c6ae",
+     "effect": "Summons Baby Plum to fight for Isaac for roughly 10 seconds, dealing high damage."
+    }
+   ]
+  },
+  {
+   "id": 411,
+   "name": "Rotten Heart",
+   "requirement": "Enter Corpse for the first time",
+   "unlocks": []
+  },
+  {
+   "id": 412,
+   "name": "Dross",
+   "requirement": "Defeat all bosses in Downpour",
+   "unlocks": []
+  },
+  {
+   "id": 413,
+   "name": "Ashpit",
+   "requirement": "Defeat all bosses in Mines",
+   "unlocks": []
+  },
+  {
+   "id": 414,
+   "name": "Gehenna",
+   "requirement": "Defeat all bosses in Mausoleum",
+   "unlocks": []
+  },
+  {
+   "id": 415,
+   "name": "Red Key",
+   "requirement": "Open Mom's Chest in Home",
+   "unlocks": [
+    {
+     "name": "Red Key",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Key_icon.png?e60eac",
+     "effect": "Creates a Red Room adjacent to a viable wall, indicated by the outline of a door. These rooms have a 10% chance to be a special room."
+    }
+   ]
+  },
+  {
+   "id": 416,
+   "name": "Wisp Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 417,
+   "name": "Book of Virtues",
+   "requirement": "Defeat Isaac as Bethany",
+   "unlocks": [
+    {
+     "name": "Book of Virtues",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Virtues_icon.png?c8bfa5",
+     "effect": "Passively causes active items to spawn themed orbital wisp familiars on use, which fire tears and block shots. Can be activated to spawn a basic wisp if Isaac has no other active item."
+    }
+   ]
+  },
+  {
+   "id": 418,
+   "name": "Urn of Souls",
+   "requirement": "Defeat Satan as Bethany",
+   "unlocks": [
+    {
+     "name": "Urn of Souls",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Urn_of_Souls_icon.png?bf9885",
+     "effect": "Isaac pulls out or puts away an urn that fires a stream of damaging blue flames. It gains Soul Charges each time an enemy dies, which are used to fuel the urn."
+    }
+   ]
+  },
+  {
+   "id": 419,
+   "name": "Blessed Penny",
+   "requirement": "Defeat ??? as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 420,
+   "name": "Alabaster Box",
+   "requirement": "Defeat The Lamb as Bethany",
+   "unlocks": [
+    {
+     "name": "Alabaster Box",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Alabaster_Box_icon.png?7e88e8",
+     "effect": "Upon use, spawns three Soul Hearts and two Angel Room items and is consumed. Starts with no charges, and can only be charged by picking up 6 Soul Hearts."
+    }
+   ]
+  },
+  {
+   "id": 421,
+   "name": "Beth's Faith",
+   "requirement": "Complete the Boss Rush as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 422,
+   "name": "Soul Locket",
+   "requirement": "Defeat Ultra Greed as Bethany",
+   "unlocks": [
+    {
+     "name": "Soul Locket",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Soul_Locket_icon.png?7d2d1e",
+     "effect": "Gives Isaac a permanent stat boost whenever he picks up a Soul Heart."
+    }
+   ]
+  },
+  {
+   "id": 423,
+   "name": "Divine Intervention",
+   "requirement": "Defeat Hush as Bethany",
+   "unlocks": [
+    {
+     "name": "Divine Intervention",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Divine_Intervention_icon.png?8f3fb1",
+     "effect": "Double tapping a fire key creates a shield that pushes away enemies and reflects enemy projectiles and lasers."
+    }
+   ]
+  },
+  {
+   "id": 424,
+   "name": "Vade Retro",
+   "requirement": "Defeat Ultra Greedier as Bethany",
+   "unlocks": [
+    {
+     "name": "Vade Retro",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vade_Retro_icon.png?37b678",
+     "effect": "While held, enemies leave behind ghosts on death. Stronger enemies leave bigger ghosts. Using the item causes the ghosts to explode and damage nearby enemies, and instantly kills all ghost enemies with less than 50% HP."
+    }
+   ]
+  },
+  {
+   "id": 425,
+   "name": "Star of Bethlehem",
+   "requirement": "Defeat Delirium as Bethany",
+   "unlocks": [
+    {
+     "name": "Star of Bethlehem",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Star_of_Bethlehem_icon.png?d3c4ff",
+     "effect": "Spawns a star familiar that slowly travels towards the Boss Room, giving an aura that increases damage and tears and grants homing tears."
+    }
+   ]
+  },
+  {
+   "id": 426,
+   "name": "Hope Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 427,
+   "name": "Glowing Baby",
+   "requirement": "Defeat Mega Satan as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 428,
+   "name": "Double Baby",
+   "requirement": "Defeat Mom's Heart or It Lives! on Hard mode as Jacob and Esau",
+   "unlocks": []
+  },
+  {
+   "id": 429,
+   "name": "The Stairway",
+   "requirement": "Defeat Isaac as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "The Stairway",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Stairway_icon.png?f0a39f",
+     "effect": "Generates a ladder at the start of every floor that leads to a unique Angel Room shop."
+    }
+   ]
+  },
+  {
+   "id": 430,
+   "name": "Red Stew",
+   "requirement": "Defeat Satan as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Red Stew",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Stew_icon.png?ae63c4",
+     "effect": "Refills all heart containers. Grants an enormous damage boost that wears off over time."
+    }
+   ]
+  },
+  {
+   "id": 431,
+   "name": "Birthright",
+   "requirement": "Defeat ??? as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Birthright",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Birthright_icon.png?dbd31c",
+     "effect": "Grants a character-specific effect that enhances their special abilities."
+    }
+   ]
+  },
+  {
+   "id": 432,
+   "name": "Damocles",
+   "requirement": "Defeat The Lamb as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Damocles",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Damocles_icon.png?bd6ce7",
+     "effect": "Spawns a sword above Isaac's head, which doubles all item pedestals. After Isaac takes damage, the sword can randomly fall at any point, instantly killing him."
+    }
+   ]
+  },
+  {
+   "id": 433,
+   "name": "Rock Bottom",
+   "requirement": "Complete Boss Rush as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Rock Bottom",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rock_Bottom_icon.png?d684d3",
+     "effect": "Prevents Isaac's attributes from being lowered."
+    }
+   ]
+  },
+  {
+   "id": 434,
+   "name": "Inner Child",
+   "requirement": "Defeat Ultra Greed as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Inner Child",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Inner_Child_icon.png?85dac1",
+     "effect": "Upon death, Isaac respawns in the current room with half of a Red Heart, a massive size down, and +0.2 Speed."
+    }
+   ]
+  },
+  {
+   "id": 435,
+   "name": "Vanishing Twin",
+   "requirement": "Defeat Hush as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Vanishing Twin",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vanishing_Twin_icon.png?304f53",
+     "effect": "Spawns a familiar that becomes a weaker clone of the floor's boss when entering the Boss Room. Defeating it drops an extra item."
+    }
+   ]
+  },
+  {
+   "id": 436,
+   "name": "Genesis",
+   "requirement": "Defeat Ultra Greedier as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Genesis",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Genesis_icon.png?b70bc9",
+     "effect": "Removes all of Isaac's items and pickups and takes him to a unique Clean Bedroom with some pickups and Chests and a passage to the next floor. For every item Isaac lost, he gets to take an item from a set of three."
+    }
+   ]
+  },
+  {
+   "id": 437,
+   "name": "Suplex!",
+   "requirement": "Defeat Delirium as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Suplex!",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Suplex%21_icon.png?3827bd",
+     "effect": "Isaac dashes forward and picks up the first enemy hit. After a moment, he jumps and slams them into the ground to deal damage and create a circular rock wave."
+    }
+   ]
+  },
+  {
+   "id": 438,
+   "name": "Solomon's Baby",
+   "requirement": "Earn all Hard mode Completion Marks as Jacob and Esau",
+   "unlocks": []
+  },
+  {
+   "id": 439,
+   "name": "Illusion Baby",
+   "requirement": "Defeat Mega Satan as Jacob and Esau",
+   "unlocks": []
+  },
+  {
+   "id": 440,
+   "name": "Meat Cleaver",
+   "requirement": "Defeat Mother as Isaac",
+   "unlocks": [
+    {
+     "name": "Meat Cleaver",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Meat_Cleaver_icon.png?3c9f88",
+     "effect": "Splits all enemies in the room into two smaller versions of themselves with much less health."
+    }
+   ]
+  },
+  {
+   "id": 441,
+   "name": "Options?",
+   "requirement": "Defeat The Beast as Isaac",
+   "unlocks": [
+    {
+     "name": "Options?",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Options%3F_icon.png?641b07",
+     "effect": "If a room gives a reward when cleared, there will be two different rewards to chose from. Taking one causes the other to disappear."
+    }
+   ]
+  },
+  {
+   "id": 442,
+   "name": "Yuck Heart",
+   "requirement": "Defeat Mother as Magdalene",
+   "unlocks": [
+    {
+     "name": "Yuck Heart",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Yuck_Heart_icon.png?150348",
+     "effect": "Grants Isaac a Rotten Heart."
+    }
+   ]
+  },
+  {
+   "id": 443,
+   "name": "Candy Heart",
+   "requirement": "Defeat The Beast as Magdalene",
+   "unlocks": [
+    {
+     "name": "Candy Heart",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Candy_Heart_icon.png?bd6b7d",
+     "effect": "Gives Isaac a permanent stat boost whenever he heals with Red Heart pickups."
+    }
+   ]
+  },
+  {
+   "id": 444,
+   "name": "Guppy's Eye",
+   "requirement": "Defeat Mother as Cain",
+   "unlocks": [
+    {
+     "name": "Guppy's Eye",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Eye_icon.png?89b4a9",
+     "effect": "Shows the contents of Chests, Fire Places, Grab Bags, and Shopkeepers before they're opened/destroyed."
+    }
+   ]
+  },
+  {
+   "id": 445,
+   "name": "A Pound of Flesh",
+   "requirement": "Defeat The Beast as Cain",
+   "unlocks": [
+    {
+     "name": "A Pound of Flesh",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Pound_of_Flesh_icon.png?3a39c4",
+     "effect": "Devil deals now cost Coins, Shop items now cost health, and consumables in shops are free but surrounded by spikes."
+    }
+   ]
+  },
+  {
+   "id": 446,
+   "name": "Akeldama",
+   "requirement": "Defeat Mother as Judas",
+   "unlocks": [
+    {
+     "name": "Akeldama",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Akeldama_icon.png?1d685d",
+     "effect": "While in an uncleared room, Isaac forms a trail of bloody tears that drags behind him, bursting and dealing damage upon contact with enemies."
+    }
+   ]
+  },
+  {
+   "id": 447,
+   "name": "Redemption",
+   "requirement": "Defeat The Beast as Judas",
+   "unlocks": [
+    {
+     "name": "Redemption",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Redemption_icon.png?c4a688",
+     "effect": "If Isaac enters a Devil Room but leaves without taking/opening anything in it, he gets +1 Damage and a Soul Heart at the start of the next floor."
+    }
+   ]
+  },
+  {
+   "id": 448,
+   "name": "Eternal D6",
+   "requirement": "Defeat Mother as ???",
+   "unlocks": [
+    {
+     "name": "Eternal D6",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eternal_D6_icon.png?f89499",
+     "effect": "Re-rolls all items in the room. Each item has a 25% chance to disappear instead."
+    }
+   ]
+  },
+  {
+   "id": 449,
+   "name": "Montezuma's Revenge",
+   "requirement": "Defeat The Beast as ???",
+   "unlocks": [
+    {
+     "name": "Montezuma's Revenge",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Montezuma%27s_Revenge_icon.png?b061f3",
+     "effect": "While firing, Isaac charges up a short-ranged Brimstone-like diarrhea beam that shoots behind him."
+    }
+   ]
+  },
+  {
+   "id": 450,
+   "name": "Bird Cage",
+   "requirement": "Defeat Mother as Eve",
+   "unlocks": [
+    {
+     "name": "Bird Cage",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bird_Cage_icon.png?521053",
+     "effect": "The first time Isaac takes damage in a room, a familiar leaps on an enemy, dealing damage and releasing a rock wave. For the rest of the room, it chases enemies similar to Dead Bird."
+    }
+   ]
+  },
+  {
+   "id": 451,
+   "name": "Cracked Orb",
+   "requirement": "Defeat The Beast as Eve",
+   "unlocks": [
+    {
+     "name": "Cracked Orb",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cracked_Orb_icon.png?84757a",
+     "effect": "Unlocks doors and reveals a random room on the map when Isaac takes damage."
+    }
+   ]
+  },
+  {
+   "id": 452,
+   "name": "Bloody Gust",
+   "requirement": "Defeat Mother as Samson",
+   "unlocks": [
+    {
+     "name": "Bloody Gust",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bloody_Gust_icon.png?2d2a9e",
+     "effect": "The first 6 times Isaac takes damage on a given floor, he gains Speed and Fire Rate for the rest of the floor, up to a maximum of +1.02 and +3.00, respectively."
+    }
+   ]
+  },
+  {
+   "id": 453,
+   "name": "Empty Heart",
+   "requirement": "Defeat The Beast as Samson",
+   "unlocks": [
+    {
+     "name": "Empty Heart",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Empty_Heart_icon.png?eab44e",
+     "effect": "If Isaac has one red heart or fewer at the beginning of a floor, he gains an empty red heart container."
+    }
+   ]
+  },
+  {
+   "id": 454,
+   "name": "Devil's Crown",
+   "requirement": "Defeat Mother as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 455,
+   "name": "Lil Abaddon",
+   "requirement": "Defeat The Beast as Azazel",
+   "unlocks": [
+    {
+     "name": "Lil Abaddon",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Abaddon_icon.png?79f2d2",
+     "effect": "Spawns a familiar that charges a miniature Maw Of The Void attack while Isaac shoots."
+    }
+   ]
+  },
+  {
+   "id": 456,
+   "name": "Tinytoma",
+   "requirement": "Defeat Mother as Lazarus",
+   "unlocks": [
+    {
+     "name": "Tinytoma",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tinytoma_icon.png?3f4139",
+     "effect": "Gives Isaac a Teratoma orbital that blocks shots, deals contact damage, and splits into smaller versions of itself upon taking damage. The smaller versions break into blue spiders."
+    }
+   ]
+  },
+  {
+   "id": 457,
+   "name": "Astral Projection",
+   "requirement": "Defeat The Beast as Lazarus",
+   "unlocks": [
+    {
+     "name": "Astral Projection",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Astral_Projection_icon.png?3b6aee",
+     "effect": "Causes Isaac to turn into a ghost if he gets hit while in an uncleared room, giving him flight and spectral tears and blocking the next hit he takes."
+    }
+   ]
+  },
+  {
+   "id": 458,
+   "name": "'M",
+   "requirement": "Defeat Mother as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 459,
+   "name": "Everything Jar",
+   "requirement": "Defeat The Beast as Eden",
+   "unlocks": [
+    {
+     "name": "Everything Jar",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Everything_Jar_icon.png?48a0a0",
+     "effect": "Spawns certain pickups based on how many charges it has. If fully charged, instead has one of many unique effects."
+    }
+   ]
+  },
+  {
+   "id": 460,
+   "name": "Lost Soul",
+   "requirement": "Defeat Mother as The Lost",
+   "unlocks": [
+    {
+     "name": "Lost Soul",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lost_Soul_icon.png?f7c9f6",
+     "effect": "Creates a ghostly familiar that closely follows behind Isaac. It dies in one hit, but respawns at the start of the next floor. Each time it survives until the next floor, it rewards Isaac with Soul Hearts, Eternal Hearts, or an Item."
+    }
+   ]
+  },
+  {
+   "id": 461,
+   "name": "Hungry Soul",
+   "requirement": "Defeat The Beast as The Lost",
+   "unlocks": [
+    {
+     "name": "Hungry Soul",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hungry_Soul_icon.png?7d5903",
+     "effect": "Enemies have a chance to spawn ghosts on death, which chase and deal contact damage to enemies and explode after a short time."
+    }
+   ]
+  },
+  {
+   "id": 462,
+   "name": "Blood Puppy",
+   "requirement": "Defeat Mother as Lilith",
+   "unlocks": [
+    {
+     "name": "Blood Puppy",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Puppy_icon.png?2b26af",
+     "effect": "Spawns a familiar that chases enemies. After killing enough enemies, it becomes more powerful but will also try to hurt Isaac. Dealing enough damage to it returns it to normal."
+    }
+   ]
+  },
+  {
+   "id": 463,
+   "name": "C Section",
+   "requirement": "Defeat The Beast as Lilith",
+   "unlocks": [
+    {
+     "name": "C Section",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_C_Section_icon.png?684859",
+     "effect": "Replaces tears with fetuses that chase down enemies and deal contact damage. Each shot requires a brief charge up."
+    }
+   ]
+  },
+  {
+   "id": 464,
+   "name": "Keeper's Sack",
+   "requirement": "Defeat Mother as Keeper",
+   "unlocks": [
+    {
+     "name": "Keeper's Sack",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Sack_icon.png?a0f519",
+     "effect": "Gives range, speed, or damage when buying things from a shop. Spawns three coins and a Key on pickup."
+    }
+   ]
+  },
+  {
+   "id": 465,
+   "name": "Keeper's Box",
+   "requirement": "Defeat The Beast as Keeper",
+   "unlocks": [
+    {
+     "name": "Keeper's Box",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Box_icon.png?b17f94",
+     "effect": "Spawns a random Shop item or pickup which can be bought for its normal price."
+    }
+   ]
+  },
+  {
+   "id": 466,
+   "name": "Lil Portal",
+   "requirement": "Defeat Mother as Apollyon",
+   "unlocks": [
+    {
+     "name": "Lil Portal",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Portal_icon.png?703e2f",
+     "effect": "Spawns a familiar that flies forward, consuming pickups in its path and dealing damage to enemies. Each pickup increases its size and damage and spawns a Blue Fly. After 1 + (stage number) pickups, opens a portal which leads to a special room with contents that persist between floors."
+    }
+   ]
+  },
+  {
+   "id": 467,
+   "name": "Worm Friend",
+   "requirement": "Defeat The Beast as Apollyon",
+   "unlocks": [
+    {
+     "name": "Worm Friend",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Worm_Friend_icon.png?43918e",
+     "effect": "Gives Isaac a Nerve Ending familiar that burrows out of the ground to grab and deal damage to enemies over time."
+    }
+   ]
+  },
+  {
+   "id": 468,
+   "name": "Bone Spurs",
+   "requirement": "Defeat Mother as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Bone Spurs",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bone_Spurs_icon.png?96983a",
+     "effect": "Enemies spawn floating bones on death, which block shots and damage/repel enemies that touch them."
+    }
+   ]
+  },
+  {
+   "id": 469,
+   "name": "Spirit Shackles",
+   "requirement": "Defeat The Beast as The Forgotten",
+   "unlocks": [
+    {
+     "name": "Spirit Shackles",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spirit_Shackles_icon.png?667463",
+     "effect": "On taking fatal damage, instead of dying, Isaac's ghost is chained to his dead body, and he can continue to fight with 1/2 of a heart, returning to life after 10 seconds. After it activates, it must be recharged by gaining a Soul Heart or Black Heart from any source."
+    }
+   ]
+  },
+  {
+   "id": 470,
+   "name": "Revelation",
+   "requirement": "Defeat Mother as Bethany",
+   "unlocks": [
+    {
+     "name": "Revelation",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Revelation_icon.png?b1e304",
+     "effect": "Grants flight. In addition to tears, Isaac can charge up and fire a powerful holy laser."
+    }
+   ]
+  },
+  {
+   "id": 471,
+   "name": "Jar of Wisps",
+   "requirement": "Defeat The Beast as Bethany",
+   "unlocks": [
+    {
+     "name": "Jar of Wisps",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jar_of_Wisps_icon.png?98cc4c",
+     "effect": "Spawns random wisps that shoot various tears, block shots, and deal contact damage. The number of wisps spawned increases every time the jar is used."
+    }
+   ]
+  },
+  {
+   "id": 472,
+   "name": "Magic Skin",
+   "requirement": "Defeat Mother as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Magic Skin",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_Skin_icon.png?860ddf",
+     "effect": "Consumes one heart container or two Soul Hearts to spawn an item and grant Isaac a broken heart container that can never be filled. If Magic Skin is not held after being used, it is very likely to replace any future items."
+    }
+   ]
+  },
+  {
+   "id": 473,
+   "name": "Friend Finder",
+   "requirement": "Defeat The Beast as Jacob and Esau",
+   "unlocks": [
+    {
+     "name": "Friend Finder",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Friend_Finder_icon.png?f46f13",
+     "effect": "Spawns a random friendly monster that mimics Isaac's movements and attacks."
+    }
+   ]
+  },
+  {
+   "id": 474,
+   "name": "The Broken",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 475,
+   "name": "The Dauntless",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 476,
+   "name": "The Hoarder",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Cain",
+   "unlocks": []
+  },
+  {
+   "id": 477,
+   "name": "The Deceiver",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Judas",
+   "unlocks": []
+  },
+  {
+   "id": 478,
+   "name": "The Soiled",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as ???",
+   "unlocks": []
+  },
+  {
+   "id": 479,
+   "name": "The Curdled",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Eve",
+   "unlocks": []
+  },
+  {
+   "id": 480,
+   "name": "The Savage",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Samson",
+   "unlocks": []
+  },
+  {
+   "id": 481,
+   "name": "The Benighted",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 482,
+   "name": "The Enigma",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 483,
+   "name": "The Capricious",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Eden",
+   "unlocks": []
+  },
+  {
+   "id": 484,
+   "name": "The Baleful",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as The Lost",
+   "unlocks": []
+  },
+  {
+   "id": 485,
+   "name": "The Harlot",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 486,
+   "name": "The Miser",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 487,
+   "name": "The Empty",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 488,
+   "name": "The Fettered",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as The Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 489,
+   "name": "The Zealot",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 490,
+   "name": "The Deserter",
+   "requirement": "Use Red Key (etc.) to open the hidden closet in Home as Jacob and Esau",
+   "unlocks": []
+  },
+  {
+   "id": 491,
+   "name": "Glitched Crown",
+   "requirement": "Defeat The Beast as Tainted Isaac",
+   "unlocks": [
+    {
+     "name": "Glitched Crown",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glitched_Crown_icon.png?76b42a",
+     "effect": "Item pedestals cycle between 5 random items before being picked up."
+    }
+   ]
+  },
+  {
+   "id": 492,
+   "name": "Belly Jelly",
+   "requirement": "Defeat The Beast as Tainted Magdalene",
+   "unlocks": [
+    {
+     "name": "Belly Jelly",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Belly_Jelly_icon.png?b8c497",
+     "effect": "Causes enemies to bounce off of Isaac, dealing damage to them if they hit an enemy or obstacle. Also gives Isaac the chance to deflect enemy shots."
+    }
+   ]
+  },
+  {
+   "id": 493,
+   "name": "Blue Key",
+   "requirement": "Defeat The Beast as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 494,
+   "name": "Sanguine Bond",
+   "requirement": "Defeat The Beast as Tainted Judas",
+   "unlocks": [
+    {
+     "name": "Sanguine Bond",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sanguine_Bond_icon.png?ad2df2",
+     "effect": "Spawns a special set of spikes in the Devil Room. Taking damage from the spikes has a chance to grant a reward."
+    }
+   ]
+  },
+  {
+   "id": 495,
+   "name": "The Swarm",
+   "requirement": "Defeat The Beast as Tainted ???",
+   "unlocks": [
+    {
+     "name": "The Swarm",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Swarm_icon.png?576641",
+     "effect": "Spawns eight orbital flies, which turn into Blue Flies after they block a shot. Each time a room is cleared, spawns another orbital fly."
+    }
+   ]
+  },
+  {
+   "id": 496,
+   "name": "Heartbreak",
+   "requirement": "Defeat The Beast as Tainted Eve",
+   "unlocks": [
+    {
+     "name": "Heartbreak",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Heartbreak_icon.png?c48b02",
+     "effect": "Grants 3 broken hearts and +0.25 damage for every broken heart Isaac has. Every otherwise fatal hit will add 2 more until Isaac has nothing but broken hearts."
+    }
+   ]
+  },
+  {
+   "id": 497,
+   "name": "Larynx",
+   "requirement": "Defeat The Beast as Tainted Samson",
+   "unlocks": [
+    {
+     "name": "Larynx",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Larynx_icon.png?5fe6df",
+     "effect": "Isaac shouts, damaging and pushing away nearby enemies. The shout gets stronger the more charges the item has. Larynx gains 1 charge whenever Isaac takes damage, in addition to charging normally."
+    }
+   ]
+  },
+  {
+   "id": 498,
+   "name": "Azazel's Rage",
+   "requirement": "Defeat The Beast as Tainted Azazel",
+   "unlocks": [
+    {
+     "name": "Azazel's Rage",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Azazel%27s_Rage_icon.png?f26eda",
+     "effect": "Isaac builds rage every time a room is cleared. After four rooms, fires a large Brimstone laser when entering the next room."
+    }
+   ]
+  },
+  {
+   "id": 499,
+   "name": "Salvation",
+   "requirement": "Defeat The Beast as Tainted Lazarus",
+   "unlocks": [
+    {
+     "name": "Salvation",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Salvation_icon.png?65975d",
+     "effect": "Gives Isaac a halo that summons beams of light on enemies inside it. The halo grows larger the more times Isaac has taken damage this floor."
+    }
+   ]
+  },
+  {
+   "id": 500,
+   "name": "TMTRAINER",
+   "requirement": "Defeat The Beast as Tainted Eden",
+   "unlocks": [
+    {
+     "name": "TMTRAINER",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_TMTRAINER_icon.png?e502e0",
+     "effect": "Causes all future items to be \"glitched\", granting them completely random effects."
+    }
+   ]
+  },
+  {
+   "id": 501,
+   "name": "Sacred Orb",
+   "requirement": "Defeat The Beast as Tainted Lost",
+   "unlocks": [
+    {
+     "name": "Sacred Orb",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacred_Orb_icon.png?3612bf",
+     "effect": "Prevents items of quality 0-1 from appearing, and items of quality 2 from appearing 33% of the time. Quest items are unaffected."
+    }
+   ]
+  },
+  {
+   "id": 502,
+   "name": "Twisted Pair",
+   "requirement": "Defeat The Beast as Tainted Lilith",
+   "unlocks": [
+    {
+     "name": "Twisted Pair",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Twisted_Pair_icon.png?ff128b",
+     "effect": "Spawns two familiars that float on either side of Isaac and fire tears that use his tears, range, shot speed, and tear effects, and scale with damage."
+    }
+   ]
+  },
+  {
+   "id": 503,
+   "name": "Strawman",
+   "requirement": "Defeat The Beast as Tainted Keeper",
+   "unlocks": [
+    {
+     "name": "Strawman",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Strawman_icon.png?8666a5",
+     "effect": "Spawns a controllable Keeper to fight enemies alongside Isaac, functioning similarly to Jacob and Esau. If Keeper dies, he spawns 5 blue spiders and Strawman is removed from Isaac's inventory."
+    }
+   ]
+  },
+  {
+   "id": 504,
+   "name": "Echo Chamber",
+   "requirement": "Defeat The Beast as Tainted Apollyon",
+   "unlocks": [
+    {
+     "name": "Echo Chamber",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Echo_Chamber_icon.png?e028b2",
+     "effect": "When Isaac uses a Card, Pill, or Rune, he also uses a copy of the previous three Cards/Pills/Runes he used after picking up Echo Chamber."
+    }
+   ]
+  },
+  {
+   "id": 505,
+   "name": "Isaac's Tomb",
+   "requirement": "Defeat The Beast as Tainted Forgotten",
+   "unlocks": [
+    {
+     "name": "Isaac's Tomb",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Tomb_icon.png?795f12",
+     "effect": "Spawns an Old Chest at the start of each floor."
+    }
+   ]
+  },
+  {
+   "id": 506,
+   "name": "Vengeful Spirit",
+   "requirement": "Defeat The Beast as Tainted Bethany",
+   "unlocks": [
+    {
+     "name": "Vengeful Spirit",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vengeful_Spirit_icon.png?df3e04",
+     "effect": "After taking damage, spawns an orbital wisp that lasts for the entire floor, up to a maximum of six. They fire tears but do not block shots."
+    }
+   ]
+  },
+  {
+   "id": 507,
+   "name": "Esau Jr.",
+   "requirement": "Defeat The Beast as Tainted Jacob",
+   "unlocks": [
+    {
+     "name": "Esau Jr.",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Esau_Jr._icon.png?c10c0d",
+     "effect": "Swaps between the current character and Esau Jr., who has +2 flat damage and flight. Characters have independent items and health. Dying as either character ends the run."
+    }
+   ]
+  },
+  {
+   "id": 508,
+   "name": "Bloody Mary",
+   "requirement": "Unlock Bethany, Blood Bag, and It Lives!",
+   "unlocks": []
+  },
+  {
+   "id": 509,
+   "name": "Baptism by Fire",
+   "requirement": "Defeat Satan as Bethany, defeat Mom's Heart 11 times, and unlock Maggy's Faith",
+   "unlocks": []
+  },
+  {
+   "id": 510,
+   "name": "Isaac's Awakening",
+   "requirement": "Defeat Mother",
+   "unlocks": []
+  },
+  {
+   "id": 511,
+   "name": "Seeing Double",
+   "requirement": "Defeat Mother",
+   "unlocks": []
+  },
+  {
+   "id": 512,
+   "name": "Pica Run",
+   "requirement": "Defeat Mom's Heart 11 times and unlock Marbles",
+   "unlocks": []
+  },
+  {
+   "id": 513,
+   "name": "Hot Potato",
+   "requirement": "Unlock Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 514,
+   "name": "Cantripped!",
+   "requirement": "Unlock Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 515,
+   "name": "Red Redemption",
+   "requirement": "Unlock Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 516,
+   "name": "DELETE THIS",
+   "requirement": "Unlock Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 517,
+   "name": "Dirty Mind",
+   "requirement": "Complete Scat Man (challenge #36)",
+   "unlocks": [
+    {
+     "name": "Dirty Mind",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dirty_Mind_icon.png?d6867a",
+     "effect": "Destroying poop spawns Dip Familiars that follow Isaac and damage enemies. Destroying different types of poop spawns different Dips with special effects."
+    }
+   ]
+  },
+  {
+   "id": 518,
+   "name": "Sigil of Baphomet",
+   "requirement": "Complete Bloody Mary (challenge #37)",
+   "unlocks": []
+  },
+  {
+   "id": 519,
+   "name": "Purgatory",
+   "requirement": "Complete Baptism by Fire (challenge #38)",
+   "unlocks": [
+    {
+     "name": "Purgatory",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Purgatory_icon.png?8a23ff",
+     "effect": "While in a room with enemies, spawns red cracks in the ground. Walking over these cracks summons ghosts that launch themselves at enemies and explode."
+    }
+   ]
+  },
+  {
+   "id": 520,
+   "name": "Spirit Sword",
+   "requirement": "Complete Isaac's Awakening (challenge #39)",
+   "unlocks": [
+    {
+     "name": "Spirit Sword",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spirit_Sword_icon.png?f16594",
+     "effect": "Instead of tears, Isaac swings a sword. Charging does a spin attack and fires a projectile, and a projectile is sometimes fired with normal swings if Isaac has no empty Red Heart Containers."
+    }
+   ]
+  },
+  {
+   "id": 521,
+   "name": "Broken Glasses",
+   "requirement": "Complete Seeing Double (challenge #40)",
+   "unlocks": []
+  },
+  {
+   "id": 522,
+   "name": "Ice Cube",
+   "requirement": "Complete Pica Run (challenge #41)",
+   "unlocks": []
+  },
+  {
+   "id": 523,
+   "name": "Charged Penny",
+   "requirement": "Donate to Battery Bums until they pay out with an item 5 times",
+   "unlocks": []
+  },
+  {
+   "id": 524,
+   "name": "The Fool",
+   "requirement": "Defeat Ultra Greedier as Tainted Lost",
+   "unlocks": []
+  },
+  {
+   "id": 525,
+   "name": "The Magician",
+   "requirement": "Defeat Ultra Greedier as Tainted Judas",
+   "unlocks": []
+  },
+  {
+   "id": 526,
+   "name": "The High Priestess",
+   "requirement": "Defeat Ultra Greedier as Tainted Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 527,
+   "name": "The Empress",
+   "requirement": "Defeat Ultra Greedier as Tainted Eve",
+   "unlocks": []
+  },
+  {
+   "id": 528,
+   "name": "The Emperor",
+   "requirement": "Defeat Ultra Greedier as Tainted ???",
+   "unlocks": []
+  },
+  {
+   "id": 529,
+   "name": "The Hierophant",
+   "requirement": "Defeat Ultra Greedier as Tainted Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 530,
+   "name": "The Lovers",
+   "requirement": "Defeat Ultra Greedier as Tainted Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 531,
+   "name": "The Chariot",
+   "requirement": "Complete Hot Potato (challenge #42)",
+   "unlocks": []
+  },
+  {
+   "id": 532,
+   "name": "Justice",
+   "requirement": "Complete Cantripped (challenge #43)",
+   "unlocks": []
+  },
+  {
+   "id": 533,
+   "name": "The Hermit",
+   "requirement": "Complete Red Redemption (challenge #44)",
+   "unlocks": []
+  },
+  {
+   "id": 534,
+   "name": "Wheel of Fortune",
+   "requirement": "Defeat Ultra Greedier as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 535,
+   "name": "Strength",
+   "requirement": "Defeat Ultra Greedier as Tainted Samson",
+   "unlocks": []
+  },
+  {
+   "id": 536,
+   "name": "The Hanged Man",
+   "requirement": "Defeat Ultra Greedier as Tainted Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 537,
+   "name": "Death",
+   "requirement": "Defeat Ultra Greedier as Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 538,
+   "name": "Temperance",
+   "requirement": "Complete DELETE THIS (challenge #45)",
+   "unlocks": []
+  },
+  {
+   "id": 539,
+   "name": "The Devil",
+   "requirement": "Defeat Ultra Greedier as Tainted Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 540,
+   "name": "The Tower",
+   "requirement": "Defeat Ultra Greedier as Tainted Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 541,
+   "name": "The Stars",
+   "requirement": "Defeat Ultra Greedier as Tainted Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 542,
+   "name": "The Sun and the Moon",
+   "requirement": "Defeat Ultra Greedier as Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 543,
+   "name": "Judgement",
+   "requirement": "Defeat Ultra Greedier as Tainted Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 544,
+   "name": "The World",
+   "requirement": "Defeat Ultra Greedier as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 545,
+   "name": "Old Capacitor",
+   "requirement": "Kill 10 Battery Bums",
+   "unlocks": []
+  },
+  {
+   "id": 546,
+   "name": "Brimstone Bombs",
+   "requirement": "After breaking Hornfel's minecart, kill him before he can escape",
+   "unlocks": [
+    {
+     "name": "Brimstone Bombs",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brimstone_Bombs_icon.png?7d6930",
+     "effect": "+5 Bombs. Bombs fire four Brimstone lasers in the cardinal directions upon exploding."
+    }
+   ]
+  },
+  {
+   "id": 547,
+   "name": "Mega Mush",
+   "requirement": "Earn all Hard mode Completion Marks for all non-Tainted characters",
+   "unlocks": [
+    {
+     "name": "Mega Mush",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mega_Mush_icon.png?eb1c89",
+     "effect": "Gigantifies Isaac for 30 seconds, increasing damage and range while lowering tears, granting invulnerability, and allowing Isaac to crush enemies and obstacles he walks on. The effect persists between rooms."
+    }
+   ]
+  },
+  {
+   "id": 548,
+   "name": "Mom's Lock",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 549,
+   "name": "Dice Bag",
+   "requirement": "Defeat Mother as Tainted Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 550,
+   "name": "Holy Crown",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 551,
+   "name": "Mother's Kiss",
+   "requirement": "Defeat Mother as Tainted Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 552,
+   "name": "Gilded Key",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 553,
+   "name": "Lucky Sack",
+   "requirement": "Defeat Mother as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 554,
+   "name": "Your Soul",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Judas",
+   "unlocks": []
+  },
+  {
+   "id": 555,
+   "name": "Number Magnet",
+   "requirement": "Defeat Mother as Tainted Judas",
+   "unlocks": []
+  },
+  {
+   "id": 556,
+   "name": "Dingle Berry",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted ???",
+   "unlocks": []
+  },
+  {
+   "id": 557,
+   "name": "Ring Cap",
+   "requirement": "Defeat Mother as Tainted ???",
+   "unlocks": []
+  },
+  {
+   "id": 558,
+   "name": "Strange Key",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eve",
+   "unlocks": []
+  },
+  {
+   "id": 559,
+   "name": "Lil Clot",
+   "requirement": "Defeat Mother as Tainted Eve",
+   "unlocks": []
+  },
+  {
+   "id": 560,
+   "name": "Temporary Tattoo",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Samson",
+   "unlocks": []
+  },
+  {
+   "id": 561,
+   "name": "Swallowed M80",
+   "requirement": "Defeat Mother as Tainted Samson",
+   "unlocks": []
+  },
+  {
+   "id": 562,
+   "name": "Wicked Crown",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 563,
+   "name": "Azazel's Stump",
+   "requirement": "Defeat Mother as Tainted Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 564,
+   "name": "Torn Pocket",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 565,
+   "name": "Torn Card",
+   "requirement": "Defeat Mother as Tainted Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 566,
+   "name": "Nuh Uh!",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 567,
+   "name": "Modeling Clay",
+   "requirement": "Defeat Mother as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 568,
+   "name": "Kid's Drawing",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lost",
+   "unlocks": []
+  },
+  {
+   "id": 569,
+   "name": "Crystal Key",
+   "requirement": "Defeat Mother as Tainted Lost",
+   "unlocks": []
+  },
+  {
+   "id": 570,
+   "name": "The Twins",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 571,
+   "name": "Adoption Papers",
+   "requirement": "Defeat Mother as Tainted Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 572,
+   "name": "Keeper's Bargain",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 573,
+   "name": "Cursed Penny",
+   "requirement": "Defeat Mother as Tainted Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 574,
+   "name": "Cricket Leg",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 575,
+   "name": "Apollyon's Best Friend",
+   "requirement": "Defeat Mother as Tainted Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 576,
+   "name": "Polished Bone",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 577,
+   "name": "Hollow Heart",
+   "requirement": "Defeat Mother as Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 578,
+   "name": "Expansion Pack",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 579,
+   "name": "Beth's Essence",
+   "requirement": "Defeat Mother as Tainted Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 580,
+   "name": "RC Remote",
+   "requirement": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 581,
+   "name": "Found Soul",
+   "requirement": "Defeat Mother as Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 582,
+   "name": "Member Card",
+   "requirement": "Spend 40+ coins in a single Shop",
+   "unlocks": [
+    {
+     "name": "Member Card",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Member_Card_icon.png?a5295d",
+     "effect": "Adds a trapdoor to every Shop that leads to a second shop with a unique stock and marked-up prices."
+    }
+   ]
+  },
+  {
+   "id": 583,
+   "name": "Golden Razor",
+   "requirement": "In a single run, obtain 99 Coins, then spend all of them",
+   "unlocks": [
+    {
+     "name": "Golden Razor",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Golden_Razor_icon.png?b054a9",
+     "effect": "Spends 5 pennies to grant +1.2 damage for the current room. Grants 5 pennies when picked up for the first time."
+    }
+   ]
+  },
+  {
+   "id": 584,
+   "name": "Spindown Dice",
+   "requirement": "Defeat Delirium as Tainted Isaac",
+   "unlocks": [
+    {
+     "name": "Spindown Dice",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spindown_Dice_icon.png?e3a521",
+     "effect": "Reduces the internal ID number of all items in the room by one, turning them into the item with that number."
+    }
+   ]
+  },
+  {
+   "id": 585,
+   "name": "Hypercoagulation",
+   "requirement": "Defeat Delirium as Tainted Magdalene",
+   "unlocks": [
+    {
+     "name": "Hypercoagulation",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hypercoagulation_icon.png?5063cb",
+     "effect": "After Isaac takes damage from an enemy or donates health, launches Red Hearts from Isaac that despawn after 1.5 seconds."
+    }
+   ]
+  },
+  {
+   "id": 586,
+   "name": "Bag of Crafting",
+   "requirement": "Defeat Delirium as Tainted Cain",
+   "unlocks": [
+    {
+     "name": "Bag of Crafting",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bag_of_Crafting_icon.png?d0d5dd",
+     "effect": "Swipes a bag that collects and holds up to 8 pickups, which can then be used to craft an item. The power level of the item is based on the quality of pickups used."
+    }
+   ]
+  },
+  {
+   "id": 587,
+   "name": "Dark Arts",
+   "requirement": "Defeat Delirium as Tainted Judas",
+   "unlocks": [
+    {
+     "name": "Dark Arts",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Arts_icon.png?c346f3",
+     "effect": "Briefly grants +1 speed and makes Isaac invulnerable and intangible. When the effect ends, destroys all projectiles and damages all enemies Isaac passed through."
+    }
+   ]
+  },
+  {
+   "id": 588,
+   "name": "IBS",
+   "requirement": "Defeat Delirium as Tainted ???",
+   "unlocks": [
+    {
+     "name": "IBS",
+     "quality": 0,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_IBS_icon.png?40bdb6",
+     "effect": "Causes Isaac to throw poop, create buffing creep, or drop bombs while fighting enemies."
+    }
+   ]
+  },
+  {
+   "id": 589,
+   "name": "Sumptorium",
+   "requirement": "Defeat Delirium as Tainted Eve",
+   "unlocks": [
+    {
+     "name": "Sumptorium",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sumptorium_icon.png?821f97",
+     "effect": "Removes half a heart and creates a Clot familiar that mimics Isaac's movements and tear effects. As Tainted Eve, passively converts health into Clots while firing. Activating returns all Clots to health."
+    }
+   ]
+  },
+  {
+   "id": 590,
+   "name": "Berserk!",
+   "requirement": "Defeat Delirium as Tainted Samson",
+   "unlocks": [
+    {
+     "name": "Berserk!",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Berserk%21_icon.png?33a64f",
+     "effect": "Isaac goes berserk for 5 seconds, greatly increasing his speed, tears, and damage, but restricting him to using a melee weapon instead of his tears. This item charges by dealing damage to enemies instead of clearing rooms."
+    }
+   ]
+  },
+  {
+   "id": 591,
+   "name": "Hemoptysis",
+   "requirement": "Defeat Delirium as Tainted Azazel",
+   "unlocks": [
+    {
+     "name": "Hemoptysis",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hemoptysis_icon.png?9ac0c3",
+     "effect": "Double-tapping a fire button causes Isaac to sneeze blood, dealing damage to enemies in front of him. Affected enemies are cursed and take more damage from Brimstone-like attacks."
+    }
+   ]
+  },
+  {
+   "id": 592,
+   "name": "Flip",
+   "requirement": "Defeat Delirium as Tainted Lazarus",
+   "unlocks": [
+    {
+     "name": "Flip",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Flip_icon.png?84b146",
+     "effect": "Item pedestals have a second un-interactable \"ghostly\" item behind them. Activating will flip the real and ghostly items around. If playing as Tainted Lazarus, also flips between them and Dead Tainted Lazarus."
+    }
+   ]
+  },
+  {
+   "id": 593,
+   "name": "Corrupted Data",
+   "requirement": "Defeat Delirium as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 594,
+   "name": "Ghost Bombs",
+   "requirement": "Defeat Delirium as Tainted Lost",
+   "unlocks": [
+    {
+     "name": "Ghost Bombs",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ghost_Bombs_icon.png?d06239",
+     "effect": "+5 Bombs. Bombs become spectral and spawn ghosts that deal contact damage to enemies and explode after 10 seconds."
+    }
+   ]
+  },
+  {
+   "id": 595,
+   "name": "Gello",
+   "requirement": "Defeat Delirium as Tainted Lilith",
+   "unlocks": [
+    {
+     "name": "Gello",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Gello_icon.png?d7fd8b",
+     "effect": "Spawns a demon familiar for the current room attached to Isaac that moves and fires in the direction Isaac shoots, using Isaac's damage, tears, range, shot speed, and special tear effects."
+    }
+   ]
+  },
+  {
+   "id": 596,
+   "name": "Keeper's Kin",
+   "requirement": "Defeat Delirium as Tainted Keeper",
+   "unlocks": [
+    {
+     "name": "Keeper's Kin",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Kin_icon.png?62b42a",
+     "effect": "Rocks and other Obstacles spawn blue spiders over time while in a room with enemies, and spawn two blue spiders when destroyed."
+    }
+   ]
+  },
+  {
+   "id": 597,
+   "name": "Abyss",
+   "requirement": "Defeat Delirium as Tainted Apollyon",
+   "unlocks": [
+    {
+     "name": "Abyss",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abyss_icon.png?c32320",
+     "effect": "Destroys all item pedestals in the room and gives Isaac a unique locust familiar for each item destroyed. Locusts fly forwards in the direction Isaac shoots and damage enemies hit. Destroying certain items spawns special locusts with unique effects."
+    }
+   ]
+  },
+  {
+   "id": 598,
+   "name": "Decap Attack",
+   "requirement": "Defeat Delirium as Tainted Forgotten",
+   "unlocks": [
+    {
+     "name": "Decap Attack",
+     "quality": 1,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Decap_Attack_icon.png?8e3a82",
+     "effect": "Throws Isaac's head, which is still able to fire tears at the spot it lands. Reactivating the item or stepping on the head reattaches it."
+    }
+   ]
+  },
+  {
+   "id": 599,
+   "name": "Lemegeton",
+   "requirement": "Defeat Delirium as Tainted Bethany",
+   "unlocks": [
+    {
+     "name": "Lemegeton",
+     "quality": 3,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lemegeton_icon.png?8ff81e",
+     "effect": "Spawns a destructible orbital familiar representing a random passive item, which blocks shots and deals contact damage. While the wisp is alive, Isaac gains that item's effects."
+    }
+   ]
+  },
+  {
+   "id": 600,
+   "name": "Anima Sola",
+   "requirement": "Defeat Delirium as Tainted Jacob",
+   "unlocks": [
+    {
+     "name": "Anima Sola",
+     "quality": 2,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Anima_Sola_icon.png?6eaf82",
+     "effect": "Chains down the nearest enemy for 5 seconds, preventing them from moving or attacking."
+    }
+   ]
+  },
+  {
+   "id": 601,
+   "name": "Mega Chest",
+   "requirement": "Defeat Mega Satan as Tainted Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 602,
+   "name": "Queen of Hearts",
+   "requirement": "Defeat Mega Satan as Tainted Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 603,
+   "name": "Gold Pill",
+   "requirement": "Defeat Mega Satan as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 604,
+   "name": "Black Sack",
+   "requirement": "Defeat Mega Satan as Tainted Judas",
+   "unlocks": []
+  },
+  {
+   "id": 605,
+   "name": "Charming Poop",
+   "requirement": "Defeat Mega Satan as Tainted ???",
+   "unlocks": []
+  },
+  {
+   "id": 606,
+   "name": "Horse Pill",
+   "requirement": "Defeat Mega Satan as Tainted Eve",
+   "unlocks": []
+  },
+  {
+   "id": 607,
+   "name": "Crane Game",
+   "requirement": "Defeat Mega Satan as Tainted Samson",
+   "unlocks": []
+  },
+  {
+   "id": 608,
+   "name": "Hell Game",
+   "requirement": "Defeat Mega Satan as Tainted Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 609,
+   "name": "Wooden Chest",
+   "requirement": "Defeat Mega Satan as Tainted Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 610,
+   "name": "Wild Card",
+   "requirement": "Defeat Mega Satan as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 611,
+   "name": "Haunted Chest",
+   "requirement": "Defeat Mega Satan as Tainted Lost",
+   "unlocks": []
+  },
+  {
+   "id": 612,
+   "name": "Fool's Gold",
+   "requirement": "Defeat Mega Satan as Tainted Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 613,
+   "name": "Golden Penny",
+   "requirement": "Defeat Mega Satan as Tainted Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 614,
+   "name": "Rotten Beggar",
+   "requirement": "Defeat Mega Satan as Tainted Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 615,
+   "name": "Golden Battery",
+   "requirement": "Defeat Mega Satan as Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 616,
+   "name": "Confessional",
+   "requirement": "Defeat Mega Satan as Tainted Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 617,
+   "name": "Golden Trinket",
+   "requirement": "Defeat Mega Satan as Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 618,
+   "name": "Soul of Isaac",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Isaac",
+   "unlocks": []
+  },
+  {
+   "id": 619,
+   "name": "Soul of Magdalene",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Magdalene",
+   "unlocks": []
+  },
+  {
+   "id": 620,
+   "name": "Soul of Cain",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Cain",
+   "unlocks": []
+  },
+  {
+   "id": 621,
+   "name": "Soul of Judas",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Judas",
+   "unlocks": []
+  },
+  {
+   "id": 622,
+   "name": "Soul of ???",
+   "requirement": "Defeat Hush and Boss Rush as Tainted ???",
+   "unlocks": []
+  },
+  {
+   "id": 623,
+   "name": "Soul of Eve",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Eve",
+   "unlocks": []
+  },
+  {
+   "id": 624,
+   "name": "Soul of Samson",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Samson",
+   "unlocks": []
+  },
+  {
+   "id": 625,
+   "name": "Soul of Azazel",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Azazel",
+   "unlocks": []
+  },
+  {
+   "id": 626,
+   "name": "Soul of Lazarus",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Lazarus",
+   "unlocks": []
+  },
+  {
+   "id": 627,
+   "name": "Soul of Eden",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Eden",
+   "unlocks": []
+  },
+  {
+   "id": 628,
+   "name": "Soul of the Lost",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Lost",
+   "unlocks": []
+  },
+  {
+   "id": 629,
+   "name": "Soul of Lilith",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Lilith",
+   "unlocks": []
+  },
+  {
+   "id": 630,
+   "name": "Soul of the Keeper",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Keeper",
+   "unlocks": []
+  },
+  {
+   "id": 631,
+   "name": "Soul of Apollyon",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Apollyon",
+   "unlocks": []
+  },
+  {
+   "id": 632,
+   "name": "Soul of the Forgotten",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Forgotten",
+   "unlocks": []
+  },
+  {
+   "id": 633,
+   "name": "Soul of Bethany",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Bethany",
+   "unlocks": []
+  },
+  {
+   "id": 634,
+   "name": "Soul of Jacob and Esau",
+   "requirement": "Defeat Hush and Boss Rush as Tainted Jacob",
+   "unlocks": []
+  },
+  {
+   "id": 635,
+   "name": "A Strange Door",
+   "requirement": "Defeat Mother",
+   "unlocks": []
+  },
+  {
+   "id": 636,
+   "name": "Death Certificate",
+   "requirement": "Earn all Hard mode Completion Marks for all characters, including tainted ones",
+   "unlocks": [
+    {
+     "name": "Death Certificate",
+     "quality": 4,
+     "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death_Certificate_icon.png?57f600",
+     "effect": "Transports Isaac to an abandoned and expanded version of Home, which contains one copy of every item in the game. After taking an item, Isaac returns to the room he used Death Certificate in."
+    }
+   ]
+  },
+  {
+   "id": 637,
+   "name": "Dead God",
+   "requirement": "Unlock all the other achievements ( including the 4 Repentance+ achievements) and collect every item in the game",
+   "unlocks": []
+  },
+  {
+   "id": 638,
+   "name": "Play Online",
+   "requirement": "Play an Online game",
+   "unlocks": []
+  },
+  {
+   "id": 639,
+   "name": "Win Online",
+   "requirement": "Win an Online run",
+   "unlocks": []
+  },
+  {
+   "id": 640,
+   "name": "Win Online Daily",
+   "requirement": "Win an Online Daily run",
+   "unlocks": []
+  },
+  {
+   "id": 641,
+   "name": "Item Descriptions",
+   "requirement": "Defeat Mom",
+   "unlocks": []
+  }
+ ]
+}

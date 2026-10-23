@@ -1,0 +1,781 @@
+/* Reference: the game's collection and completion-mark screens — light grey background with a vignette, paper with ragged ink edges, pixel font */
+
+/* Full fonts: only fetched when the page shows Hangul the small files lack (e.g. a Steam nickname) */
+@font-face {
+  font-family: Galmuri11;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Galmuri11.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: Galmuri11;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Galmuri11-Bold.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+AC00-D7A3;
+}
+
+/* Small files (scripts/subset-fonts.sh): declared last so they are tried first */
+@font-face {
+  font-family: Galmuri11;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Galmuri11-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Galmuri11;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Galmuri11-Bold-subset.woff2") format("woff2");
+}
+
+:root {
+  --ink: #2b2522;
+  --ink-soft: #625853;
+  --ink-faint: #9a908b;
+  --paper: #ece8e5;
+  --paper-dark: #d8d2ce;
+  --table: #c9c2be;
+  --blood: #a3241e;
+  --gold: #7d5f14;
+  --shadow: rgba(43, 37, 34, 0.35);
+  --line: #cfc8c3;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--table);
+  font-family: Galmuri11, "Apple SD Gothic Neo", sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: none;
+}
+
+/* iOS ignores background-attachment: fixed — the vignette is a separate fixed layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 35%, transparent 45%, rgba(43, 37, 34, 0.45) 100%);
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+a {
+  color: var(--ink);
+}
+
+.sprite {
+  image-rendering: pixelated;
+}
+
+button {
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 2px 6px 3px 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* Unstyled button (text/image only) */
+button.link,
+.tabs button,
+.gain-name,
+.grid-pick,
+.char {
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+button.link:active,
+.tabs button:active,
+.gain-name:active,
+.grid-pick:active,
+.char:active {
+  transform: none;
+}
+
+button.link {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--ink-soft);
+}
+
+.error {
+  color: var(--blood);
+}
+
+/* Paper: wobble the edge like bleeding ink. Only the ::before paper layer wobbles, so text stays crisp */
+
+.paper {
+  position: relative;
+  isolation: isolate;
+  padding: 14px 16px;
+}
+
+.paper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  box-shadow: 5px 6px 0 var(--shadow);
+  filter: url(#ink);
+}
+
+/* Header */
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 3px;
+  border-bottom: 4px solid var(--ink);
+  border-radius: 0 0 40% 10% / 0 0 6px 3px;
+}
+
+.home {
+  text-decoration: none;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  font-size: 12px;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--ink);
+}
+
+/* On phones, adding the name wraps the title onto two lines */
+@media (max-width: 480px) {
+  .who-name {
+    display: none;
+  }
+}
+
+.lang {
+  min-width: 40px;
+  min-height: 36px;
+  padding: 2px 8px;
+  font-weight: 700;
+}
+
+/* Progress: one line under the title instead of a card */
+
+.tally {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 14px;
+}
+
+.count {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.count .of {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.tally .pct {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.bar {
+  flex-basis: 100%;
+  height: 8px;
+  border: 2px solid var(--ink);
+  background: var(--paper-dark);
+}
+
+.bar > div {
+  height: 100%;
+  background: var(--blood);
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin: 10px 0 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs button {
+  flex: none;
+  padding: 10px 0 6px;
+  color: var(--ink-soft);
+}
+
+.tabs button.on {
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 var(--ink);
+}
+
+/* Recommendation cards */
+
+.plans {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+/* Tilt only the paper — rotating the text blurs the pixel font */
+.plans > li:nth-child(odd)::before {
+  transform: rotate(-0.4deg);
+}
+
+.plans > li:nth-child(even)::before {
+  transform: rotate(0.35deg);
+}
+
+.plan-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.rank {
+  flex: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blood);
+}
+
+.who-img {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.who-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.who {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.route {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Mode badge as a stamp */
+.mode {
+  flex: none;
+  margin-left: auto;
+  padding: 0 6px;
+  border: 2px solid var(--ink-soft);
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: rotate(-4deg);
+}
+
+.mode-hard {
+  border-color: var(--blood);
+  color: var(--blood);
+}
+
+/* Achievement row */
+
+.gains {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gain {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 2px dotted var(--line);
+}
+
+.gains > .gain:first-child {
+  border-top: none;
+}
+
+.gain-icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.gain-icon.ach {
+  border: 2px solid var(--ink);
+}
+
+.gain-text {
+  min-width: 0;
+  padding-top: 5px;
+}
+
+.gain-name {
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.gain-name.expandable::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  border: 4px solid transparent;
+  border-left: 5px solid var(--ink);
+  border-right: none;
+  vertical-align: 1px;
+}
+
+.gain-name[aria-expanded="true"]::after {
+  transform: rotate(90deg);
+}
+
+.item {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.note {
+  margin-top: 1px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.note.bonus {
+  color: var(--blood);
+}
+
+.note.opens {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.q {
+  padding: 0 3px;
+  border: 1px solid var(--ink-soft);
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.q3 {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.q4 {
+  border-color: var(--blood);
+  color: var(--paper);
+  background: var(--blood);
+}
+
+.effect {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.shared {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.shared summary {
+  list-style: none;
+  padding: 10px 0;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.shared summary::-webkit-details-marker {
+  display: none;
+}
+
+.shared summary::before {
+  content: "";
+  display: inline-block;
+  margin-right: 6px;
+  border: 4px solid transparent;
+  border-left: 5px solid var(--ink-soft);
+  border-right: none;
+}
+
+.shared[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Character grid (like the collection: unavailable ones are faded) */
+
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 4px;
+  margin-bottom: 18px;
+}
+
+.char {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.char img {
+  position: absolute;
+  inset: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.char.on img {
+  filter: drop-shadow(2px 0 0 var(--ink)) drop-shadow(-2px 0 0 var(--ink)) drop-shadow(0 2px 0 var(--ink))
+    drop-shadow(0 -2px 0 var(--ink));
+  transform: scale(1.1);
+}
+
+.char.locked img {
+  filter: grayscale(1) contrast(0.5) brightness(1.3);
+  opacity: 0.55;
+}
+
+.char .left {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow:
+    1px 0 var(--table),
+    -1px 0 var(--table),
+    0 1px var(--table),
+    0 -1px var(--table);
+}
+
+.char .left.done {
+  color: var(--blood);
+}
+
+.char-route {
+  margin-top: 12px;
+}
+
+.char-route > .route {
+  display: inline-block;
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--ink);
+}
+
+/* Grid (in-game completion-mark screen) */
+
+.grid-paper {
+  padding: 12px 6px;
+  overflow-x: auto;
+}
+
+.grid {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.grid th,
+.grid td {
+  width: 24px;
+  height: 28px;
+  padding: 1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.grid thead th {
+  border-bottom: 2px solid var(--ink);
+}
+
+.grid tbody tr {
+  cursor: pointer;
+}
+
+.grid tbody tr.tainted-start > * {
+  border-top: 2px solid var(--ink);
+}
+
+.grid tbody tr:hover {
+  background: var(--paper-dark);
+}
+
+.grid .mark {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid-pick {
+  display: block;
+}
+
+.grid-who {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+.grid tr.locked .grid-who {
+  filter: grayscale(1) contrast(0.5) brightness(1.3);
+  opacity: 0.55;
+}
+
+.grid .unlock {
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.grid .unlock.ach {
+  border: 1px solid var(--ink);
+}
+
+.cell.todo .unlock {
+  filter: grayscale(1) brightness(1.5);
+  opacity: 0.35;
+}
+
+.grid tfoot td {
+  border-top: 2px solid var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blood);
+}
+
+.grid tfoot td.full {
+  color: var(--ink-soft);
+}
+
+/* Challenges: single-sheet list */
+
+.ch-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.ch {
+  display: grid;
+  grid-template-columns: 22px 32px 1fr auto auto;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 2px dotted var(--line);
+}
+
+.ch:first-child {
+  border-top: none;
+}
+
+.ch.locked {
+  opacity: 0.5;
+}
+
+.ch.locked img {
+  filter: grayscale(1);
+}
+
+.ch-num {
+  color: var(--blood);
+  font-weight: 700;
+  text-align: right;
+}
+
+.ch-who {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.ch-text {
+  min-width: 0;
+}
+
+.ch-goal img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.ch-goal span {
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.ch-reward {
+  display: flex;
+  gap: 2px;
+}
+
+/* Other list */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 2px dotted var(--line);
+}
+
+.list .ach-icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--ink);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.desc {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.list .pct {
+  flex: none;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.more {
+  width: 100%;
+  margin-top: 14px;
+}
+
+/* Landing screen */
+
+.landing {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.hero {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  margin: 4px auto 10px;
+  display: block;
+}
+
+.lookup {
+  text-align: left;
+}
+
+.lookup label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.lookup-row {
+  display: flex;
+  gap: 6px;
+}
+
+.lookup input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+footer {
+  margin-top: 48px;
+  font-size: 11px;
+  color: var(--ink-soft);
+}

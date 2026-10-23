@@ -1,0 +1,37 @@
+{
+  "name": "isaac-unlock-planner",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p . && tsc --noEmit -p worker && vite build",
+    "test": "vitest run",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "knip": "knip",
+    "check": "pnpm lint && pnpm build && pnpm test && pnpm knip",
+    "preview": "pnpm build && wrangler dev",
+    "deploy": "pnpm build && wrangler deploy"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@cloudflare/workers-types": "^4.20260701.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^5.2.0",
+    "knip": "6.41.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^4.1.10",
+    "wrangler": "4.151.0"
+  },
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "isaac-unlock-planner",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-09-26",
+  // The UI is static assets from dist/; only /api/* hits the worker
+  "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  // Per IP: 30 Steam lookups a minute — a page view costs two
+  "ratelimits": [{ "name": "LOOKUP_LIMIT", "namespace_id": "1001", "simple": { "limit": 30, "period": 60 } }],
+  "routes": [{ "pattern": "isaac-unlock-planner.zmunm.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": true }
+}
