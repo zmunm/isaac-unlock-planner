@@ -3296,7 +3296,7 @@
   {
    "id": 276,
    "name": "Mega",
-   "requirement": "Defeat Mega Satan as every character ( except tainted characters)",
+   "requirement": "Defeat Mega Satan as every character (except tainted characters)",
    "unlocks": [
     {
      "name": "Mega Blast",
@@ -3776,7 +3776,7 @@
   {
    "id": 328,
    "name": "Mr. Resetter!",
-   "requirement": "Reset 7 times in a row SwitchPS 4 Get a minus 10-win streak",
+   "requirement": "Reset 7 times in a row",
    "unlocks": []
   },
   {
@@ -6554,7 +6554,7 @@
   {
    "id": 637,
    "name": "Dead God",
-   "requirement": "Unlock all the other achievements ( including the 4 Repentance+ achievements) and collect every item in the game",
+   "requirement": "Unlock all the other achievements (including the 4 Repentance+ achievements) and collect every item in the game",
    "unlocks": []
   },
   {

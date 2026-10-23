@@ -27,7 +27,6 @@ interface Messages {
   routes: Record<RouteId, string>
   groups: Record<GroupId, string>
   conditions: Record<ConditionalGoal, string>
-  bonus: string
   hardOnly: string
   partial: string
   anyCharacter: string
@@ -93,6 +92,7 @@ const ko: Messages = {
   },
   modes: { normal: '노말', hard: '하드', greed: '그리드', greedier: '그리디어', challenge: '챌린지' },
   routes: {
+    momsHeart: "Mom → Mom's Heart",
     chest: '체스트 루트 (Isaac → ???)',
     darkRoom: '다크룸 루트 (Satan → The Lamb)',
     mother: '대체 경로 → Mother',
@@ -116,7 +116,6 @@ const ko: Messages = {
     megaSatan: 'Mega Satan 처치 (열쇠 조각 2개)',
     delirium: 'Delirium 처치 (보이드 포털이 열리면)',
   },
-  bonus: '보너스',
   hardOnly: '하드 모드',
   partial: '여러 판 중 하나',
   anyCharacter: '아무 캐릭터',
@@ -189,6 +188,7 @@ const en: Messages = {
   },
   modes: { normal: 'Normal', hard: 'Hard', greed: 'Greed', greedier: 'Greedier', challenge: 'Challenge' },
   routes: {
+    momsHeart: "Mom → Mom's Heart",
     chest: 'Chest route (Isaac → ???)',
     darkRoom: 'Dark Room route (Satan → The Lamb)',
     mother: 'Alt path → Mother',
@@ -212,19 +212,18 @@ const en: Messages = {
     megaSatan: 'beat Mega Satan (both key pieces)',
     delirium: 'beat Delirium (if a Void portal opens)',
   },
-  bonus: 'bonus',
   hardOnly: 'Hard mode',
   partial: 'one of several runs',
   anyCharacter: 'any character',
   anyCharacterTitle: 'Any character',
   opens: (n, name) => `opens challenge #${n} ${name}`,
-  shared: (n) => `${n} more come along in this run (any character)`,
+  shared: (n) => `${n} more ${n === 1 ? 'comes' : 'come'} along in this run (any character)`,
   noPlans: 'Nothing left to group into runs.',
   start: 'Start',
   blindfolded: 'blindfolded — cannot shoot tears',
   goal: (boss) => `Goal: ${boss}`,
   challengeRoute: (n, name, goal) => `Challenge #${n} ${name} · goal ${goal}`,
-  marksLeft: (n) => `${n} marks left`,
+  marksLeft: (n) => `${n} ${n === 1 ? 'mark' : 'marks'} left`,
   lockedCharacter: 'Not unlocked yet — to unlock',
   closet: (base) => `open the hidden closet in Home as ${base} (Red Key etc.)`,
   characterDone: 'Every mark for this character is done.',

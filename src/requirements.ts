@@ -108,6 +108,9 @@ const PATTERNS: [RegExp, (m: RegExpMatchArray) => Goal[] | null][] = [
 
 const ANY_PATTERNS: [RegExp, (m: RegExpMatchArray) => Goal[] | null][] = [
   [/^Defeat \?\?\? and The Lamb$/, () => ['blueBaby', 'lamb']],
+  // Chapter 4 ends at Mom's Heart (It Lives! later)
+  [/^Complete Chapter 4$/, () => ['momsHeart']],
+  [/^Defeat Delirium for the 1st time$/, () => ['delirium']],
   [/^Defeat (.+)$/, (m) => (BOSS_GOAL[m[1]] ? [BOSS_GOAL[m[1]]] : null)],
 ]
 

@@ -38,6 +38,19 @@ export function UnlockIcon({
   return icon ? <img className="gain-icon ach" src={icon} alt="" loading="lazy" /> : <span className="gain-icon" />
 }
 
+function GainLabel({ gain }: { gain: PlannedAchievement }) {
+  return (
+    <>
+      {gain.name}
+      {gain.unlocks.map((u) => (
+        <span key={u.name} className="item">
+          {u.name !== gain.name && <> → {u.name}</>} <Quality q={u.quality} />
+        </span>
+      ))}
+    </>
+  )
+}
+
 /** One row — name · unlock · quality. The effect expands when the name is clicked */
 function GainRow({ gain, achievementIcon }: { gain: PlannedAchievement; achievementIcon: Map<number, string> }) {
   const { t } = useI18n()
@@ -54,19 +67,20 @@ function GainRow({ gain, achievementIcon }: { gain: PlannedAchievement; achievem
     <li className="gain">
       <UnlockIcon gain={gain} achievementIcon={achievementIcon} />
       <div className="gain-text">
-        <button
-          type="button"
-          className={effects.length ? 'gain-name expandable' : 'gain-name'}
-          aria-expanded={effects.length ? open : undefined}
-          onClick={() => effects.length && setOpen((v) => !v)}
-        >
-          {gain.name}
-          {gain.unlocks.map((u) => (
-            <span key={u.name} className="item">
-              {u.name !== gain.name && <> → {u.name}</>} <Quality q={u.quality} />
-            </span>
-          ))}
-        </button>
+        {effects.length ? (
+          <button
+            type="button"
+            className="gain-name expandable"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <GainLabel gain={gain} />
+          </button>
+        ) : (
+          <span className="gain-name">
+            <GainLabel gain={gain} />
+          </span>
+        )}
         {notes.length > 0 && <div className={gain.bonus ? 'note bonus' : 'note'}>{notes.join(' · ')}</div>}
         {gain.opens?.map((c) => (
           <div key={c.number} className="note opens">

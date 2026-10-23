@@ -41,8 +41,11 @@ export function App() {
         <div className="tools">
           {viewed?.ok && (
             <>
-              <img className="avatar" src={viewed.data.avatar} alt="" />
-              <span className="who-name">{viewed.data.name}</span>
+              {/* The name hides on phones, so the avatar carries it for screen readers */}
+              <img className="avatar" src={viewed.data.avatar} alt={viewed.data.name} />
+              <span className="who-name" aria-hidden="true">
+                {viewed.data.name}
+              </span>
             </>
           )}
           {/* Also when the lookup failed — a remembered profile that went private must not trap the visitor */}
@@ -64,7 +67,9 @@ export function App() {
       ) : viewed.ok ? (
         <Progress steamid={viewed.data.steamid} />
       ) : (
-        <p className="error">{t.errors[viewed.error]}</p>
+        <p className="error" role="alert">
+          {t.errors[viewed.error]}
+        </p>
       )}
 
       <footer>
@@ -127,7 +132,11 @@ function Lookup() {
             {t.lookup.view}
           </button>
         </div>
-        {error && <p className="error">{error}</p>}
+        {error && (
+          <p className="error" role="alert">
+            {error}
+          </p>
+        )}
       </form>
     </section>
   )
@@ -160,7 +169,9 @@ function Progress({ steamid }: { steamid: string }) {
     const [before, link, after] = t.privacyFix
     return (
       <section>
-        <p className="error">{t.errors[progress.error]}</p>
+        <p className="error" role="alert">
+          {t.errors[progress.error]}
+        </p>
         {progress.error === 'private_profile' && (
           <p>
             {before}
@@ -203,7 +214,13 @@ function Progress({ steamid }: { steamid: string }) {
 
       <nav className="tabs">
         {VIEWS.map((id) => (
-          <button key={id} type="button" className={view === id ? 'on' : undefined} onClick={() => open(id)}>
+          <button
+            key={id}
+            type="button"
+            className={view === id ? 'on' : undefined}
+            aria-pressed={view === id}
+            onClick={() => open(id)}
+          >
             {t.tabs[id]}
           </button>
         ))}

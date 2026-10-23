@@ -33,6 +33,18 @@ describe('currentDescription', () => {
     expect(currentDescription(text)).toBe('New effect.')
   })
 
+  it('drops console-only lines', () => {
+    const text =
+      'Reset 7 times in a row<br><span class="plat plat-Switch cf-skip" title="Nintendo Switch edition only">Switch</span> Get a minus 10-win streak'
+    expect(currentDescription(text)).toBe('Reset 7 times in a row')
+  })
+
+  it('leaves no gap where a marker sat inside parentheses', () => {
+    expect(currentDescription(`every character (${marker(24)} except tainted characters)`)).toBe(
+      'every character (except tainted characters)',
+    )
+  })
+
   it('ends a marker at the line break', () => {
     expect(currentDescription(`${marker(7)} Old.<br>Always.`)).toBe('Always.')
   })

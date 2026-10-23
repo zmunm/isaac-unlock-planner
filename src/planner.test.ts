@@ -22,6 +22,14 @@ const req = (text: string) => wiki.find((a) => a.requirement === text)!.id
 const byIdOf = (id: number) => wiki.find((a) => a.id === id)!.requirement
 
 describe('parseRequirement', () => {
+  it('reads the plain clears that any character can do', () => {
+    expect(parseRequirement('Complete Chapter 4')).toEqual({ character: ANY_CHARACTER, goals: ['momsHeart'] })
+    expect(parseRequirement('Defeat Delirium for the 1st time')).toEqual({
+      character: ANY_CHARACTER,
+      goals: ['delirium'],
+    })
+  })
+
   it('reads a plain boss mark', () => {
     expect(parseRequirement('Defeat Isaac as Eden')).toEqual({ character: 'Eden', goals: ['isaac'] })
   })
@@ -112,9 +120,11 @@ describe('planRuns', () => {
     expect(top.character).toBe('Keeper')
   })
 
-  it('skips characters that are not unlocked yet', () => {
+  it('skips characters that are not unlocked yet, and offers their unlock instead', () => {
     const marks = [req('Defeat Isaac as Eden'), idOf('Eden')]
-    expect(planRuns(without(...marks), wiki)).toEqual([])
+    const plans = planRuns(without(...marks), wiki)
+    expect(plans.some((p) => p.character === 'Eden')).toBe(false)
+    expect(plans.flatMap((p) => p.gains.map((g) => g.id))).toEqual([idOf('Eden')])
   })
 
   it('ranks a run with more marks above a run with fewer', () => {
@@ -156,6 +166,12 @@ describe('planRuns', () => {
     const has = (achieved: Set<number>) => planRuns(achieved, wiki, 50).some((p) => p.gains.some((g) => g.id === hush))
     expect(has(without(hush))).toBe(true)
     expect(has(without(hush, idOf('Blue Womb')))).toBe(false)
+  })
+
+  it('names a run that reaches nothing past Mom after Mom, not after the Chest', () => {
+    expect(planRuns(new Set(), wiki, 50).map((p) => p.route)).not.toContain('chest')
+    const [top] = planRuns(new Set(), wiki)
+    expect(top.route).toBe('momsHeart')
   })
 
   it('offers only what is reachable on a fresh save — Mom and the Boss Rush behind her', () => {

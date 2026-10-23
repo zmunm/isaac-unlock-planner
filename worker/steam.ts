@@ -4,6 +4,7 @@ import type { GlobalPercent, PlayerAchievement, SchemaAchievement } from './isaa
 const API = 'https://api.steampowered.com'
 
 const DAY_SEC = 24 * 3600
+const HOUR_SEC = 3600
 const PLAYER_TTL_SEC = 5 * 60
 // Steam can accept the connection and then never answer
 const TIMEOUT_MS = 8000
@@ -18,7 +19,11 @@ export class SteamError extends Error {
  * Caches Steam responses at the edge. The API key must not end up in the cache key, so a fake URL is used as the key.
  * The Cache API is a no-op on workers.dev — caching only works on a custom domain.
  */
-async function cached<T>(cacheKey: string, ttlSec: number, load: () => Promise<T>): Promise<T> {
+async function cached<T>(
+  cacheKey: string,
+  ttlSec: number | ((value: T) => number),
+  load: () => Promise<T>,
+): Promise<T> {
   const cache = caches.default
   const key = new Request(`https://cache.isaac-unlock-planner.internal/${cacheKey}`)
   const hit = await cache.match(key)
@@ -27,7 +32,10 @@ async function cached<T>(cacheKey: string, ttlSec: number, load: () => Promise<T
   await cache.put(
     key,
     new Response(JSON.stringify(value), {
-      headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${ttlSec}` },
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': `max-age=${typeof ttlSec === 'function' ? ttlSec(value) : ttlSec}`,
+      },
     }),
   )
   return value
@@ -89,14 +97,21 @@ export function summary(key: string, steamid: string): Promise<Me | null> {
   })
 }
 
-/** Custom profile name → SteamID64. null if the name doesn't exist */
+/**
+ * Custom profile name → SteamID64. null if the name doesn't exist.
+ * A miss is kept briefly — someone may be setting that name on Steam right now
+ */
 export function resolveVanity(key: string, vanity: string): Promise<string | null> {
-  return cached(`vanity/${vanity.toLowerCase()}`, DAY_SEC, async () => {
-    const { body } = await getJson(
-      `${API}/ISteamUser/ResolveVanityURL/v1/?key=${key}&vanityurl=${encodeURIComponent(vanity)}`,
-    )
-    const response = (body as { response?: { success?: number; steamid?: string } })?.response
-    if (!response) throw new SteamError('steam_unavailable')
-    return response.success === 1 && response.steamid ? response.steamid : null
-  })
+  return cached(
+    `vanity/${vanity.toLowerCase()}`,
+    (id) => (id ? HOUR_SEC : PLAYER_TTL_SEC),
+    async () => {
+      const { body } = await getJson(
+        `${API}/ISteamUser/ResolveVanityURL/v1/?key=${key}&vanityurl=${encodeURIComponent(vanity)}`,
+      )
+      const response = (body as { response?: { success?: number; steamid?: string } })?.response
+      if (!response) throw new SteamError('steam_unavailable')
+      return response.success === 1 && response.steamid ? response.steamid : null
+    },
+  )
 }

@@ -1,4 +1,5 @@
 import { completionGrid, type Grid as GridData } from './completion'
+import { byId } from './data'
 import { useI18n } from './i18n'
 import type { WikiAchievement } from './planner'
 import { Sprite } from './Sprite'
@@ -17,7 +18,6 @@ interface Props {
 export function Grid({ achieved, wiki, characterImage, markImage, achievementIcon, onPick }: Props) {
   const { t } = useI18n()
   const grid: GridData = completionGrid(achieved, wiki)
-  const byId = new Map(wiki.map((a) => [a.id, a]))
   /** Each cell shows the item that mark unlocks — for non-items (babies, trinkets, etc.) the achievement icon */
   const cellImage = (id: number | null) => {
     if (id === null) return null

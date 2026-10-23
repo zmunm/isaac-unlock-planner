@@ -25,3 +25,12 @@ describe('messages', () => {
     }
   })
 })
+
+describe('English counts', () => {
+  it('uses the singular for one', () => {
+    expect(MESSAGES.en.marksLeft(1)).toBe('1 mark left')
+    expect(MESSAGES.en.marksLeft(3)).toBe('3 marks left')
+    expect(MESSAGES.en.shared(1)).toBe('1 more comes along in this run (any character)')
+    expect(MESSAGES.en.shared(2)).toBe('2 more come along in this run (any character)')
+  })
+})

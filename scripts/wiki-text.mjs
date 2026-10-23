@@ -11,6 +11,7 @@ export function plain(text) {
     .replace(/'{2,3}/g, '')
     .replace(/&amp;/g, '&')
     .replace(/\s+/g, ' ')
+    .replace(/\( /g, '(')
     .trim()
 }
 
@@ -21,6 +22,8 @@ export function plain(text) {
 export function currentDescription(wikitext) {
   const kept = []
   for (const line of wikitext.replace(/\[\[Category:[^\]]*\]\]/g, '').split(/<br\s*\/?>/)) {
+    // A console-only line ("<span class="plat plat-Switch">Switch</span> …") is not the PC game
+    if (/class="plat /.test(line)) continue
     const parts = line.split(/(\[\[File:Dlc [^\]]*?cf-val-\d+[^\]]*\]\])/)
     let applies = true
     for (const part of parts) {

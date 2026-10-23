@@ -18,9 +18,22 @@ const json = (body: unknown, status = 200) =>
 
 const fail = (error: ApiError['error'], status: number) => json({ error } satisfies ApiError, status)
 
+/** An IPv6 client owns a whole /64 — count the prefix, or rotating addresses walks past the limit */
+export function rateKey(ip: string | null): string {
+  if (!ip) return 'local'
+  if (!ip.includes(':')) return ip
+  const [head, tail = ''] = ip.split('::')
+  const left = head ? head.split(':') : []
+  const right = tail ? tail.split(':') : []
+  const groups = [...left, ...Array(Math.max(0, 8 - left.length - right.length)).fill('0'), ...right]
+  return `${groups
+    .slice(0, 4)
+    .map((g) => Number.parseInt(g, 16).toString(16))
+    .join(':')}::/64`
+}
+
 async function withinLimit(req: Request, env: Env): Promise<boolean> {
-  const ip = req.headers.get('CF-Connecting-IP') ?? 'local'
-  return (await env.LOOKUP_LIMIT.limit({ key: ip })).success
+  return (await env.LOOKUP_LIMIT.limit({ key: rateKey(req.headers.get('CF-Connecting-IP')) })).success
 }
 
 function steamFailure(e: unknown): Response {
@@ -67,7 +80,7 @@ export default {
       }
     }
 
-    if (url.pathname.startsWith('/api/')) return fail('not_found', 404)
+    if (url.pathname === '/api' || url.pathname.startsWith('/api/')) return fail('not_found', 404)
     return env.ASSETS.fetch(req)
   },
 } satisfies ExportedHandler<Env>

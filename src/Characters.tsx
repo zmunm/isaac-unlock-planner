@@ -30,6 +30,8 @@ export function Characters({ initial, achieved, wiki, achievementIcon, character
             key={s.character}
             type="button"
             title={s.character}
+            aria-label={`${s.character} · ${t.marksLeft(s.remaining)}`}
+            aria-pressed={s.character === selected}
             className={['char', s.character === selected && 'on', !s.playable && 'locked'].filter(Boolean).join(' ')}
             onClick={() => setSelected(s.character)}
           >

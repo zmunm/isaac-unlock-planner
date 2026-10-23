@@ -44,7 +44,7 @@ export interface Challenge {
   rewards: number[]
 }
 
-export type RouteId = 'chest' | 'darkRoom' | 'mother' | 'beast' | 'greed' | 'greedier' | 'challenge'
+export type RouteId = 'momsHeart' | 'chest' | 'darkRoom' | 'mother' | 'beast' | 'greed' | 'greedier' | 'challenge'
 
 interface Route {
   id: RouteId
@@ -56,6 +56,8 @@ interface Route {
 }
 
 const ROUTES: Route[] = [
+  // First, so a run that reaches nothing past Mom's Heart is not named after the Chest or the Dark Room
+  { id: 'momsHeart', core: ['mom', 'momsHeart', 'momsHeartHard'], bonus: [...CONDITIONAL_GOALS] },
   { id: 'chest', core: ['mom', 'momsHeart', 'momsHeartHard', 'isaac', 'blueBaby'], bonus: [...CONDITIONAL_GOALS] },
   { id: 'darkRoom', core: ['mom', 'momsHeart', 'momsHeartHard', 'satan', 'lamb'], bonus: [...CONDITIONAL_GOALS] },
   // The alternate path also goes through Mom in the Mausoleum
