@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest'
 // @ts-expect-error untyped build script
-import { challengeGoal, challengeGoalFile, currentDescription, plain } from './wiki-text.mjs'
+import {
+  achievementIdByName,
+  challengeGoal,
+  challengeGoalFile,
+  challengeReward,
+  currentDescription,
+  plain,
+} from './wiki-text.mjs'
 
 const marker = (val: number) => `[[File:Dlc x indicator.png|link=|class=dlc cf-tag cf-val-${val} |alt=|x]]`
 
@@ -46,5 +53,33 @@ describe('challenge goal', () => {
   it('keeps the portrait file for the picture', () => {
     expect(challengeGoalFile(portrait)).toBe("Boss Mom's Heart portrait.png")
     expect(challengeGoalFile('[[:Basement|Basement]]')).toBeNull()
+  })
+})
+
+describe('challengeReward', () => {
+  it('takes only conditions that are just the challenge', () => {
+    expect(challengeReward('Complete Suicide King (challenge #7)')).toBe(7)
+    expect(
+      challengeReward('Beat The Family Man (challenge #19), defeat Lokii, and unlock Judas and It Lives!'),
+    ).toBeNull()
+  })
+})
+
+describe('achievementIdByName', () => {
+  const lookup = achievementIdByName([
+    { id: '160', name: 'Suicide King' },
+    { id: '120', name: 'Suicide King' },
+    { id: '1', name: 'Magdalene' },
+  ])
+
+  it('reads "Name 2" as the second achievement of that name by id', () => {
+    expect(lookup('Suicide King 2')).toBe(160)
+    expect(lookup('suicide king 1')).toBe(120)
+  })
+
+  it('refuses a bare name that is ambiguous, and an unknown one', () => {
+    expect(lookup('Suicide King')).toBeNull()
+    expect(lookup('Nobody')).toBeNull()
+    expect(lookup('magdalene')).toBe(1)
   })
 })

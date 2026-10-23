@@ -50,3 +50,28 @@ export function challengeItems(wikitext) {
 export function challengeGoalFile(wikitext) {
   return wikitext.match(/\[\[File:(Boss [^|\]]*?portrait\.png)/)?.[1] ?? null
 }
+
+/** Challenge number when the condition is nothing but beating that challenge — "Beat X (challenge #19), defeat Lokii…" is not */
+export function challengeReward(requirement) {
+  const n = requirement.match(/^Complete .+ \(challenge #(\d+)\)$/)?.[1]
+  return n ? Number(n) : null
+}
+
+/**
+ * Name → achievement id. Names repeat ("Suicide King" is #120 and #160), and the wiki then
+ * writes the later ones as "Suicide King 2" — the nth achievement of that name by id.
+ */
+export function achievementIdByName(achievements) {
+  const byName = new Map()
+  for (const a of [...achievements].sort((x, y) => Number(x.id) - Number(y.id))) {
+    const key = a.name.toLowerCase()
+    byName.set(key, [...(byName.get(key) ?? []), Number(a.id)])
+  }
+  return (ref) => {
+    const key = ref.toLowerCase()
+    const exact = byName.get(key)
+    if (exact?.length === 1) return exact[0]
+    const [, base, nth] = key.match(/^(.+) (\d+)$/) ?? []
+    return (base && byName.get(base)?.[Number(nth) - 1]) ?? null
+  }
+}

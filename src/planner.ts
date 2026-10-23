@@ -66,6 +66,30 @@ const ROUTES: Route[] = [
   { id: 'greedier', core: ['greedier', 'greed'], bonus: [], greed: 'greedier' },
 ]
 
+/**
+ * Achievements a goal needs before it can be reached, from the wiki's "unlocked by" lines:
+ * The Womb #4, It Lives! #34 (Cathedral, Sheol), The Polaroid #57, The Negative #78, Angels #155 (key pieces),
+ * Blue Womb #234, New Area #320 (The Void), Greedier! #341, A Secret Exit #407 (Corpse), A Strange Door #635 (Home)
+ */
+export const GOAL_NEEDS: Partial<Record<Goal, number[]>> = {
+  momsHeart: [4],
+  momsHeartHard: [4],
+  isaac: [4, 34],
+  satan: [4, 34],
+  blueBaby: [4, 34, 57],
+  lamb: [4, 34, 78],
+  megaSatan: [155],
+  hush: [234],
+  delirium: [320],
+  greedier: [341],
+  mother: [407],
+  beast: [635],
+  homeCloset: [635],
+}
+
+const isGoalOpen = (goal: Goal, achieved: Set<number>): boolean =>
+  (GOAL_NEEDS[goal] ?? []).every((id) => achieved.has(id))
+
 export interface PlannedAchievement {
   id: number
   name: string
@@ -163,6 +187,7 @@ export function planChallenges(achieved: Set<number>, wiki: WikiAchievement[], c
 }
 
 interface Context {
+  achieved: Set<number>
   todo: { a: WikiAchievement; r: Requirement }[]
   byId: Map<number, WikiAchievement>
   /** achievement id → challenges it unlocks */
@@ -174,11 +199,11 @@ function contextOf(achieved: Set<number>, wiki: WikiAchievement[], challenges: C
   for (const c of challenges) {
     if (c.requires !== null) opens.set(c.requires, [...(opens.get(c.requires) ?? []), c])
   }
-  return { todo: remaining(achieved, wiki), byId: new Map(wiki.map((a) => [a.id, a])), opens }
+  return { achieved, todo: remaining(achieved, wiki), byId: new Map(wiki.map((a) => [a.id, a])), opens }
 }
 
-function planFor(character: string, route: Route, { todo, byId, opens }: Context): Plan | null {
-  const reachable = new Set([...route.core, ...route.bonus])
+function planFor(character: string, route: Route, { achieved, todo, byId, opens }: Context): Plan | null {
+  const reachable = new Set([...route.core, ...route.bonus].filter((g) => isGoalOpen(g, achieved)))
   const gains: PlannedAchievement[] = []
   let needsHard = false
 

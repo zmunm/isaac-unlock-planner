@@ -3,9 +3,11 @@
 // wiki.gg serves a Cloudflare challenge (403) to browser UAs. Use a short bot UA.
 import { writeFileSync } from 'node:fs'
 import {
+  achievementIdByName,
   challengeGoal,
   challengeGoalFile,
   challengeItems,
+  challengeReward,
   currentDescription,
   plain,
   REPENTANCE_PLUS,
@@ -155,12 +157,12 @@ const data = achievements
   }))
   .sort((a, b) => a.id - b.id)
 
-const idByName = new Map(achievements.map((a) => [a.name.toLowerCase(), Number(a.id)]))
+const idByName = achievementIdByName(achievements)
 // Challenge reward achievements share names ("2 new pills") — link them via "(challenge #N)" in the condition text
 const rewardsOf = new Map()
 for (const a of data) {
-  const n = a.requirement.match(/\(challenge #(\d+)\)/)?.[1]
-  if (n) rewardsOf.set(Number(n), [...(rewardsOf.get(Number(n)) ?? []), a.id])
+  const n = challengeReward(a.requirement)
+  if (n) rewardsOf.set(n, [...(rewardsOf.get(n) ?? []), a.id])
 }
 const challenges = challengeRows
   .map((c) => ({
@@ -172,7 +174,7 @@ const challenges = challengeRows
     items: challengeItems(c.item ?? ''),
     blindfolded: c.blindfolded === '1',
     // The wiki capitalizes inconsistently ("Aprils fool")
-    requires: c['unlocked by'] ? (idByName.get(c['unlocked by'].toLowerCase()) ?? null) : null,
+    requires: c['unlocked by'] ? idByName(c['unlocked by']) : null,
     rewards: rewardsOf.get(Number(c.number)) ?? [],
   }))
   .sort((a, b) => a.number - b.number)

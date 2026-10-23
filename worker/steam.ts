@@ -5,6 +5,8 @@ const API = 'https://api.steampowered.com'
 
 const DAY_SEC = 24 * 3600
 const PLAYER_TTL_SEC = 5 * 60
+// Steam can accept the connection and then never answer
+const TIMEOUT_MS = 8000
 
 export class SteamError extends Error {
   constructor(readonly kind: 'private_profile' | 'no_game' | 'steam_unavailable') {
@@ -32,7 +34,7 @@ async function cached<T>(cacheKey: string, ttlSec: number, load: () => Promise<T
 }
 
 async function getJson(url: string): Promise<{ status: number; body: unknown }> {
-  const res = await fetch(url)
+  const res = await fetch(url, { signal: AbortSignal.timeout(TIMEOUT_MS) })
   const body = await res.json().catch(() => null)
   return { status: res.status, body }
 }
@@ -59,7 +61,7 @@ export function globalPercents(appid: number): Promise<GlobalPercent[]> {
 
 export function playerAchievements(key: string, steamid: string, appid: number): Promise<PlayerAchievement[]> {
   return cached(`player/${steamid}/${appid}`, PLAYER_TTL_SEC, async () => {
-    const { status, body } = await getJson(
+    const { body } = await getJson(
       `${API}/ISteamUserStats/GetPlayerAchievements/v1/?key=${key}&steamid=${steamid}&appid=${appid}`,
     )
     const stats = (
@@ -68,7 +70,8 @@ export function playerAchievements(key: string, steamid: string, appid: number):
       }
     )?.playerstats
     if (stats?.success) return stats.achievements ?? []
-    if (status === 403 || /not public/i.test(stats?.error ?? '')) throw new SteamError('private_profile')
+    // A private profile and a bad key are both 403 — only the JSON body tells them apart
+    if (/not public/i.test(stats?.error ?? '')) throw new SteamError('private_profile')
     if (/no stats/i.test(stats?.error ?? '')) throw new SteamError('no_game')
     throw new SteamError('steam_unavailable')
   })

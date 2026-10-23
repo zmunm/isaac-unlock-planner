@@ -7,7 +7,7 @@ import { Grid } from './Grid'
 import { useI18n, VIEWS, type View } from './i18n'
 import { Plans } from './Plans'
 import { planRuns } from './planner'
-import { remember, rememberedId } from './remember'
+import { profileRef, remember } from './remember'
 import { ANY_CHARACTER } from './requirements'
 import { Sprite } from './Sprite'
 import type { AchievementView, IsaacProgress, Me } from './types'
@@ -15,7 +15,7 @@ import type { AchievementView, IsaacProgress, Me } from './types'
 const PAGE = 30
 
 /** ?id=<SteamID64 or custom name> shows that player's public profile — shareable as a link */
-const viewedRef = new URLSearchParams(location.search).get('id') ?? rememberedId()
+const viewedRef = profileRef(location.search)
 
 export function App() {
   const { t, lang, setLang } = useI18n()
@@ -47,14 +47,7 @@ export function App() {
           )}
           {/* Also when the lookup failed — a remembered profile that went private must not trap the visitor */}
           {viewedRef && (
-            <button
-              type="button"
-              className="link"
-              onClick={() => {
-                remember(null)
-                location.assign('/')
-              }}
-            >
+            <button type="button" className="link" onClick={() => location.assign('/?lookup')}>
               {t.otherProfile}
             </button>
           )}

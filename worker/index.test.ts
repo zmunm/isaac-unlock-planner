@@ -12,14 +12,16 @@ const env = {
 } as unknown as Env
 
 /** Picks the Steam response by URL */
-function steam(players: unknown[] = [{ personaname: 'p', avatarmedium: 'a' }]) {
+function steam(
+  players: unknown[] = [{ personaname: 'p', avatarmedium: 'a' }],
+  playerAchievements = () => Response.json({ playerstats: { success: true, achievements: [] } }),
+) {
   vi.stubGlobal(
     'fetch',
     vi.fn(async (url: string) => {
       if (url.includes('GetPlayerSummaries')) return Response.json({ response: { players } })
       if (url.includes('GetSchemaForGame')) return Response.json({ game: { availableGameStats: { achievements: [] } } })
-      if (url.includes('GetPlayerAchievements'))
-        return Response.json({ playerstats: { success: true, achievements: [] } })
+      if (url.includes('GetPlayerAchievements')) return playerAchievements()
       if (url.includes('GetGlobalAchievementPercentages'))
         return Response.json({ achievementpercentages: { achievements: [] } })
       return new Response('?', { status: 500 })
@@ -50,6 +52,30 @@ describe('/api/isaac', () => {
   it('rate-limits every lookup', async () => {
     expect((await call(`/api/isaac?steamid=${OTHER}`)).status).toBe(200)
     expect(limit).toHaveBeenCalledTimes(1)
+  })
+
+  it('tells a private profile from a rejected API key — Steam answers 403 to both', async () => {
+    steam(undefined, () =>
+      Response.json({ playerstats: { error: 'Profile is not public', success: false } }, { status: 403 }),
+    )
+    expect((await call(`/api/isaac?steamid=${OTHER}`)).status).toBe(403)
+
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    steam(undefined, () => new Response('<html>Forbidden. Please verify your key= parameter.</html>', { status: 403 }))
+    const res = await call(`/api/isaac?steamid=${OTHER}`)
+    expect(res.status).toBe(502)
+    expect(await res.json()).toEqual({ error: 'steam_unavailable' })
+    expect(console.error).toHaveBeenCalled()
+  })
+
+  it('gives up on a Steam call that never answers', async () => {
+    const fetchMock = vi.fn(async (_url: string, _init?: RequestInit) => {
+      throw new DOMException('timed out', 'TimeoutError')
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    expect((await call(`/api/isaac?steamid=${OTHER}`)).status).toBe(502)
+    for (const [, init] of fetchMock.mock.calls) expect(init?.signal).toBeInstanceOf(AbortSignal)
   })
 
   it('answers 429 when the limit is hit', async () => {

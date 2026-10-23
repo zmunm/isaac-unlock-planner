@@ -169,7 +169,7 @@
     "My Reflection"
    ],
    "blindfolded": false,
-   "requires": null,
+   "requires": 160,
    "rewards": [
     120
    ]
@@ -378,8 +378,7 @@
    "blindfolded": true,
    "requires": 165,
    "rewards": [
-    62,
-    164
+    62
    ]
   },
   {

@@ -30,9 +30,9 @@ browser ──► Cloudflare Worker ──► Steam Web API   (your achievements
 
 ## Privacy
 
-- Steam responses (public achievements, profile name and avatar, global unlock rates) are cached at
-  the edge for up to 5 minutes (global data and the wiki schema for a day). Nothing is written to a
-  database.
+- Steam responses are cached at the edge: your achievements, profile name and avatar for 5 minutes;
+  global unlock rates, the achievement list and custom-URL lookups for a day. Nothing is written to
+  a database.
 - There is no login and no cookie. The last profile you looked up is remembered in your browser's
   local storage only.
 - Looking up a profile by URL only reads data that profile already makes public.

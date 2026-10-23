@@ -13,10 +13,16 @@ export function rememberedId(storage: Pick<Storage, 'getItem'> | null = safeStor
   }
 }
 
-export function remember(steamid: string | null): void {
+/** Whose profile the page shows: ?id= first, else the remembered one. ?lookup asks for the form without forgetting */
+export function profileRef(search: string, storage: Pick<Storage, 'getItem'> | null = safeStorage()): string | null {
+  const params = new URLSearchParams(search)
+  if (params.has('lookup')) return null
+  return params.get('id')?.trim() || rememberedId(storage)
+}
+
+export function remember(steamid: string): void {
   try {
-    if (steamid) localStorage.setItem(KEY, steamid)
-    else localStorage.removeItem(KEY)
+    localStorage.setItem(KEY, steamid)
   } catch {
     // If storage is blocked, the profile is not remembered
   }

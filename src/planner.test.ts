@@ -4,6 +4,7 @@ import {
   type Challenge,
   characterRoutes,
   characterStatuses,
+  GOAL_NEEDS,
   planChallenges,
   planRuns,
   playableCharacters,
@@ -18,6 +19,7 @@ const without = (...ids: number[]) => new Set([...all].filter((id) => !ids.inclu
 
 /** Look up achievement ids by wiki sentence — keeps numeric ids out of the tests */
 const req = (text: string) => wiki.find((a) => a.requirement === text)!.id
+const byIdOf = (id: number) => wiki.find((a) => a.id === id)!.requirement
 
 describe('parseRequirement', () => {
   it('reads a plain boss mark', () => {
@@ -127,6 +129,40 @@ describe('planRuns', () => {
     const [top] = planRuns(without(four), wiki)
     expect(top.character).toBe('Tainted Cain')
     expect(top.gains[0].partial).toBe(true)
+  })
+
+  it('gates goals behind the achievements the wiki names', () => {
+    const names = (goal: keyof typeof GOAL_NEEDS) => GOAL_NEEDS[goal]!.map((id) => wiki.find((a) => a.id === id)!.name)
+    expect(names('blueBaby')).toEqual(['The Womb', 'It Lives!', 'The Polaroid'])
+    expect(names('lamb')).toEqual(['The Womb', 'It Lives!', 'The Negative'])
+    expect(names('megaSatan')).toEqual(['Angels'])
+    expect(names('hush')).toEqual(['Blue Womb'])
+    expect(names('delirium')).toEqual(['New Area'])
+    expect(names('greedier')).toEqual(['Greedier!'])
+    expect(names('mother')).toEqual(['A Secret Exit'])
+    expect(names('beast')).toEqual(['A Strange Door'])
+  })
+
+  it('does not send anyone to Greedier mode before Greedier! unlocks it', () => {
+    const greedier = req('Defeat Ultra Greedier as Isaac')
+    const plans = planRuns(without(greedier), wiki, 50)
+    expect(plans.some((p) => p.route === 'greedier')).toBe(true)
+    const locked = planRuns(without(greedier, idOf('Greedier!')), wiki, 50)
+    expect(locked.some((p) => p.route === 'greedier')).toBe(false)
+  })
+
+  it('does not count goals behind a locked floor — Hush needs Blue Womb', () => {
+    const hush = req('Defeat Hush as Eden')
+    const has = (achieved: Set<number>) => planRuns(achieved, wiki, 50).some((p) => p.gains.some((g) => g.id === hush))
+    expect(has(without(hush))).toBe(true)
+    expect(has(without(hush, idOf('Blue Womb')))).toBe(false)
+  })
+
+  it('offers only what is reachable on a fresh save — Mom and the Boss Rush behind her', () => {
+    const goals = planRuns(new Set(), wiki, 50).flatMap((p) =>
+      p.gains.flatMap((g) => parseRequirement(byIdOf(g.id))!.goals),
+    )
+    expect(new Set(goals)).toEqual(new Set(['mom', 'bossRush']))
   })
 
   it('ranks a run that unlocks a quality 4 item above an equal run without one', () => {
