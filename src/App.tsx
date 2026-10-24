@@ -88,6 +88,12 @@ export function App() {
           Galmuri
         </a>{' '}
         (SIL OFL 1.1)
+        <br />
+        {t.footer.source}:{' '}
+        <a href="https://github.com/zmunm/isaac-unlock-planner" target="_blank" rel="noreferrer">
+          GitHub
+        </a>{' '}
+        (MIT)
       </footer>
     </main>
   )

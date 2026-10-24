@@ -48,7 +48,7 @@ interface Messages {
   allDone: string
   more: (n: number) => string
   hidden: string
-  footer: { rights: string; privacy: string; data: string; font: string }
+  footer: { rights: string; privacy: string; data: string; font: string; source: string }
 }
 
 const ko: Messages = {
@@ -144,6 +144,7 @@ const ko: Messages = {
       '저장하는 것: 공개 도전과제 응답을 최대 5분 캐시합니다. 조회한 프로필은 이 브라우저에만 기억합니다. 그 밖엔 아무것도 남기지 않습니다.',
     data: '해금 조건·아이템 퀄리티',
     font: '글꼴',
+    source: '소스 코드',
   },
 }
 
@@ -240,6 +241,7 @@ const en: Messages = {
       'What is stored: public achievement responses cached for up to 5 minutes. The profile you look up is remembered in this browser only. Nothing else is kept.',
     data: 'Unlock conditions and item quality',
     font: 'Font',
+    source: 'Source code',
   },
 }
 
