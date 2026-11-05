@@ -2,17 +2,15 @@ import { type FormEvent, useEffect, useMemo, useState } from 'react'
 import { fetchIsaac, type Result, resolveProfile } from './api'
 import { Challenges } from './Challenges'
 import { Characters } from './Characters'
-import { byId, challenges, characterImage, markImage, requirementOf, wiki } from './data'
+import { challenges, characterImage, markImage, wiki } from './data'
 import { Grid } from './Grid'
 import { useI18n, VIEWS, type View } from './i18n'
+import { Others } from './Others'
 import { Plans } from './Plans'
 import { planRuns } from './planner'
 import { profileRef, remember } from './remember'
-import { ANY_CHARACTER } from './requirements'
 import { Sprite } from './Sprite'
-import type { AchievementView, IsaacProgress, Me } from './types'
-
-const PAGE = 30
+import type { IsaacProgress, Me } from './types'
 
 /** ?id=<SteamID64 or custom name> shows that player's public profile — shareable as a link */
 const viewedRef = profileRef(location.search)
@@ -151,7 +149,6 @@ function Lookup() {
 function Progress({ steamid }: { steamid: string }) {
   const { t } = useI18n()
   const [progress, setProgress] = useState<Result<IsaacProgress> | null>(null)
-  const [shown, setShown] = useState(PAGE)
   const [view, setView] = useState<View>('plan')
   const [picked, setPicked] = useState<string | undefined>()
 
@@ -192,12 +189,6 @@ function Progress({ steamid }: { steamid: string }) {
   }
 
   const { total, unlocked } = progress.data
-  // Character marks belong to other tabs — Other holds what can't be grouped into a run, plus "any character" ones
-  const others = progress.data.achievements.filter((a) => {
-    if (a.achieved) return false
-    const r = requirementOf.get(Number(a.apiname))
-    return !r || r.character === ANY_CHARACTER
-  })
   const percent = total === 0 ? 0 : (unlocked / total) * 100
 
   const open = (next: View) => {
@@ -262,36 +253,7 @@ function Progress({ steamid }: { steamid: string }) {
         <Challenges achieved={achieved} achievementIcon={achievementIcon} characterImage={characterImage} />
       )}
 
-      {view === 'other' && (
-        <section className="paper">
-          {others.length === 0 && <p>{t.allDone}</p>}
-          <ol className="list">
-            {others.slice(0, shown).map((a) => (
-              <Row key={a.apiname} a={a} />
-            ))}
-          </ol>
-          {shown < others.length && (
-            <button type="button" className="more" onClick={() => setShown((n) => n + PAGE)}>
-              {t.more(others.length - shown)}
-            </button>
-          )}
-        </section>
-      )}
+      {view === 'other' && <Others achievements={progress.data.achievements} achievementIcon={achievementIcon} />}
     </>
-  )
-}
-
-function Row({ a }: { a: AchievementView }) {
-  const { t } = useI18n()
-  const description = byId.get(Number(a.apiname))?.requirement || a.description || (a.hidden ? t.hidden : '')
-  return (
-    <li>
-      <img className="ach-icon" src={a.icon} alt="" loading="lazy" />
-      <div className="text">
-        <div className="name">{a.name}</div>
-        <div className="desc">{description}</div>
-      </div>
-      <div className="pct">{a.globalPercent.toFixed(1)}%</div>
-    </li>
   )
 }

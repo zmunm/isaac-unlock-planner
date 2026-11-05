@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type ReactNode, useState } from 'react'
 import { useI18n } from './i18n'
 import type { Plan, PlannedAchievement } from './planner'
 import { ANY_CHARACTER } from './requirements'
@@ -52,7 +52,15 @@ function GainLabel({ gain }: { gain: PlannedAchievement }) {
 }
 
 /** One row — name · unlock · quality. The effect expands when the name is clicked */
-function GainRow({ gain, achievementIcon }: { gain: PlannedAchievement; achievementIcon: Map<number, string> }) {
+export function GainRow({
+  gain,
+  achievementIcon,
+  children,
+}: {
+  gain: PlannedAchievement
+  achievementIcon: Map<number, string>
+  children?: ReactNode
+}) {
   const { t } = useI18n()
   const [open, setOpen] = useState(false)
   const effects = gain.unlocks.filter((u) => u.effect)
@@ -82,6 +90,7 @@ function GainRow({ gain, achievementIcon }: { gain: PlannedAchievement; achievem
           </span>
         )}
         {notes.length > 0 && <div className={gain.bonus ? 'note bonus' : 'note'}>{notes.join(' · ')}</div>}
+        {children}
         {gain.opens?.map((c) => (
           <div key={c.number} className="note opens">
             {t.opens(c.number, c.name)}
