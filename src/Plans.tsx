@@ -51,6 +51,23 @@ function GainLabel({ gain }: { gain: PlannedAchievement }) {
   )
 }
 
+/** A new character's best items up front — the reason to open it now */
+function OpensCharacter({ character, marks }: NonNullable<PlannedAchievement['opensCharacter']>) {
+  const { t } = useI18n()
+  const best = marks.flatMap((m) => m.unlocks).filter((u) => (u.quality ?? 0) >= 3)
+  return (
+    <div className="note opens">
+      {t.opensCharacter(character, marks.length)}
+      {best.map((u) => (
+        <span key={u.name} className="item">
+          {' '}
+          · {u.name} <Quality q={u.quality} />
+        </span>
+      ))}
+    </div>
+  )
+}
+
 /** One row — name · unlock · quality. The effect expands when the name is clicked */
 export function GainRow({
   gain,
@@ -96,6 +113,7 @@ export function GainRow({
             {t.opens(c.number, c.name)}
           </div>
         ))}
+        {gain.opensCharacter && gain.opensCharacter.marks.length > 0 && <OpensCharacter {...gain.opensCharacter} />}
         {open &&
           effects.map((u) => (
             <p key={u.name} className="effect">

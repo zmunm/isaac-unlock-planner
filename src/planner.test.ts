@@ -197,6 +197,18 @@ describe('planRuns', () => {
     expect(plans.filter((p) => p.character === 'Eden')).toHaveLength(1)
   })
 
+  it('counts what a new character will unlock, so opening Tainted Isaac beats a few loose marks', () => {
+    const closet = req('Use Red Key (etc.) to open the hidden closet in Home as Isaac')
+    const tainted = wiki.filter((a) => parseRequirement(a.requirement)?.character === 'Tainted Isaac').map((a) => a.id)
+    const lamb = req('Defeat The Lamb as Jacob and Esau')
+    const hush = req('Defeat Hush as Jacob and Esau')
+    const plans = planRuns(without(closet, ...tainted, lamb, hush), wiki)
+    expect(plans[0].character).toBe('Isaac')
+    const opened = plans[0].gains.find((g) => g.id === closet)!.opensCharacter!
+    expect(opened.character).toBe('Tainted Isaac')
+    expect(opened.marks.map((m) => m.id).sort()).toEqual([...tainted].sort())
+  })
+
   it('marks timed or keyed goals as bonus', () => {
     const rush = req('Complete the Boss Rush as Eden')
     const [top] = planRuns(without(rush), wiki)

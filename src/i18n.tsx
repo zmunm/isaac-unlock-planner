@@ -32,6 +32,7 @@ interface Messages {
   anyCharacter: string
   anyCharacterTitle: string
   opens: (n: number, name: string) => string
+  opensCharacter: (character: string, marks: number) => string
   shared: (n: number) => string
   noPlans: string
   start: string
@@ -121,6 +122,7 @@ const ko: Messages = {
   anyCharacter: '아무 캐릭터',
   anyCharacterTitle: '아무 캐릭터',
   opens: (n, name) => `챌린지 #${n} ${name} 열림`,
+  opensCharacter: (character, marks) => `${character} 열림 · 해금 ${marks}개`,
   shared: (n) => `이 판에 같이 따라오는 것 ${n}개 (아무 캐릭터)`,
   noPlans: '남은 도전과제를 판으로 묶을 게 없습니다.',
   start: '시작',
@@ -218,6 +220,7 @@ const en: Messages = {
   anyCharacter: 'any character',
   anyCharacterTitle: 'Any character',
   opens: (n, name) => `opens challenge #${n} ${name}`,
+  opensCharacter: (character, marks) => `opens ${character} · ${marks} ${marks === 1 ? 'unlock' : 'unlocks'}`,
   shared: (n) => `${n} more ${n === 1 ? 'comes' : 'come'} along in this run (any character)`,
   noPlans: 'Nothing left to group into runs.',
   start: 'Start',

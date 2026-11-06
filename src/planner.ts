@@ -108,6 +108,8 @@ export interface PlannedAchievement {
   anyCharacter?: boolean
   /** Challenges this unlocks */
   opens?: Challenge[]
+  /** Character this makes selectable, with the marks it will then have left */
+  opensCharacter?: { character: string; marks: WikiAchievement[] }
 }
 
 export interface Plan {
@@ -119,17 +121,21 @@ export interface Plan {
   challenge?: Challenge
 }
 
-/** Is this character selectable — base characters need the same-named achievement, tainted ones the Home closet */
-export function playableCharacters(achieved: Set<number>, wiki: WikiAchievement[]): Set<string> {
-  const byName = new Map(wiki.map((a) => [a.name, a.id]))
-  const playable = new Set<string>(['Isaac'])
-  for (const base of BASE_CHARACTERS) {
-    const id = byName.get(base)
-    if (id !== undefined && achieved.has(id)) playable.add(base)
-  }
+/** achievement id → the character it makes selectable: base characters by the same-named achievement, tainted ones by the Home closet */
+function characterUnlocks(wiki: WikiAchievement[]): Map<number, string> {
+  const unlocks = new Map<number, string>()
   for (const a of wiki) {
+    if ((BASE_CHARACTERS as readonly string[]).includes(a.name)) unlocks.set(a.id, a.name)
     const r = parseRequirement(a.requirement)
-    if (r?.goals[0] === 'homeCloset' && achieved.has(a.id)) playable.add(TAINTED_OF[r.character])
+    if (r?.goals[0] === 'homeCloset') unlocks.set(a.id, TAINTED_OF[r.character])
+  }
+  return unlocks
+}
+
+export function playableCharacters(achieved: Set<number>, wiki: WikiAchievement[]): Set<string> {
+  const playable = new Set<string>(['Isaac'])
+  for (const [id, character] of characterUnlocks(wiki)) {
+    if (achieved.has(id)) playable.add(character)
   }
   return playable
 }
@@ -147,7 +153,9 @@ function scoreOf(gains: PlannedAchievement[], wiki: Map<number, WikiAchievement>
       const rewards = c.rewards.flatMap((id) => wiki.get(id)?.unlocks ?? [])
       return s + 0.5 + qualityBonus(rewards)
     }, 0)
-    return sum + base + qualityBonus(g.unlocks) + opened
+    // A new character's marks are each a later run, so they count less than a mark earned now — but their items count in full
+    const character = (g.opensCharacter?.marks ?? []).reduce((s, m) => s + 0.25 + qualityBonus(m.unlocks), 0)
+    return sum + base + qualityBonus(g.unlocks) + opened + character
   }, 0)
 }
 
@@ -194,6 +202,8 @@ interface Context {
   byId: Map<number, WikiAchievement>
   /** achievement id → challenges it unlocks */
   opens: Map<number, Challenge[]>
+  /** achievement id → the character it makes selectable, with that character's remaining marks */
+  opensCharacter: Map<number, NonNullable<PlannedAchievement['opensCharacter']>>
 }
 
 function contextOf(achieved: Set<number>, wiki: WikiAchievement[], challenges: Challenge[]): Context {
@@ -201,10 +211,21 @@ function contextOf(achieved: Set<number>, wiki: WikiAchievement[], challenges: C
   for (const c of challenges) {
     if (c.requires !== null) opens.set(c.requires, [...(opens.get(c.requires) ?? []), c])
   }
-  return { achieved, todo: remaining(achieved, wiki), byId: new Map(wiki.map((a) => [a.id, a])), opens }
+  const todo = remaining(achieved, wiki)
+  const opensCharacter = new Map(
+    [...characterUnlocks(wiki)].map(([id, character]) => [
+      id,
+      { character, marks: todo.filter(({ r }) => r.character === character).map(({ a }) => a) },
+    ]),
+  )
+  return { achieved, todo, byId: new Map(wiki.map((a) => [a.id, a])), opens, opensCharacter }
 }
 
-function planFor(character: string, route: Route, { achieved, todo, byId, opens }: Context): Plan | null {
+function planFor(
+  character: string,
+  route: Route,
+  { achieved, todo, byId, opens, opensCharacter }: Context,
+): Plan | null {
   const reachable = new Set([...route.core, ...route.bonus].filter((g) => isGoalOpen(g, achieved)))
   const gains: PlannedAchievement[] = []
   let needsHard = false
@@ -225,6 +246,7 @@ function planFor(character: string, route: Route, { achieved, todo, byId, opens 
       conditions: bonus ? hit.filter(isConditionalGoal) : undefined,
       anyCharacter: any || undefined,
       opens: opens.get(a.id),
+      opensCharacter: opensCharacter.get(a.id),
     })
   }
   // Any-character extras alone are no reason to pick this character — the "any character" run covers those
