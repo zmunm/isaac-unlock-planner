@@ -108,8 +108,8 @@ export interface PlannedAchievement {
   anyCharacter?: boolean
   /** Challenges this unlocks */
   opens?: Challenge[]
-  /** Character this makes selectable, with the marks it will then have left */
-  opensCharacter?: { character: string; marks: WikiAchievement[] }
+  /** Character this makes selectable, its remaining marks, and the score of its best run */
+  opensCharacter?: { character: string; marks: WikiAchievement[]; next: number }
 }
 
 export interface Plan {
@@ -142,8 +142,10 @@ export function playableCharacters(achieved: Set<number>, wiki: WikiAchievement[
 
 function qualityBonus(unlocks: PlannedAchievement['unlocks']): number {
   const best = Math.max(-1, ...unlocks.map((u) => u.quality ?? -1))
-  return best >= 4 ? 1 : best === 3 ? 0.5 : 0
+  return best >= 4 ? 2 : best === 3 ? 1 : 0
 }
+
+const NEXT_RUN_SHARE = 0.3
 
 function scoreOf(gains: PlannedAchievement[], wiki: Map<number, WikiAchievement>): number {
   return gains.reduce((sum, g) => {
@@ -153,8 +155,8 @@ function scoreOf(gains: PlannedAchievement[], wiki: Map<number, WikiAchievement>
       const rewards = c.rewards.flatMap((id) => wiki.get(id)?.unlocks ?? [])
       return s + 0.5 + qualityBonus(rewards)
     }, 0)
-    // A new character's marks are each a later run, so they count less than a mark earned now — but their items count in full
-    const character = (g.opensCharacter?.marks ?? []).reduce((s, m) => s + 0.25 + qualityBonus(m.unlocks), 0)
+    // Opening a character is worth part of the run it makes possible — never more, or the opener outranks that run once it is open
+    const character = (g.opensCharacter?.next ?? 0) * NEXT_RUN_SHARE
     return sum + base + qualityBonus(g.unlocks) + opened + character
   }, 0)
 }
@@ -211,14 +213,23 @@ function contextOf(achieved: Set<number>, wiki: WikiAchievement[], challenges: C
   for (const c of challenges) {
     if (c.requires !== null) opens.set(c.requires, [...(opens.get(c.requires) ?? []), c])
   }
-  const todo = remaining(achieved, wiki)
-  const opensCharacter = new Map(
-    [...characterUnlocks(wiki)].map(([id, character]) => [
-      id,
-      { character, marks: todo.filter(({ r }) => r.character === character).map(({ a }) => a) },
-    ]),
-  )
-  return { achieved, todo, byId: new Map(wiki.map((a) => [a.id, a])), opens, opensCharacter }
+  const context: Context = {
+    achieved,
+    todo: remaining(achieved, wiki),
+    byId: new Map(wiki.map((a) => [a.id, a])),
+    opens,
+    opensCharacter: new Map(),
+  }
+  // Scored before opensCharacter is filled, so a character's next run never counts the characters it opens in turn
+  for (const [id, character] of characterUnlocks(wiki)) {
+    if (achieved.has(id)) continue
+    context.opensCharacter.set(id, {
+      character,
+      marks: context.todo.filter(({ r }) => r.character === character).map(({ a }) => a),
+      next: Math.max(0, ...ROUTES.map((route) => planFor(character, route, context)?.score ?? 0)),
+    })
+  }
+  return context
 }
 
 function planFor(

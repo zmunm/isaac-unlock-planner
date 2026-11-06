@@ -197,16 +197,24 @@ describe('planRuns', () => {
     expect(plans.filter((p) => p.character === 'Eden')).toHaveLength(1)
   })
 
-  it('counts what a new character will unlock, so opening Tainted Isaac beats a few loose marks', () => {
+  it('counts part of the run a closet opens, so Isaac opening Tainted Isaac beats a few loose marks', () => {
     const closet = req('Use Red Key (etc.) to open the hidden closet in Home as Isaac')
     const tainted = wiki.filter((a) => parseRequirement(a.requirement)?.character === 'Tainted Isaac').map((a) => a.id)
     const lamb = req('Defeat The Lamb as Jacob and Esau')
-    const hush = req('Defeat Hush as Jacob and Esau')
-    const plans = planRuns(without(closet, ...tainted, lamb, hush), wiki)
+    const plans = planRuns(without(closet, ...tainted, lamb), wiki)
     expect(plans[0].character).toBe('Isaac')
     const opened = plans[0].gains.find((g) => g.id === closet)!.opensCharacter!
     expect(opened.character).toBe('Tainted Isaac')
     expect(opened.marks.map((m) => m.id).sort()).toEqual([...tainted].sort())
+  })
+
+  it('ranks playing an opened character above opening another one', () => {
+    const marksOf = (character: string) =>
+      wiki.filter((a) => parseRequirement(a.requirement)?.character === character).map((a) => a.id)
+    const closet = req('Use Red Key (etc.) to open the hidden closet in Home as Lazarus')
+    const plans = planRuns(without(...marksOf('Tainted Isaac'), closet, ...marksOf('Tainted Lazarus')), wiki)
+    expect(plans[0].character).toBe('Tainted Isaac')
+    expect(plans.find((p) => p.character === 'Lazarus')!.score).toBeLessThan(plans[0].score)
   })
 
   it('marks timed or keyed goals as bonus', () => {
